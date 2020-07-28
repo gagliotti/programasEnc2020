@@ -1,0 +1,204 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{LABORATÓRIO DE CIRCUITOS DIGITAIS}
+\newcommand{\codigo}{DEC7549}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{0}
+\newcommand{\creditosP}{4}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}https://www.overleaf.com/project/5ef2058d7bcf9600012c3daf
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Desenvolvimento de atividades práticas que permitam explorar os fundamentos, conceitos e técnicas relativas em circuitos digitais.
+\\ \hline
+}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input cabecalho.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+%\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+Objetivo Geral: \\
+\\
+Esta disciplina deverá abordar aspectos práticos circuitos digitais e explorando os equipamentos e componentes do mundo real.\\
+\\
+Objetivos Específicos:
+\begin{itemize}
+\item Colocar os alunos em contato com componentes eletrônicos reais;
+\item Utilizar equipamentos de medição de sinais eletrônicos como multímetros, geradores de funções, fontes de alimentação e osciloscópios;
+\item Montar em placa eletrônica universal circuitos digitais clássicos;
+\item Estudar os componentes eletrônicos básicos da eletrônica
+\item Medir e avaliar circuitos digitais
+\item Projetar circuitos digitais para soluções de problemas digitais
+\end{itemize}
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+UNIDADE 1: Medidas Elétricas [12 horas-aula]\\
+Apresentar os conceitos fundamentais de medidas elétricas\\
+Estudar e utilizar multímetro (tensão, corrente, resistência, etc)\\
+Utilizar fontes de alimentação estudando suas características e cuidados\\
+Utilizar geradores de função\\
+Utilizar osciloscópios\\
+\\
+UNIDADE 2: Componentes Eletrônicos [12 horas-aula]\\
+Características técnicas, comerciais e de montagem de resistores\\
+Características técnicas, comerciais e de montagem de capacitores\\
+Características técnicas, comerciais e de montagem de diodos\\
+Características técnicas, comerciais e de montagem de transistores\\
+Características técnicas, comerciais e de montagem de circuitos integrados\\
+\\
+UNIDADE 3: Montagem de Circuitos Digitais Combinacionais. [12 horas-aula]\\
+Portas Lógicas\\
+Projeto de circuitos lógicos combinacionais\\
+Codificadores e decodificadores\\
+\\
+UNIDADE 4: Montagem de Circuitos Digitais Sequenciais. [36 horas-aula]\\
+Flip-fllops\\
+Registradores de deslocamento\\
+Contadores\\
+Multiplex/demultiplex\\
+Conversor analógico/digital e digital/analógico\\
+Memórias
+\\ \hline
+\end{longtable} 
+
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+
+\begin{enumerate}
+\item TOCCI, RONALD J.; WIDMER, NEAL S.; MOSS, GREGORY L. Sistemas Digitais: Princípios e Aplicações 11ª edição. São Paulo: Pearson. 
+\item BIGNELL, James; DONOVAN, Robert. Eletrônica digital. São Paulo: Cengage Learning, 2010. xviii, 648 p. ISBN 9788522107452. 
+\item IDOETA, Ivan V.; CAPUANO, Francisco G. Elementos de eletrônica digital. 41. ed. rev. e atual. São Paulo: Livros Erica Ed., c2012. 544 p. ISBN 9788571940192. 
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+
+\item FERREIRA, José Manuel Martins. Introdução ao projeto com sistemas digitais e microcontroladores. Porto: FEUP, 1998. 371 p. ISBN 9727520324 
+\item WILSON, Peter. The circuit designer’s companion. 3rd ed. Amsterdam: Elsevier, 2012. xv, 439 p. ISBN 9780080971384
+\item PEDRONI, Volnei A. Eletrônica digital moderna e VHDL. Rio de Janeiro: Elsevier, c2010. 619 p. ISBN 9788535234657.
+\item MALVINO, Albert Paul; BATES, David J. Eletrônica. 7. ed. Porto Alegre: AMGH, 2007. v. ISBN 9788577260225 (v.1).
+\item D’AMORE, Roberto. VHDL: descrição e síntese de circuitos digitais. 2. ed. Rio de Janeiro: LTC, c2012. xiii, 292 p. ISBN 9788521620549.
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}
+

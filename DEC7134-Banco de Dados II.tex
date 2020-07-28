@@ -1,0 +1,216 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{BANCO DE DADOS II}
+\newcommand{\codigo}{DEC7134}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{2}
+\newcommand{\creditosP}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{DEC7129 & BANCO DE DADOS I &TIC \\ \hline }
+\newcommand{\requisitoB}{}%CIT7584 & ESTRUTURA DE DADOS E ALGORITMOS \\ \hline}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{}%Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+SQL embutida: instruções estáticas e dinâmicas, cursores. Processamento de consultas: otimização algébrica; plano de execução. Transações: definição, propriedades, estados. Recuperação de falhas: categorias de falhas, gerência de buffer, técnicas de recuperação. Controle de concorrência. Noções básicas de bancos de dados distribuídos. Tópicos avançados em Banco de Dados.
+ \\ \hline
+}
+
+
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input cabecalho.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+Objetivo Geral:\\
+
+Prover ao aluno conhecimentos que possibilitem um entendimento sólido sobre banco de dados de modo que este possa atuar no gerenciamento, na manutenção e no desenvolvimento de soluções de banco de dados.\\
+\\
+Objetivos Específicos 
+\begin{itemize}
+\item Apresentar as principais estruturas de um banco de dados;
+\item Apresentar os recursos existentes para o suporte ao desenvolvimento de aplicações que manipulem informações disponíveis em um banco de dados;
+\item Abordar os conceitos que possibilitem o gerenciamento de banco de dados;
+\item Apresentar as novas tecnologias na área de banco de dados.
+\end{itemize}
+
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+Conteúdo Teórico seguido de Conteúdo Prático com foco no estudo das estruturas que suportam um banco de dados, na manutenção de banco de dados através e na apresentação das novas tecnologias dessa área: \\
+\\
+UNIDADE 1: SQL avançada [8 horas-aula] \\
+- SQL embutida\\
+- SQL dinâmica\\
+- Procedimento Armazenado\\
+\\
+UNIDADE 2: Organização física de banco de dados [8 horas-aula] \\
+- Armazenamento e estrutura de arquivos\\
+- Indexação e hashing\\
+\\
+UNIDADE 3: Processamento de consultas [8 horas-aula]\\
+- Visão geral\\
+- Custo da consulta \\
+- Otimização de consultas\\
+\\
+UNIDADE 4: Gerenciamento de transações [4 horas-aula]\\
+- Definição de transações\\
+- Propriedades e estados\\
+\\
+UNIDADE 5: Recuperação de falhas (Sistema de recuperação) [4 horas-aula] \\
+- Classificação das falhas\\
+- Gerenciamento de buffer\\
+- Técnicas de recuperação\\
+\\
+UNIDADE 6: Controle de concorrência [4 horas-aula] \\
+- Protocolos\\
+- Tratamento de impasse\\
+- Concorrência em estruturas de índices\\
+\\
+UNIDADE 7: Noções básicas de banco de dados distribuído [4 horas-aula]\\
+- Banco de dados paralelos\\
+- Banco de dados homogêneos e heterogêneos\\
+- Armazenamento de dados distribuídos\\
+- Transações distribuídas\\
+\\
+UNIDADE 8: Tópicos avançados em banco de dados [10 horas-aula]\\
+\\
+UNIDADE 9: Seminários [10 horas-aula]
+\\ \hline
+\end{longtable} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item SILBERSCHATZ, A.; KORTH, H. F.; SUDARSHAN, S. Sistema de bancos de dados. 5. ed. Rio de Janeiro: Elsevier, 2006. 
+\item ELMASRI, R; NAVATHE, S. B. Sistemas de banco de dados. 6. ed. São Paulo: Pearson Addison Wesley, 2011. 
+\item DATE, C. J. Introdução a sistemas de bancos de dados. 8. ed. Rio de Janeiro: Elsevier, 2004.
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item GARCIA-MOLINA, Hector; ULLMAN, Jeffrey D.; WIDOM, Jennifer. Database systems: The 108 complete book. 2. ed. Prentice Hall, 2008. 
+\item HOFFER, Jeffrey A.; PRESCOTT, Mary; TOPI, Heikki. Modern database management. 9. ed. Prentice Hall, 2008. 
+\item O'NEIL, P.; O'NEIL, E. Database: principles, programming, and performance. 2. ed. Califórnia: Morgan Kaufmann, 2001. 
+\item RAMAKRISHNAN, Raghu; GEHRKE, Johannes. Sistemas de gerenciamento de banco de dados. 3. ed. São Paulo: McGraw-Hill Medical, 2008. 
+\item ULLMAN, J. D.; WIDOM, J. A. First course in database systems. New Jersey: Prentice-Hall, 2007.
+
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

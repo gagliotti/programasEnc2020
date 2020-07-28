@@ -1,0 +1,203 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{CONSTRUÇÃO DE COMPILADORES}
+\newcommand{\codigo}{DEC7565}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{2}
+\newcommand{\creditosP}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Linguagens-fonte, objeto, de alto-nível e de baixo-nível. Especificação de linguagens de programação. Compilação e interpretação. Processadores de linguagens de programação. Máquinas reais e virtuais. Bootstrapping. Análise sintática. Análise de contexto. Ambientes de execução. Geração de código. 90 Otimização de código independente de máquina. Otimização de código dependente de máquina.
+\\ \hline
+}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input cabecalho.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+Objetivo Geral:\\
+
+Capacitar o aluno na síntese, análise e manipulação de especificações de linguagens de programação de alto nível, assim como no emprego de técnicas de implementação de processadores de linguagens.\\
+\\
+Objetivos Específicos:
+\begin{itemize}
+\item Estudar e conhecer os princípios de um compilador;
+\item Estudar o processo de análise léxica e semântica em um compilador;
+\item Estudar o processo de geração de código intermediário e código objeto final;
+\item Estudar o processo de otimização de código intermediário e código objeto final.
+\end{itemize}
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+Conteúdo Teórico seguido de Conteúdo Prático com desenvolvimento de problemas em computador:\\
+\\
+Unidade 1: Introdução\\
+Apresentação da disciplina (ementa, bibliografia, metodologia e avaliações)\\
+Introdução aos compiladores\\
+Fases de um compilador\\
+\\
+Unidade 2: Análise Léxica\\
+Expressão regular\\
+Reconhecedores\\
+Autômatos finitos para análise léxica\\
+\\
+Unidade 3: Análise Sintática\\
+Gramáticas livres de contexto\\
+Análise sintática top-down e bottom-up\\
+Conjuntos FIRST e FOLLOW\\
+Analisador sintático LR\\
+Reconhecedores\\
+\\
+Unidade 4: Análise Semântica\\
+Atributos semânticos herdados e sintetizados\\
+Esquemas S e L atributos\\
+\\
+Unidade 5: Geração e Otimização de Código\\
+Geração de código intermediário\\
+Otimização de código intermediário\\
+Geração de código objeto\\
+Otimização de código objeto\\
+\\ \hline
+\end{longtable} 
+
+%\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+
+\begin{enumerate}
+\item AHO, Alfred V. et al. Compiladores: Princípios, Técnicas e Ferramentas. 2a ed. São Paulo: Pearson Addison Wesley, 2008. 
+\item PRICE, Ana Maria de A.; TOSCANI, Simão S. Implementação de Linguagens de Programação: Compiladores. 3a ed. Porto Alegre. Bookman, 2008. 
+\item ASCENCIO, Ana Fernanda Gomes; CAMPOS, Edilene Aparecida Veneruchi de. Fundamentos da programação de computadores: algoritmos, Pascal, C/C++ e Java. 2. ed. São Paulo: Pearson Prentice Hall, 2008.
+\end{enumerate}
+
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item SEBESTA, Robert W. Conceitos de linguagens de programação. 9. ed. Porto Alegre: Bookman, 2011. 
+\item  PATTERSON, David A.; HENNESSY, John L. Organização e projeto de computadores: a interface hardware/sofware. 3. ed. Rio de Janeiro: Elsevier, 2005. 
+\item  SANTOS, Rafael. Introdução à programação orientada a objetos usando JAVA. Rio de Janeiro: Campus, 2003
+%
+\item MANZANO, José Augusto N. G; OLIVEIRA, Jayr Figueiredo de. Algoritmos: lógica para desenvolvimento de programação de computadores. 27. ed. rev. São Paulo: Érica, 2014. 328 p. ISBN 9788536502212.
+\item MEDINA, Marco; FERTING, Cristina. Algoritmos e programação: teoria e prática. 2.ed. São Paulo: Novatec, 2006. 384 p. ISBN 857522073X (broch.).
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

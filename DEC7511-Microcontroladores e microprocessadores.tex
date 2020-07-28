@@ -1,0 +1,211 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{MICROCONTROLADORES E MICROPROCESSADOS}
+\newcommand{\codigo}{DEC7511}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{2}
+\newcommand{\creditosP}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}%Graduação em Engenharia de Energia \\ \hline}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Microprocessadores: introdução histórica; estrutura básica de um microprocessador;microprocessadores comercialmente disponíveis; memórias; controladores; computadores;microcontroladores; operações de entrada/saída. Microcontroladores: arquiteturas típicas de um microcontrolador e seus registradores; arquiteturas; exemplos de microcontroladores comerciais; instruções; programação; mapa de memória, portas de entrada e saída; modulo temporizador; contadores; interrupções, conversão analógico-digital; acesso à memória; barramentos padrões; dispositivos periféricos; ferramentas de programação, simulação e depuração. Aplicações de microcontroladores e microprocessadores. Projetos de sistemas práticos com microcontroladores.
+ \\ \hline
+}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input cabecalho.tex
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+%\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+Objetivo Geral: \\
+
+Explorar a arquitetura de microprocessadores e microcontroladores, suas unidades funcionais internas, interfaceamento com  seus periféricos e linguagem de programação.\\
+\\
+Objetivos Específicos: 
+\begin{itemize}
+\item Conhecer a arquitetura interna dos microprocessadores e microcontroladores
+\item Estudar os modelos e diferenças entre as famílias de microprocessadores e microcontroladores
+\item Desenvolver sistemas embarcados baseados em microcontroladores
+\item Trabalhar com periféricos de entrada e saída
+\item Utilizar software de desenvolvimento e simulação de sistemas embarcados
+\item Desenvolver um projeto completo de sistema embarcado
+\end{itemize}
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+UNIDADE 1 - INTRODUÇÃO [8 ha]\\
+Apresentação da disciplina\\
+Evolução dos microprocessadores\\
+\\
+UNIDADE 2 - Introdução a Sistemas Embarcados [8 ha]\\
+Definições\\
+Aplicações de sistemas embarcados\\
+Diferença entre microprocessadores e microcontroladores\\
+Fabricantes\\
+\\
+UNIDADE 3 - Arquitetura de Microcontroladores e  Linguagem Assembly [12 ha]\\
+Microcontroladores da família PIC\\
+Estudo da arquitetura de microcontrolador\\
+Desenvolvimento de programas em assembly para microcontroladores\\
+\\
+UNIDADE 4 - Microcontroladores - Linguagem Ce Periféricos[28 ha]\\
+Desenvolvimento de programa em C para microcontroladores\\
+Tipos de dados\\
+Entrada e saída\\ 
+Estruturas de repetição\\
+Estrutura de seleção\\
+Subrotinas\\
+Interrupção\\
+Display de 7 segmentos\\
+Timers\\
+Conversor Analógico/Digital\\
+Display LCD\\
+Memórias EEPROM e FLASH\\
+Barramentos (I2C, SPI, USB)\\
+\\
+UNIDADE 5 - Projetos de sistemas embarcados [16 ha]\\
+Projeto de Hardware\\
+Projeto de software\\
+Projeto de sistema embarcado eficiente\\
+Desenvolvimento de projeto original
+\\ \hline
+\end{longtable} 
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item CATSOULIS, John. Designing embedded hardware. 2nd ed. Sebastopol: O'Reilly, 2005. xvi, 377 p. ISBN 9780596007553. 
+\item STALLINGS, W. - Arquitetura e Organização de Computadores - 5a. Ed., Pearson/Prentice Hall, 2002. 
+\item SOUZA, David José de. Desbravando o PIC/ ampliado e atualizado para PIC16F628A. 12. ed. São Paulo: Érica, 2014. 268 p. ISBN 9788571948679.
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item FERREIRA, José Manuel Martins. Introdução ao projeto com sistemas digitais e microcontroladores. Porto: FEUP, 1998. 371 p. ISBN 9727520324 
+\item KLEINJOHANN, Bernd; KLEINJOHANN, Lisa; WOLF, Wayne. Distributed Embedded Systems: Design, Middleware and Resources. Boston: Springer Science+Business Media, LLC, 2008. 
+\item PATTERSON, D. A.; HENNESSY, P. Organização e Projeto de Computadores. Editora Campus (Elsevier), 2005. 
+\item PARHAMI, Behrooz. Arquitetura de computadores: de microprocessadores a supercomputadores. São Paulo: McGraw Hill, 2008 xvi, 560 p. ISBN 9788577260256. 
+\item MALVINO, Albert Paul; BATES, David J. Eletrônica. 7. ed. Porto Alegre: AMGH, 2007. v. ISBN 9788577260225 (v.1).
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

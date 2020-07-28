@@ -1,0 +1,226 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{LINGUAGEM DE PROGRAMAÇÃO I}
+\newcommand{\codigo}{DEC0012}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{2}
+\newcommand{\creditosP}{4}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação. \\ \hline}
+\newcommand{\cursoB}{}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+
+Algoritmos e lógica de programação. Formas de representação de algoritmos. Programação estruturada, linguagens de programação e ambientes de programação. Variáveis: nomeação, declaração, inicialização, tipos de dados. Expressões: expressões aritméticas, expressão literal, expressões lógicas, expressões relacionais. Estruturas de Controle de Fluxo: linear, condicional, repetição. Estruturas de Dados Simples: vetores, matrizes, registros. Arquitetura de programa mínimo: paradigmas, regras de escopo, funções, modularização. Ponteiros e Alocação dinâmica. Funções: definição, declaração, tipos de passagem de parâmetro. Entrada e Saída de Dados: arquivos, acesso sequencial, acesso direto.
+
+ \\ \hline
+}
+
+
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.2\textwidth}|C{0.8\textwidth}|} \hline
+%
+\multirow{6}*{\includegraphics[scale=0.5]{UFSC-foto.jpg}} &\\
+%
+&{\bf UNIVERSIDADE FEDERAL DE SANTA CATARINA}\hfill\\
+%
+&{\bf Centro de Ciências, Tecnologias e Saúde} \\
+%
+&{\bf Departamento de Computação}\\
+%
+&{\bf PROGRAMA DE ENSINO}\\
+%
+& \\ \hline
+
+%\multicolumn{2}{|c|}{{\bf SEMESTRE \semestre}}\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 108} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+
+Objetivos Gerais: O aluno ao final desta disciplina deverá ser capaz de transpor um algoritmo, tal como apreendido em lógica de programação, para uma linguagem de programação sob o paradigma da programação estruturada.
+
+\\
+
+Objetivos Específicos:
+\begin{enumerate}
+\item  Domínio do Contexto Científico e Tecnológico em Linguagem de Programação.
+\item Utilização de Ferramentas e Técnicas de Programação.
+\item Domínio do Paradigma Entrada.
+\item Processamento e Saída de Dados.
+
+\end{enumerate}
+
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+
+UNIDADE 1: \\
+Introdução ao paradigma da programação estruturada. \\
+Conceituação de elementos básicos da linguagem de programação. \\
+Estruturas de controle de fluxo. \\
+Arquitetura de programas. \\
+\\
+
+UNIDADE 2: \\
+Estruturas de dados simples. \\
+Variáveis compostas. \\
+Variáveis homogenias: vetores e matrizes. \\
+Variáveis heterogenias. \\
+\\
+
+UNIDADE 3 \\
+Funções, chamada de funções, passagem de parâmetros. \\
+Ponteiros. \\
+Alocação de Memória. Alocação Estática. Alocação Dinâmica. \\
+Processamento de Strings. \\
+Entrada e Saída de dados. Arquivos e sistemas de arquivo.\\
+
+\\ \hline
+\end{longtable} 
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item MIZRAHI, Victorine Viviane. Treinamento em linguagem C. 2. ed. São Paulo: PearsonPrentice Hall, c2008. xxii, 405 p. ISBN 9758576051916.
+\item FORBELLONE, André Luiz Villar; EBERSPACHER, Henri Frederico. Lógica deprogramação: a construção de algoritmos e estruturas de dados. 3. ed. São Paulo:Prentice-Hall, Pearson, 2005. xii, 218 p. ISBN 8576050242. 
+\item FEOFILOFF, Paulo. Algoritmos em linguagem C. Rio de Janeiro: Elsevier, c2009. xv,208 p. ISBN 9788535232493.
+
+%
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+
+\item SEDGEWICK, Robert; WAYNE, Kevin Daniel. Algorithms. 4th ed. Upper Saddle River:Addison Wesley, c2011. xii, 955 p. ISBN 9780321573513.
+\item ASCENCIO, Ana Fernanda Gomes; CAMPOS, Edilene Aparecida Veneruchi de.Fundamentos da programação de computadores: algoritmos, Pascal, C/C++ e Java. 2. ed.São Paulo: Pearson Prentice Hall, 2008. 434 p. ISBN 9788576051480.
+\item FARRER, Harry et al. Algoritmos estruturados. 3. ed. Rio de Janeiro: LTC, c1999. 284 p.(Programação estruturada de computadores). ISBN 9788521611806.
+\item SCHILDT, Herbert. C, completo e total. 3. ed. rev. e atual. São Paulo: Pearson Educationdo Brasil, 2006. xx,827 p. ISBN 9788534605953.
+\item LOUDON, Kyle. Mastering algorithms with C. 1st ed. Sebastopol: O’Reilly, 1999. xvii,540 p. ISBN 9781565924536.
+
+
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

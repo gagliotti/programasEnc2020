@@ -1,0 +1,191 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{ANÁLISE E PROJETO DE SOFTWARE}
+\newcommand{\codigo}{DEC7138}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{2}
+\newcommand{\creditosP}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação. \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Processo de desenvolvimento de Sistemas orientado a objetos. Engenharia de requisitos: Análise de requisitos; técnicas para levantamento e representação de requisitos, incluindo casos de uso. Modelagem orientada a objetos. Projeto orientado por objetos. Linguagem de especificação orientada por objetos. Métodos de análise e projeto orientados por objetos.
+ \\ \hline
+}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input cabecalho.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+Objetivo Geral:\\
+
+Fornecer subsídios ao aluno para que ele possa analisar e projetar adequadamente um produto de software utilizando uma metodologia orientada a objetos.\\
+ \\
+Objetivos Específicos:\\
+O aluno ao final do curso deve possuir habilidades para:\\
+\begin{itemize}
+\item Modelar os dados de uma organização utilizando uma notação apropriada;
+\item Projetar um sistema a partir da engenharia de requisitos;
+\item Analisar e projetar software através do paradigma orientado a objetos.
+\end{itemize}
+
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+Unidade I: Fundamentos de Análise e Gestão de Requisitos\\
+Conteúdo Teórico seguido de Conteúdo Prático \\
+Visão geral da Engenharia de Software \\
+Visão Geral do Sistema\\
+Engenharia de requisitos\\
+Identificar o problema \\
+Planejar uma solução\\
+Definir os requisitos do sistema\\
+Analisar e classificar os requisitos\\
+Documentar os requisitos\\
+\\
+Unidade II: Projeto Orientado a Objetos\\
+Conteúdo Teórico seguido de Conteúdo Prático com desenvolvimento de modelagem por computador. \\
+Elaboração da solução com diagramas UML/SYSML: estados, atividades, caso de uso, interação;\\
+Modelagem de software para sistemas embarcados e de tempo real.\\
+
+\\ \hline
+\end{longtable} 
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item WAZLAWICK, Raul Sidnei. Análise e projeto de sistemas de informação orientados a objetos. 2. ed. rev. e atual. Rio de Janeiro: Elsevier: Campus, 2011. 330 p. (Série Editora Campus, SBC). ISBN 9788535239164. 
+\item SILVA, R. P. UML2 em modelagem orientada a objetos. Florianópolis: Visual Books, 2007.
+\item BOOCH, G.; RUMBAUGH, J.; JACOBSON, I. UML - Guia do Usuário. 2. ed. Rio de Janeiro: Elsevier., 2006. 
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item SOMMERVILLE, Ian. Engenharia de software. 8. ed. São Paulo: Pearson Addison-Wesley, 2007. xiv, 552 p.
+\item BEZERRA, Eduardo. Princípios de análise e projeto de sistemas com UML. Rio de Janeiro: Elsevier, 2003. 286p. 
+\item PRESSMAN, Roger. Engenharia de software. 6. ed. São Paulo: McGraw Hill, 2006. 752p. 
+\item FRIEDENTHAL, Sanford; MOORE, Alan; STEINER, Rick. A practical guide to SysML: the systems modeling language. 2nd ed. Waltham: Morgan Kaufmann, c2012. xxiii, 615 p. ISBN 9780123852069. 
+\item LARMAN, Craig. Utilizando UML e padrões: uma introdução à análise e ao projetos orientados a objetos e ao desenvolvimento interativo. 3. ed. Porto Alegre: Bookman, 2007.
+
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

@@ -1,0 +1,212 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{LINGUAGEM DE PROGRAMAÇÃO II}
+\newcommand{\codigo}{DEC7532}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{1}
+\newcommand{\creditosP}{3}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}%Graduação em Engenharia de Energia \\ \hline}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+%Fundamentos de uma linguagem orientada por objetos: nomes, variáveis, tipos de dados, operadores, expressões, estruturas de controle de fluxo, regras de escopo. Decomposição de problemas por objetos. Encapsulamento. Classes: Abstrata, Derivada, Genérica, Aninhada e Agregada. Mecanismo de herança. Polimorfismo. Interfaces. Objetos Componentes. Interface Gráfica com o Usuário (GUI). Sistemas Orientados por Eventos. Mecanismo de resposta à eventos. Persistência: streams, entrada e saída de dados.
+
+Fundamentos do paradigma Orientado à Objetos. Classes e métodos. Encapsulamento, herança e polimorfismo. Modelagem e solução de problemas utilizando os conceitos de orientação a objetos, decomposição por objetos e tipos abstratos de dados. Interface gráfica com usuário (GUI). Análise dos aspectos tecnológicos complementares à solução de problemas (programação orientada a eventos, persistência de dados e objetos, tratamento de exceções).
+ \\ \hline
+}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input cabecalho.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+%\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+Objetivos Gerais:\\
+ O aluno ao final desta disciplina deverá ser capaz de transpor algoritmos, tal como apreendido em lógica de programação, para uma linguagem de programação sob o paradigma da programação orientada por objetos.
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+Objetivos Específicos:\\
+\begin{itemize}
+\item Compreender a motivação para a adoção do paradigma de orientação por objetos. 
+\item Conhecer os principais pilares da orientação à objetos, bem como classes, abstração, herança e polimorfismo. 
+\item Decompor problemas segundo o conceito de orientação à objetos. 
+\item Implementar o conceito segundo os aspectos da orientação à objetos.
+\end{itemize}
+
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+UNIDADE 1:\\
+Apresentação da disciplina e Apresentação do plano de ensino.\\
+Linguagem C para C++ e Histórico\\
+Utilização da biblioteca padrão do C++ e diferenças da programação em Linguagem C\\
+Compilação, flags de compilação e depuração de código. \\
+Ferramentas para detecção de memoryleak e stackoverflow\\
+Alocação dinâmica de memória em C++ e inputs/pipe do SO.\\
+conceito   de   namespace,  std::string,   ::stringstream,   ::vector,   ::pair,   ::ifstream,   ::ofstream, e outros necessários da std.\\
+\\
+
+UNIDADE 2:\\
+Motivação para a adoção do paradigma de orientação por objetos.\\
+Programação Estruturada X Orientada à Objetos.\\
+Decomposição de problemas por objetos. \\
+Operadores Relacionais, Operadores Aritméticos, Operadores Lógicos.\\
+Composição de Operadores de Atribuição.\\
+Classes,   definição,   Variáveis  Membros  (Atributos),   Métodos  ou   Funções  (Comportamento),   Método Construtor, Modificadores de Acesso, Declaração e Instanciação de Objetos.\\
+Classes, Tipo Abstrato de Dados, Encapsulamento e Identidade de Objetos. \\
+Comparação do Operador new com a Alocação Dinâmica de Memória (Alocação Dinâmica de Tipo Abstratos de Dados).\\
+Herança, Classes Abstratas, Métodos Abstratos, Hierarquia de Classes, Classe Ancestral e Classe Derivada, Redefinição de Comportamentos Ancestrais. \\
+Polimorfismo.\\
+\\
+
+UNIDADE 3:\\
+Interface com o Usuário em Sistemas Orientados por Eventos.\\
+Classes Genéricas. Interfaces Genéricas. Métodos Genéricos.\\ Entrada e Saída de dados em Interfaces com o Usuário (Entrada e Saída de Dados para Console).\\
+Persistência de Objetos, Streams de Entrada e Saída de Dados para meios persistentes. \\
+Serialização de Objetos (Interface Serializable).\\
+Atividades práticas: desenvolvimento de trabalho.
+\\ \hline
+\end{longtable} 
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item LARMAN, Graig. Utilizando UML e padrões: uma introdução à análise e ao projeto orientado a objetos e ao desenvolvimento interativo. 3. ed. Porto Alegre: Bookman, 2007. 
+\item DEITEL, H. M.; DEITEL, P.J. C++ Como Programar. 5a. edição. Pearson, 2006. 
+\item DEITEL, H. M.; DEITEL, P.J. Java. Como Programar. 6a. edição. Pearson, 2005.
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item  BOOCH, Grady. Object-Oriented Analysis and Design with Applications (3rd Edition), Addison Wesly, 2007. 
+\item GAMMA, Erich; HELM, Richard; JOHNSON, Ralph; VLISSIDES, John. Padrões de Projeto: soluções reutilizáveis de software orientado a objetos. Porto Alegre: Bookman, 2000. (18) 
+\item KRUCHTEN, Philippe. Introdução ao RUP Rational Unified Process. Rio de Janeiro: Ciência Moderna. 2003. 
+\item MCLAUGHLIN, Brett; POLLICE, Gary; WEST, David. Use a Cabeça! Análise e projeto orientado ao objeto. São Paulo: Alta Books, 2007 
+\item BORATTI, Isaias Camilo. Programação Orientada a Objetos em Java. Visual Books, 2007.
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

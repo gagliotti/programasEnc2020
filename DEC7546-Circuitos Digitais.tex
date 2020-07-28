@@ -1,0 +1,227 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{CIRCUITOS DIGITAIS}
+\newcommand{\codigo}{DEC7546}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{4}
+\newcommand{\creditosP}{0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Sistemas Numéricos. Álgebra de Boole (teoremas). Portas lógicas. Circuitos combinacionais. Técnicas de minimização de hardware. Implementação de dispositivos elementares de memória (latchs e flip-flops). Circuitos Sequenciais. Implementação de módulos básicos. Ambiente de simulação.
+\\ \hline
+}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input cabecalho.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+\begin{itemize}
+\item Representar equações lógicas, efetuar simplificações por mapas de Karnaugh;
+\item Implementar funções lógicas utilizando portas lógicas;
+\item Projetar circuitos eletrônicos fazendo dos principais dispositivos;
+\item Compreender o funcionamento de registradores, memórias e fazer associações em série e em paralelo;
+\item Conhecer o funcionamento interno dos principais dispositivos.
+\end{itemize}
+
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline\\
+UNIDADE 1: Sistema de numeração e códigos especiais 
+\begin{itemize}
+    \item Sistema numérico decimal;
+    \item Sistema decimal, binário, hexadecimal, conversão de bases;
+    \item Operações Aritméticas básicas;
+    \item Representação de números negativos.
+\end{itemize}
+
+UNIDADE 2: Álgebra de Boole 
+\begin{itemize}
+    \item Representar funções lógicas por meio de equações;
+    \item Realizar simplificações aplicando teoremas fundamentais e mapas K (minimização);
+    \item Implementar funções lógicas através de portas lógicas.
+\end{itemize}
+
+UNIDADE 3: Circuitos Combinacionais Básicos\\
+Estudar os dispositivos fundamentais:
+\begin{itemize}
+    \item  Multiplexadores, demultiplexadores;
+    \item Decodificadores, comparadores e codificadores.
+\end{itemize}
+
+UNIDADE 4: Somadores 
+\begin{itemize}
+    \item Circuitos aritméticos somadores;
+    \item Circuitos aritméticos subtratores.
+\end{itemize}
+
+UNIDADE 5: Circuitos Sequenciais
+\begin{itemize}
+    \item Latches, flipflops;
+    \item Máquinas de estado.
+\end{itemize}
+
+UNIDADE 6: Registradores 
+\begin{itemize}
+    \item Série, paralelo, associação;
+    \item CIs.
+\end{itemize}
+
+UNIDADE 7: Contadores
+\begin{itemize}
+    \item  Up, Down, reversível;
+    \item  Síncrono, assíncrono, sequencia não natural.
+\end{itemize}
+
+UNIDADE 8: Memória 
+\begin{itemize}
+    \item Tipos de memória e seu funcionamento interno;
+    \item Associação de memória.
+\end{itemize}
+\\ \hline
+\end{longtable} 
+
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item TOCCI, RONALD J.; WIDMER, NEAL S.; MOSS, GREGORY L. Sistemas Digitais: Princípios e Aplicações 11ª edição. São Paulo: Pearson. 
+\item  BIGNELL, James; DONOVAN, Robert. Eletrônica digital. São Paulo: Cengage Learning, 2010. xviii, 648 p. ISBN 9788522107452
+%
+\item D'AMORE, ROBERTO, VHDL - Descriçao e Sintese de Circuitos Digitais, LTC, ISBN: 8521620543, ISBN-13: 9788521620549, 2ª edição, 2012.
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+
+\item FERREIRA, José Manuel Martins. Introdução ao projeto com sistemas digitais e microcontroladores. Porto: FEUP, 1998. 371 p. ISBN 9727520324 
+\item WILSON, Peter. The circuit designer's companion. 3rd ed. Amsterdam: Elsevier, 2012. xv, 439 p. ISBN 9780080971384
+\item PEDRONI, Volnei A. Eletrônica digital moderna e VHDL. Rio de Janeiro: Elsevier, c2010. 619 p. ISBN 9788535234657
+\item IDOETA, Ivan V.; CAPUANO, Francisco G. Elementos de eletrônica digital. 41. ed. rev. e atual. São Paulo: Livros Erica Ed., c2012. 544 p. ISBN 9788571940192 
+\item ARAUJO, Celso de; CRUZ, Eduardo Cesar Alves; CHOUERI JUNIOR, Salomão. Eletrônica digital. 1. ed. São Paulo: Érica, c2014. 168 p. (Série Eixos Controle e processos industriais). ISBN 9788536508177.
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

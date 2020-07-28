@@ -1,0 +1,194 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{LINGUAGEM DE DESCRIÇÃO DE HARDWARE}
+\newcommand{\codigo}{DEC7555}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{2}
+\newcommand{\creditosP}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Desenvolvimento de projetos em Alto Nível através de Linguagens de Descrição de Hardware (VHDL, Verilog), Máquina Finita de Estados, RTL (RegisterTransferLevel), em dispositivos como Field Programmable Gate Array (FPGA). São considerados Co-Projetos de Hardware/Software em ambientes System-on-Chip enfocando CORE e IP para o re-uso de sistemas. Para esses estudos são considerados os usos das ferramentas EDA (Eletronic Design Automation) da Xilinx e Altera. Considerações sobre: co-projeto de hardware/software; engenharia de software para o sistema; questões de sincronização de clock; protocolo de comunicação; escalonamento; RTOS (Real Time Operating System); validação e verificação; tolerância à falhas; programando sensores e atuadores; simulação, ferramentas EDA, ambiente distribuído.
+\\ \hline
+}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input cabecalho.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+Objetivo Geral: 
+\begin{itemize}
+\item Compreender o funcionamento de uma FPGA e o ciclo de desenvolvimento de Hardware utilizando esse tipo de dispositivo. 
+\item Compreender a capacidade desses dispositivos e as possibilidades de integração de Hard Cores, Soft Cores e código personalizado.
+\item Escrever código em linguagem de descrição de hardware, utilizar ferramentas de desenvolvimento e simulação
+\item Criar um pequeno projeto de dispositivo que explore os recursos de uma FPGA
+\end{itemize}
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+UNIDADE 1: FPGA\\
+FPGA, estrutura interna\\
+FPGA, ferramentas de desenvolvimento e simulação\\
+Ciclo de desenvolvimento, ferramenta de síntese de hardware, uso como ferramenta de prototipação\\
+Processadores implementados em hardware e em software, mercado de FPGAs, empresas fabricantes, mercado de atuação \\
+Propriedade intelectual de componentes de hardware\\
+\\
+UNIDADE 2: Programação para FPGA \\
+Linguagens existentes\\
+Código sintetizável e código não sintetizável\\
+Linguagem de programação VHDL\\
+\\
+UNIDADE 3: Estudo da linguagem VHDL \\
+Formato da linguagem, escrita de código básico\\
+Recursos avançados da linguagens\\
+Criação de código, simulação usando ambiente de desenvolvimento ALTERA\\
+\\
+UNIDADE 4: Implementação de dispositivos em VHDL \\
+Portas lógicas, latches, Flipflops, circuitos compostos por diferentes elementos\\
+Decodificadores, mux, demux, decodificadores 7 segmentos\\
+Uso de decodificadores para habilitar partes de um circuito\\
+Máquinas de estado em VHDL, máquinas moore, máquinas mealy
+\\ \hline
+\end{longtable} 
+
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+
+\begin{enumerate}
+\item HAMBLEN, James O; HALL, Tyson S; FURMAN, Michael D. Rapid Prototyping of Digital Systems. Boston: Springer Science+Business Media, LLC, 2008. 
+\item Pedroni - Circuit Design with VHDL; MIT Press, 2005. 
+\item D'Amore, R. - VHDL: Descrição e Síntese de Circuitos Digitais, LTC, 2005.
+
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item  Digital\_McLogic\_Design - Livro disponível gratuitamente em http://www.ee.calpoly.edu/media/uploads/resources/Master\_Digital\_McLogic\_Design\_-\_v2.01.pdf - (licença creative commons) 
+\item Free Range VHDL - Livro disponível gratuitamente em http://www.freerangefactory.org/ 
+\item The Designer's Guide to VHDL 3 edição, Volume 3, Peter J. Ashenden ISBN: 978-0-12-088785-9 (disponível no science direct) 
+\item Quartus II Introduction Using VHDL Designs,Altera, disponível em :(ftp://ftp.altera.com/up/pub/Altera\_Material/11.0/Tutorials/VHDL/Quartus\_II\_Introduction.pdf) 
+\item Getting Started with Altera's DE-Series Boards, Altera, disponível em: ftp://ftp.altera.com/up/pub/Altera\_Material/10.1/Tutorials/Getting\_Started\_with\_DE-series\_boards.pdf
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

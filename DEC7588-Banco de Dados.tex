@@ -1,0 +1,213 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{BANCO DE DADOS}
+\newcommand{\codigo}{DEC7588}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{2}
+\newcommand{\creditosP}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{CIT7584 & Estrutura de Dados e Algoritmos & TIC\\ \hline}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Introdução aos sistemas de gerência de bancos de dados. Projeto de banco de dados: conceitual, lógico e físico.
+Projeto conceitual de dados: entidades, relacionamentos, atributos, generalização e especialização. Projeto lógico
+para o modelo de dados relacional. Dependências funcionais e normalização. Linguagens de definição e de
+manipulação de dados. Restrições de integridade e visões. Desenvolvimento de aplicação de banco de dados.
+
+\\ \hline
+}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input cabecalho.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+Objetivo Geral:\\
+
+Prover ao aluno conhecimentos que possibilitem um entendimento sólido sobre banco de dados permitindo a elaboração de projetos e aplicações na área de banco de dados.\\
+\\
+Objetivos Específicos:
+\begin{itemize}
+\item Apresentar os principais conceitos de banco de dados;
+\item Aplicar os conceitos de banco de dados em uma ferramenta de modelagem;
+\item Desenvolver aplicações que manipulem informações disponíveis em um banco de dados.
+\end{itemize}
+
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+Conteúdo Teórico seguido de Conteúdo Prático com elaboração de modelagem e implementação de projeto de banco de dados em computador: \\
+\\
+UNIDADE 1: Introdução\\
+- Sistema de gerência de banco de dados\\
+- Conceitos básicos (modelo, objeto, modelagem)\\
+- Modelos de banco de dados (conceitual, lógico, físico)\\
+- Projeto de banco de dados\\
+\\
+UNIDADE 2: Projeto conceitual\\
+- Entidades\\
+- Relacionamentos\\
+- Atributos\\
+- Generalização\\
+- Especialização\\
+\\
+UNIDADE 3: Projeto lógico\\
+- Tabelas\\
+- Chaves\\
+- Domínios\\
+- Restrições de integridade\\
+\\
+UNIDADE 4: Normalização e Dependência funcional\\
+- Formas normais\\
+\\
+UNIDADE 5: Linguagens, Restrições e Visões\\
+- Linguagem de definição de dados e manipulação de dados (Álgebra Relacional e SQL)\\
+- Restrições de integridade\\
+- Visões\\
+\\
+UNIDADE 6: Desenvolvimento de aplicação de banco de dados\\
+\\
+UNIDADE 7: Apresentação de Trabalhos\\
+
+
+\\ \hline
+\end{longtable} 
+
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item HEUSER, C. A. Projeto de banco de dados. 6. ed. Porto Alegre: Bookman, 2009.
+\item SILBERSCHATZ, A, KORTH, H.F., SUDARSHAN, S. Sistema de bancos de dados, 5. ed. Rio de Janeiro: Elsevier, 2006.
+\item ELMASRI, R; NAVATHE, S. B. Sistemas de banco de dados, 6. ed. São Paulo: Pearson Addison Wesley, 2011.
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item COUGO, P. Modelagem conceitual e projeto de bancos de dados. Rio de Janeiro: Elsevier, 1997.
+\item DATE, C. J. Introdução a sistemas de bancos de dados. 8. ed. Rio de Janeiro: Elsevier, 2004.
+\item NADEAU, Tom; LIGHTSTONE, Sam; TEOREY, Toby. Projeto e Modelagem de Bancos de Dados. 2. ed. Rio de Janeiro: Elsevier, 2014.
+\item RAMAKRISHNAN, Raghu; GEHRKE, Johannes. Sistemas de gerenciamento de banco de dados. 3. ed. São Paulo: McGraw-Hill Medical, 2008.
+\item ULLMAN, J. D.; WIDOM, J. A first course in database systems. 3. ed. [S.l.]: Prentice-Hall, 2007.
+
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

@@ -1,0 +1,186 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{GERENCIAMENTO DE PROJETOS}
+\newcommand{\codigo}{DEC7566}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{2}
+\newcommand{\creditosP}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Fundamentos da Gestão de Projetos: Introdução e Histórico; Conceitos Básicos; Benefícios do Gerenciamento de Projetos. O Contexto da Gestão de Projetos: Fases e Ciclo de Vida de Projetos; Os Processos de Gestão de Projetos: Conceitos de Processos de Gerenciamento de Projetos; Processos e ciclo de vida de projetos. Início de um Projeto; Gestão do Escopo; Gestão de Prazos; Gestão de Custos; Gestão de Qualidade; Gestão de Recursos Humanos; Gestão de Comunicação; Gestão de Riscos. Introdução ao MSProject.
+\\ \hline
+}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input cabecalho.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+Objetivo Geral: \\
+
+Desenvolver no futuro profissional de Engenharia de Computação uma visão abrangente e estratégica dos negócios na área de Tecnologias da Informação. Noções de planejamento, técnicas, habilidades necessárias para a gestão de serviços de tecnologia.\\
+\\
+Objetivos Específicos:\\
+
+Fornecer uma visão ampla da aplicação e dos benefícios da gestão de projetos;
+Expor o futuro profissional as técnicas, padrões e métodos com o intuito de traçar objetivos, estimar custos e estabelecer cronogramas viáveis e realistas. 
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+UNIDADE 1: Teoria\\
+Apresentar os fundamentos de gestão de projeto;\\
+Gestão da Integração;\\
+Gestão do Escopo;\\
+Gestão do Tempo;\\
+Gestão de Custos;\\
+Gestão da Qualidade;\\
+Gestão de Recursos humanos;\\
+Gestão da Comunicação;\\
+Gestão de Riscos.\\
+\\
+UNIDADE 2: Atividades práticas\\
+Usar softwares de auxílio de gestão de prazos, custos, materiais, mão de obra e demais recursos necessários para o planejamento, execução e acompanhamento de projetos.
+
+\\ \hline
+\end{longtable} 
+
+%\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+
+\begin{enumerate}
+\item XAVIER, Carlos Magno da Silva. Gerenciamento de projetos: como definir e controlar o escopo do 95 projeto. 2. ed. São Paulo: Saraiva, 2009. 259 p. ISBN 9788502061958. 
+\item VARGAS, Ricardo Viana. Manual prático do plano de projeto: utilizando o PMBOK guide. 4.ed. Rio de Janeiro: Brasport, 2009. 230p. ISBN 9788574524306. 
+\item  MENEZES, Luís César de Moura. Gestão de projetos. 3. ed. São Paulo: Atlas, 2009. 242p. ISBN 9788522440405.
+\end{enumerate}
+
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item VIEIRA, Marconi Fábio. Gerenciamento de projetos de tecnologia da informação. 2. ed. total. rev. e atual. Rio de Janeiro: Elsevier, c2007. 1 CD-ROM 
+\item VERZUH, Eric. MBA compacto: gestão de projetos. Rio de Janeiro: Elsevier, 2000. 398p. ISBN 853520637X. 
+\item SOTILLE, Mauro Afonso. Gerenciamento do escopo em projetos. 2.ed. Rio de Janeiro: Ed. da FGV, 2010. 171p. ISBN 8522505799 (broch.).
+\item BORDEAUX-RÊGO, Ricardo. Viabilidade econômico-financeira de projetos. 3.ed. Rio de Janeiro: FGV, 2010. 161p. ISBN 9788522507788
+\item HELDMAN, Kim. Gerência de projetos: guia para o exame oficial do PMI. 7. ed. atual. Rio de Janeiro: Elsevier, 2015. 603 p. ISBN 9788535276152. 
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

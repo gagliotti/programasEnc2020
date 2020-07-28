@@ -1,0 +1,179 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{LINGUAGEM DE PROGRAMAÇÃO I}
+\newcommand{\codigo}{DEC7531}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{0}
+\newcommand{\creditosP}{4}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}%Graduação em Engenharia de Energia \\ \hline}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Programação Estruturada: linguagens que suportam programação estruturada. Ambientes de Programação: escolha, instalação e execução. Variáveis: nomeação, declaração, inicialização, tipos de dados. Expressões: expressão aritméticas, expressão literal, expressão lógicas, expressões relacionais. Arquitetura de Programa Mínimo: paradigmas, regras de escopo, funções, modularização. Estruturas de Dados Simples: vetores, matrizes, registros. Estruturas de Controle de Fluxo: Linear, condicional, repetição. Ponteiros: definição, declaração e uso. Funções: definição, declaração, tipos de passagem de parâmetro. Alocação Dinâmica: definição, declaração e uso. Entrada e Saída de Dados: arquivos, acesso sequencial, acesso direto.
+ \\ \hline
+}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input cabecalho.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+%\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+Objetivos Gerais:\\
+ O aluno ao final desta disciplina deverá ser capaz de transpor um algoritmo, tal como apreendido em lógica de programação, para uma linguagem de programação sob o paradigma da programação estruturada.
+\\
+\\
+\\
+\\
+\\
+Objetivos Específicos: \\
+Domínio do Contexto Científico e Tecnológico em Linguagem de Programação. Utilização de Ferramentas e Técnicas de Programação. Domínio do Paradigma Entrada, Processamento e Saída de Dados.
+
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+Unidade 1: Introdução ao paradigma da programação estruturada. Conceituação de elementos básicos da linguagem de programação. Estruturas de controle de fluxo. Arquitetura de programas.\\
+\\
+Unidade 2: Estruturas de dados simples. Variáveis compostas. Variáveis homogenias: vetores e matrizes. Variáveis heterogenias.\\
+\\
+Unidade 3: Funções, chamada de funções, passagem de parâmetros. Ponteiros. Alocação de Memória. Alocação Estática. Alocação Dinâmica. Processamento de Strings. Entrada e Saída de dados. Arquivos e sistemas de arquivo.
+
+\\ \hline
+\end{longtable} 
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item MIZRAHI, Victorine V. Treinamento em Linguagem C, Módulo 1. Pearson, 2004. 
+\item Mizrahi, V. V., Treinamento em Linguagem C - Módulo 2. Pearson, 2004. 
+\item FEOFILOFF, Paulo. Algoritmos em linguagem C. Rio de Janeiro: Elsevier, c2009. 
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item SEDGEWICK, Robert; WAYNE, Kevin Daniel. Algorithms. 4th ed. Upper Saddle River: Addison Wesley 
+\item Robert Sedgewick, Algorithms in C, Part 5 (Graph Algorithms) Addison Wesley. 2002.
+\item FARRER, Harry et al. Algoritmos estruturados. 3. ed. Rio de Janeiro: LTC, c1999. 284 p. (Programação 56 estruturada de computadores) 
+\item E-book: C - Program Structure, disponível em http://www.tutorialspoint.com/cprogramming/c\_program\_structure.htm 
+\item  E-book: The C Book, disponível em http://publications.gbdirect.co.uk/c\_book/
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

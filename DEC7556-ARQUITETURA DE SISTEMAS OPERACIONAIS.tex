@@ -1,0 +1,280 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{ARQUITETURA DE SISTEMAS OPERACIONAIS}
+\newcommand{\codigo}{DEC7556}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{2}
+\newcommand{\creditosP}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Introdução, histórico e arquitetura de sistemas operacionais. Gerenciamento de Processos; Gerenciamento de Memória; Gerenciamento de Dispositivos de Entrada e Saída; Sistemas de Arquivos; Proteção e Segurança em Sistemas Operacionais; Estudos de caso de Sistemas Operacionais.
+\\ \hline
+}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input cabecalho.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+Objetivo Geral: \\
+
+Esta disciplina tem como objetivo explorar os principais conceitos, arquiteturas e características internas dos sistemas operacionais. \\
+\\
+Objetivos Específicos:
+\begin{itemize}
+\item Apresentar os conceitos, finalidades e exemplos de sistemas operacionais;
+\item Abordar conceitos sobre gerência de processos, memória, entrada e saída e sistemas de arquivos;
+\item Fazer com que o discente obtenha conhecimento sobre as várias técnicas empregadas no projeto e implementação de um sistema operacional;
+\item Implementar algoritmos para simular partes de um sistema operacional como a gerência de processos, gerência de memória e sistemas de arquivos.
+\end{itemize}
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+Conteúdo Teórico seguido de Conteúdo Prático com desenvolvimento de problemas em computador: \\
+\\
+UNIDADE 1: Introdução [4 horas-aula]\\
+Definição e Características de um Sistema Operacional\\
+Estrutura de um Sistema Operacional\\
+Serviços do Sistema Operacional\\
+Chamadas de Sistemas\\
+Projeto e Implementação do Sistema Operacional\\
+Mecanismos e Políticas\\
+Implementação\\
+Estrutura do Sistema Operacional\\
+Monolíticos\\
+Camadas\\
+Microkernels\\
+Módulos\\
+Máquinas virtuais\\
+Cliente-sevidor\\
+\\
+UNIDADE 2: Gerência de processos [28h-aula]\\
+Conceito de Processos\\
+Estados de um Processo\\
+Bloco de Controle de Processos\\
+Escalonamento de Processos\\
+Troca de contexto\\
+Criação de Processos\\
+Threads\\
+Motivação para o uso de Threads\\
+Modelos de Múltiplas Threads\\
+Bibliotecas de Threads\\
+Posix Threads - Pthreads\\
+Windows Threads\\
+Threads em Java\\
+Aspectos do uso de Threads\\
+Escalonamento de processos\\
+Ciclos de CPU e ES (Entrada e Saída)\\
+Conceitos de Preempção\\
+Algoritmos de Escalonamento\\
+First Come, First Served - FCFS\\
+Shortest Job First - SJF\\
+Escalonamento por Prioridade\\
+Round-Robin\\
+Filas Multinível\\
+Escalonamento de Threads\\
+Escalonamento em Múltiplos processadores\\
+Programação concorrente\\
+Sincronização de processos\\
+Caracterização\\
+Seção Crítica\\
+Hardware de Sincronismo\\
+Semáforos\\
+Monitores\\
+Problemas Clássicos de Sincronismo\\
+Comunicação entre processos\\
+PIPEs\\
+PIPEs nomeados\\
+Memória compartilhada\\
+Sockets\\
+Deadlock\\
+Caracterização do Deadlock\\
+Grafo de Alocação de Recursos\\
+Métodos para Tratamento de Deadlocks\\
+Prevenção de Deadlocks\\
+Detecção de Deadlock\\
+Recuperação do Deadlock\\
+\\
+UNIDADE 3: Gerência de memória [8h-aula]\\
+Carregamento absoluto e carregamento relocado\\
+Alocação contígua\\
+Partições fixas\\
+Partições variáveis\\
+Alocação não-contígua\\
+Paginação\\
+Segmentação\\
+Segmentação paginada\\
+Memória virtual\\
+Paginação por Demanda\\
+Algoritmos de substituição de página\\
+Trashing\\
+\\
+UNIDADE 4: Sistemas de arquivos [10h-aula]\\
+Arquivos e diretórios\\
+Estruturação de arquivos\\
+Implementação de sistemas de arquivos\\
+Alocação de espaço em disco\\
+Alocação contígua\\
+Alocação encadeada\\
+Alocação indexada\\
+Gerência de espaço livre em discos\\
+Múltiplos sistemas de arquivos.\\
+Sistemas de Arquivos de Rede\\
+\\
+UNIDADE 5: Gerência de entrada e saída [12h-aula]\\
+Controlador e driver de dispositivo\\
+E/S programada\\
+Interrupções\\
+DMA (Direct Memory Access - Acesso Direto a Memória)\\
+Organização de discos rígidos\\
+Algoritmos de escalonamento de braço de disco		\\
+Sistemas RAID (Redundant Array of Independent Disks)\\
+\\
+UNIDADE 6: Proteção e Segurança em Sistemas Operacionais [10h]\\
+Princípios de proteção\\
+Matriz de acesso\\
+Domínio de proteção\\
+Conceitos de criptografia\\
+\\ \hline
+\end{longtable} 
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+
+\begin{enumerate}
+\item  SILBERSCHATZ, Abraham; GALVIN, Peter Baer; GAGNE; Greg. Fundamentos de Sistemas Operacionais. 8a ed. LTC, 2011. 
+\item TANENBAUM, Andrew S. Sistemas Operacionais Modernos. 3a ed. Pearson, 2010. 
+\item MARQUES, José Alves; FERREIRA, Paulo; RIBEIRO, Carlos; VEIGA, Luís. RODRIGUES, Rodrigo. Sistemas Operacionais. Rio de Janeiro: Editora LTC, 2011.
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item SILBERSCHATZ, Abraham; GALVIN, Peter Baer; GAGNE; Greg. Sistemas Operacionais com Java, 5a ed. Elsevier, 2006. 
+\item DEITEL, H. M; DEITEL, P. J.; CHOFFNES, D. R. Sistemas Operacionais. 3a ed. Pearson, 2005. 
+\item STUART, Brian L. Princípios de Sistemas Operacionais - Projetos e Aplicações. Cengage Learning, 2010. 
+\item MACHADO, Francis Berenger.; MAIA, Luiz Paulo. Arquitetura de Sistemas Operacionais. LTC, 2004. 
+%\item OLIVEIRA, Rômulo Silva de; CARISSINI, Alexandre da Silva; TOSCANI, Simão Sirineo. Sistemas operacionais. 4. ed. Porto Alegre: Bookman, 2010. xii, 374 p. (Livros didáticos ; 11). ISBN 9788577805211.
+\item  TANENBAUM, Andrew S.; WOODHULL, Albert S. Sistemas Operacionais - Projeto e Implementação. 3a ed. Bookman, 2008.
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+
+\input aprovacao.tex
+
+
+\end{document}

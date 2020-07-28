@@ -1,0 +1,210 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{INTRODUÇÃO À ENGENHARIA DE COMPUTAÇÃO}
+\newcommand{\codigo}{DEC7530}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{3}
+\newcommand{\creditosP}{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}%Graduação em Engenharia de Energia \\ \hline}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Perfil do profissional da computação. Campo de atuação. Ética profissional. Regulamentação profissional. Estrutura e objetivos do curso. Histórico e evolução dos computadores. Introdução à computação. Características básicas dos computadores: hardware e software. Componentes básicos dos computadores: memória, unidade central de processamento, entrada e saída. Modelo de von Neumann. Software básico e programas aplicativos. Sistemas de numeração: representação numérica e conversão de base.
+ \\ \hline
+}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input cabecalho.tex
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+%\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+Objetivo Geral: \\
+Fornecer ao aluno ingressante no curso de Engenharia de Computação uma visão geral acerca das principais áreas de atuação, competências, habilidades e o perfil do egresso do profissional de Engenharia de Computação.\\
+\\
+Objetivos Específicos:
+\begin{itemize}
+\item Fornecer aos alunos uma visão dos cursos de graduação em Engenharia de Computação: estrutura curricular, ênfases, mercado de atuação, etc;
+\item Capacitar o aluno a conhecer a estrutura básica de um computador, seu funcionamento e aplicações;
+\item Permitir ao aluno ter uma visão crítica sobre as áreas de atuação e a relação entre elas.
+\end{itemize}
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+Conteúdo Teórico seguido de Conteúdo Prático com desenvolvimento de problemas em computador: \\
+\\
+UNIDADE 1: Introdução [4 horas-aula]\\
+Introdução à Computação\\
+Histórico da Computação\\
+Sobre a Universidade Federal de Santa Catarina\\
+Estrutura do Curso de Engenharia de Computação da UFSC\\
+\\
+UNIDADE 2: Atuação Profissional [4 horas-aula]\\
+Áreas de atuação em computação\\
+Regulamentação da profissão\\
+Ética profissional\\
+Engenharia: ser engenheiro\\
+Projetos em Engenharia\\
+\\
+UNIDADE 3: Estrutura de Computadores [12 horas-aula]\\
+Evolução dos computadores\\
+Estrutura Interna (memória, unidade de processamento, barramentos)\\
+Sistemas de Numeração (base binária, base octal e base hexadecimal)\\
+Conversão de base\\
+Hardware versus software\\
+Introdução ao software básico e sistemas operacionais\\
+Programação em linguagem de montagem\\
+\\
+UNIDADE 4: Experimentos com Sistemas Microcontrolados [16 horas-aula]\\
+Introdução ao Arduino\\
+Simulação de Circuitos Elétricos\\
+Programação em Arduino\\
+Experimentos com Arduino\\
+\\
+UNIDADE 5: Experimentos com Robôs Móveis [16 horas-aula]\\
+Introdução a robótica\\
+Programação de robôs móveis\\
+\\
+UNIDADE 6: Jogos e Programação Scratch [20 horas-aula]\\
+Introdução a Jogos digitais\\
+Programação em Scratch\\
+Experimentos com Scratch e realidade aumentada.\\
+\\ \hline
+\end{longtable} 
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item CAPRON, H. L.; JOHNSON, J. A. Introdução à informática. São Paulo: Ed. Pearson, 2004.
+\item NORTON, Peter. Introdução à informática. São Paulo: Ed. Pearson, 2004. 
+\item Mokarzel,Fabio/Som. Introdução à Ciência da Computação. São Paulo.Ed. Campus/Elsevier. 2008
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item Unplugged. (2013). Computer Science Unplugged. Disponível em: http://csunplugged.org/projects/. Acesso em 25/01/2016. 
+\item MONTEIRO, M. A. Introdução à organização de computadores. 5. Ed. Rio de Janeiro: LTC, 2007. 
+\item MURDOCCA, M.J.; HEURING V.P. Introdução à arquitetura de computadores. Rio de Janeiro: Campus, 2001.
+\item BAZZO, Walter Antonio; PEREIRA, Luiz Teixeira do Vale. Introdução à engenharia: conceitos, ferramentas e comportamentos. 3. ed. Florianópolis: Ed. da UFSC, 2010. 251 p. (Série didática). ISBN 9788532805898.
+\item BROCKMAN, Jay B. Introdução à engenharia: modelagem e solução de problemas. Rio de Janeiro: LTC, c2010. xvii, 294 p. ISBN 9788521617266.
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

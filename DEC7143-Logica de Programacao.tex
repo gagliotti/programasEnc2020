@@ -1,0 +1,202 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{LÓGICA DE PROGRAMAÇÃO}
+\newcommand{\codigo}{DEC7143}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{2}
+\newcommand{\creditosP}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{Graduação em Engenharia de Energia \\ \hline}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Lógica de Programação. Sequências lógicas, pseudocódigo, fluxograma, diagrama de chapin. Variáveis: nomeação, declaração, inicialização, tipos de dados. Expressões aritméticas, expressões literais, expressões lógicas, expressões relacionais. Estruturas de Dados Simples: vetores, matrizes, registros. Estruturas de 48 Controle de Fluxo: Linear, condicional, repetição. Entrada e Saída de Dados. Aplicação dos conceitos de lógica de programação em uma linguagem de programação.
+ \\ \hline
+}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input cabecalho.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+Objetivo Geral:\\
+
+Tornar o aluno apto a transpor para a forma algorítmica , soluções de problemas utilizando-se de notações formais de representação de algoritmos, tais como, pseudo-linguagens e diagramas de fluxo. \\
+\\
+Objetivos Específicos: 
+\begin{itemize}
+\item  Estudar os principais elementos de construção de algoritmos;
+\item  Estudar e exercitar as principais formas de representação de algoritmos;
+\item  Estudar e exercitar as estruturas de seleção e repetição;
+\item  Estudar e exercitar as estruturas de dados simples: vetores, matrizes e registros;
+\item  Estudar e exercitar os conceitos de modularização de algoritmos.
+\end{itemize}
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+Conteúdo Teórico seguido de Conteúdo Prático com desenvolvimento de algoritmos.\\
+\\
+UNIDADE 1: Introdução à Lógica de Programação\\
+Conceituação.\\
+Histórico.\\
+Instruções.\\
+Algoritmos.\\
+Formas de representar algoritmos.\\
+\\
+UNIDADE 2: Estruturas básicas\\
+Tipos de dados: numéricos, literais e lógicos.\\
+Declaração e atribuição.\\
+Entrada e Saída de dados.\\
+\\
+UNIDADE 3: Estruturas de controle\\
+Seleção: simples e composta.\\
+Repetição.\\
+Aninhamento e identação.\\
+\\
+UNIDADE 4: Estruturas de dados\\
+Vetores.\\
+Matrizes.\\
+Registros.\\
+\\
+UNIDADE 5: Funções\\
+Introdução.\\
+Uso de funções em programas.\\
+\\ \hline
+\end{longtable} 
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item FORBELLONE, André L. V.; EBERSPÄCHER, Henri F. Lógica de Programação - a construção de algoritmos e estruturas de dados. 3a ed. Pearson Prentice Hall, 2005. 
+\item XAVIER, Gley Fabiano Cardoso. Lógica de Programação. 13a ed. Senac, 2014. 
+\item ASCENCIO, Ana Fernanda; CAMPOS, Edilene A. V. C. Fundamentos de Programação - algoritmos, Pascal, C/C++ e Java. 2a ed. Pearson Prentice Hall, 2008. 
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item MEDINA, Marcos; FERTIG, Cristina. Algoritmo e Programação - teoria e prática. Novatec, 2006. 
+\item MANZANO, José A.; OLIVEIRA, Jayr Fiqueiredo de. Algoritmos - lógica para o desenvolvimento de programas de computador. 27a ed. Érica, 2014. 
+\item FEOFILOFF, Paulo. Algoritmos em Linguagem C. Campus, 2009. 
+\item GUIMARÃES, Ângelo de M.; LAGES, Newton A. de C. Algoritmos e Estruturas de Dados. 33a ed. Gen LTC, 2008. 
+\item SEBESTA, Robert. Conceitos de Linguagens de Programação. 9a ed. Bookman, 2010.
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

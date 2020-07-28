@@ -1,0 +1,186 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{TRABALHO DE CONCLUSÃO DE CURSO II}
+\newcommand{\codigo}{DEC7572}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{4}
+\newcommand{\creditosP}{0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{DEC7571 & TRABALHO DE CONCLUSÃO DE CURSO I
+ \\ \hline}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Divulgar as Normas para realização do TCC; Acompanhar o cumprimento das Normas para realização do TCC; Acompanhar alunos e professores orientadores em todas as fases de desenvolvimento do projeto de TCC; Desenvolver a capacidade de trabalho do aluno e a aplicação dos conhecimentos adquiridos no decorrer do curso; Incentivar a criatividade e o espírito crítico do aluno; Participar do processo de aprovação do projeto de TCC. Introduzir o aluno na prática de investigação científica.
+\\ \hline
+}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input cabecalho.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & \\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+Objetivos Gerais: \\
+
+Coordenar as ações de alunos e orientadores de um projeto de TCC visando à integralização de conhecimentos adquiridos ao longo da formação universitária no Curso de Engenharia de Computação.\\
+\\
+Objetivos Específicos: 
+\begin{itemize}
+\item Propiciar aos estudantes a ocasião de demonstrar o conhecimento adquirido, o aprofundamento temático e o aprimoramento da capacidade de interpretação e de crítica.
+\item Propiciar aos discentes as condições necessárias para a elaboração de um estudo teórico-prático, dentro das normas técnicas que caracterizam a pesquisa científica.
+\item  Oportunizar aos estudante a possibilidade de vivenciar na prática o contexto do trabalho na área de Engenharia de Computação e de adquirir experiência no processo de iniciação científica.
+\item  Oportunizar aos estudantes a experiência de desenvolver, apresentar e defender seus projetos sob a égide da lei de inovação de produtos e processos e da defesa da propriedade intelectual.
+\item Aprofundar os conhecimentos em uma ou mais áreas relacionadas ao curso.
+\end{itemize}
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+Unidade I: Apresentação da disciplina.\\
+\\
+Unidade II: Cronograma da disciplina e cronograma individual.\\
+\\
+Unidade III: Apresentação dos projetos e acompanhamento individual\\
+\\
+Unidade IV: Prévias das Apresentações. \\
+\\
+Unidade V: Defesas e entrega da versão final. \\
+\\ \hline
+\end{longtable} 
+
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+
+\begin{enumerate}
+\item GIL, Antonio Carlos. Como Elaborar Projetos de Pesquisa. 5a ed. Editora Atlas, 2010. 
+\item MICHALISZYN, Mario Sergio; TOMASINI, Ricardo. Pesquisa - orientações e normas para elaboração de projetos, monografias e artigos científicos. 6a ed. Editora Vozes, 2005. 
+\item WASLAWICK, Raul Sidnei. Metodologia de Pesquisa para Ciência da Computação. Editora Campus Elsevier, 2009.
+\end{enumerate}
+
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item SANTOS, João Almeida; FILHO, Domingos Parra. Metodologia Científica. 2a ed. Editora Cengage Learning, 2011. 
+\item MARCONI, Marina de Andrade; LAKATOS, Eva Maria. Fundamentos de Metodologia Científica. 7a ed. Editora Atlas, 2010. 
+\item RAMPAZZO, Lino. Metodologia Científica para alunos de graduação e pós-graduação. Edições Loyola, 2013.
+\item CARVALHO, Maria Cecilia Maringoni de (Org.). Construindo o saber: metodologia cientifica, fundamentos e tecnicas. 24. ed. Campinas: Papirus, 2014. 224 p. ISBN 9788530809119.
+\item LAKATOS, Eva Maria; MARCONI, Marina de Andrade. Fundamentos de metodologia cientifica. 7. ed. São Paulo: Atlas, 2010. 297 p. ISBN 9788522457588.
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

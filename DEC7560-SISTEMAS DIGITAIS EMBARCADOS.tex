@@ -1,0 +1,210 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{SISTEMAS DIGITAIS EMBARCADOS}
+\newcommand{\codigo}{DEC7560}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{0}
+\newcommand{\creditosP}{4}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Projeto de hardware com microcontroladores. Interface com dispositivos de armazenamento, RAM, Flash e IDE. Interface com periféricos mais comuns, displays de cristal líquido e teclado. Interface com sistemas analógicos. Redes de comunicação, CAN, LIN, RS485 e I2C. Redes wireless WIFI e Bluetooth. Desenvolvimento de software de tempo real baseado em diagramas de estado. Programação na linguagem C em sistemas operacionais de tempo real para microcontroladores ($\mu$COS II).
+
+\\ \hline
+}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.2\textwidth}|C{0.8\textwidth}|} \hline
+%
+\multirow{6}*{\includegraphics[scale=0.5]{UFSC-foto.jpg}} &\\
+%
+&{\bf UNIVERSIDADE FEDERAL DE SANTA CATARINA}\hfill\\
+%
+&{\bf Centro de Ciências, Tecnologias e Saúde} \\
+%
+&{\bf Departamento de Computação}\\
+%
+&{\bf PROGRAMA DE ENSINO}\\
+%
+& \\ \hline
+
+%\multicolumn{2}{|c|}{{\bf SEMESTRE \semestre}}\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+
+Objetivo Geral: 
+\begin{itemize}
+\item Capacitar o aluno a projetar um sistema eletrônico que possua um microcontrolador o qual deve controlar os demais elementos do sistema.
+\item  Capacitar o aluno a identificar os requisitos de um projeto de sistema embarcado
+\item Realizar o particionamento entre software e hardware
+\item Escolher as ferramentas de desenvolvimento
+\item Capacitar o aluno a fazer uso avançado de dispositivos como memórias, compreendendo a sua forma de interface (paralela, serial (i2c, spi, etc), dispositivos de comunicação ( rádio, wireless, etc.). 
+\item Capacitar o aluno a compreender o que é um sistema de tempo real, quando é necessário um sistema com estas características e como escrever software para estes.
+\end{itemize}
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+
+UNIDADE 1: Microcontroladores [20 horas-aula]\\
+  Realizar um estudo de caso de diferentes famílias de microcontroladores e sua adequação a um sistema embarcado\\
+\\
+UNIDADE 2: Dipositivos de memória [20 horas-aula]\\
+Interfaceamento com dispositivos de armazenamento de dados\\
+Memória SRAM (paralela), memória EEPROM (serial), memória tipo cartão SD, memória FRAM, memória EEPROM (paralela)\\
+Experiências práticas com os tipos de dispositivos, criação de aplicações para realizar operações sobre memórias (sistema de arquivos). \\
+\\
+UNIDADE 3: Interface com dispositivos de entrada e saída [8 horas-aula]\\
+Displays LCD texto, displays LCD gráficos\\
+teclado matricial\\
+teclado PS/2, AT\\
+\\
+UNIDADE 4: Interface com sistemas analógicos [8]\\
+ Conversores AD e DA\\
+ Sensores analógicos (temperatura, luz, cor)\\
+ Experiências práticas com sistemas analógicos, captura e transmissão de dados\\
+ Experiências práticas com saída analógica, controle de intensidade de luz, gerador de funções\\
+\\
+UNIDADE 5: Comunicação de dados [8 horas-aula ]\\
+ Módulos de rádio\\
+ Experiências usando módulos de comunicação de dados\\
+\\ \hline
+\end{longtable} 
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+\item CATSOULIS, John. Designing embedded hardware. 2nd ed. Sebastopol: O'Reilly, 2005. xvi, 377 p. ISBN 9780596007553. 
+\item LABROSSE, Jean J. Embedded systems building blocks: complete and ready-to-use modules in C. 2nd ed. Lawrence: CMP Books, CRC Press, c2000. xxii, 611 p. ISBN 0879306041. 
+\item  WHITE, Elecia. Making embedded systems. Sebastopol: O'Reilly, 2011. xiv, 310 p. ISBN 9781449302146.
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item OLIVEIRA, André Schneider de; ANDRADE, Fernando Souza de. Sistemas embarcados: hardware e firmware na prática. 2. ed. São Paulo: Érica, 2010. 316 p. ISBN 9788536501055. 
+\item SIMON, David E. An embedded software primer. Boston: Addison Wesley, c1999. xix, 424 p. ISBN 020161569X. 
+\item  FERREIRA, José Manuel Martins. Introdução ao projecto com sistemas digitais e microcontroladores. Porto: FEUP, 1998. 371 p. ISBN 9727520324.
+\item  SOUSA, Daniel Rodrigues de. Microcontroladores ARM7: (Philips - Família LPC213x) : o poder dos 32 bits : teoria e prática. 1. ed. São Paulo: Érica, c2006. 280 p. ISBN 9788536501208.
+\item  LI, Qing; YAO, Caroline. Real-time concepts for embedded systems. Boca Raton: CMP Books, 2003. xii, 294 p. ISBN 9781578201242
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

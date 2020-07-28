@@ -1,0 +1,214 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{LÓGICA APLICADA À COMPUTAÇÃO}
+\newcommand{\codigo}{DEC7502}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{2}
+\newcommand{\creditosP}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}%Graduação em Engenharia de Energia \\ \hline}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Introdução à Lógica; Lógica Proposicional - símbolos proposicionais, tabelas verdade, operadores lógicos, fórmulas bem formadas, tautologias, contradições, contingência, métodos de prova; Lógica de Predicados - sintaxe e semântica, interpretação das variáveis, funções e predicados, equivalência entre fórmulas, métodos de prova; Programação em Lógica - Introdução, cláusulas de Horn, resolvente e unificação, SLD derivação e refutação, linguagem de programação Prolog. Lógicas não Clássicas - lógica modal, de multivalores, temporal e não monotônica.
+ \\ \hline
+}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input cabecalho.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+Objetivo Geral:\\
+Esta disciplina tem como objetivo geral possibilitar aos alunos o uso da lógica como uma ferramenta para a formalização e dedução de problemas inerentes a computação.\\
+\\
+Objetivos Específicos:
+\begin{itemize}
+\item  Desenvolver a capacidade de raciocínio lógico para a resolução de problemas;
+\item Abordar as técnicas de prova de teoremas usando os métodos de prova da lógica proposicional e de predicados;
+\item Abordar as potencialidades de uma linguagem de programação em lógica;
+\item Mostrar como uma linguagem lógica pode ser usada para a especificação formal de sistemas.
+\end{itemize}
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+Conteúdo Teórico seguido de Conteúdo Prático com desenvolvimento de problemas em computador:\\
+\\
+UNIDADE 1: Introdução\\
+ Apresentação da disciplina (ementa, bibliografia, metodologia e avaliações)\\
+ Histórico\\
+ Aplicações\\
+ Revisão Álgebra / Lógica Booleana\\
+ Tabela Verdade\\
+ Expressões Lógicas\\
+ Equivalência Expressões - Tabelas Verdade - Circuitos Digitais\\
+ Modelagem Lógica
+ Equivalências Lógicas e Simplificações de Expressões Lógicas\\
+\\
+UNIDADE 2: Lógica Proposicional\\
+ Símbolos proposicionais\\
+ Operadores lógicos\\
+ Formulas bem formadas\\
+ Tautologia e contradição\\
+ Contingência\\
+ Métodos de prova\\
+\\
+UNIDADE 3: Lógica de Predicados\\
+ Sintaxe e semântica da lógica de predicados\\
+ Interpretação de variáveis, funções e predicados\\
+ Equivalências entre formulas\\
+ Métodos de prova\\
+\\
+UNIDADE 4: Programação em Lógica\\
+ Introdução a programação em lógica\\
+ Cláusulas de Horn\\
+ Resolventes e unificação\\
+ SLD derivação e refutação\\
+ Programação em lógica com Prolog\\
+ Sintaxe e semântica de Prolog\\
+ Resolução de problemas com Prolog\\
+\\
+UNIDADE 5: Lógicas não Clássicas\\
+ Lógica modal\\
+ Lógicas de multivalores\\
+ Lógicas não-monotônicas\\
+ Lógica temporal\\
+
+\\ \hline
+\end{longtable} 
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item GERSTING, J. L. Fundamentos Matemáticos para a Ciência da Computação. 5a ed. LTC, 2004. 
+\item SOUZA, J. N. Lógica para Ciência da Computação - Uma Introdução Concisa. 2a ed. Rio de Janeiro: Editora Campus, 2008. v. 1. 223 p. 
+\item FILHO, Alencar E. Iniciação a Lógica Matemática. 21a ed. São Paulo: Nobel, 2008.
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item SILVA, Flávio S. C. et al. Lógica para Computação. Editora Thomson, 2006 
+\item MENEZES, P. B. Matemática Discreta para Computação e Informática. 2a ed. Porto Alegre: Bookman, 2008.
+\item LIPSCHUTZ, Seymour; LIPSON, Marc. Matemática discreta. 3. ed. Porto Alegre: Bookman, 2013. xi, 471 p. (Coleção Schaum). ISBN 9788565837736.
+\item SCHEINERMAN, Edward R. Matemática discreta: uma introdução. São Paulo: Cengage Learning, 2011. xxiii, 573 p. ISBN 9788522107964.
+\item LIPSCHUTZ, Seymour; LIPSON, Marc. Teoria e problemas de matemática discreta. 2. ed. Porto Alegre: Bookman, 2004. 511 p. (Schaum). ISBN 9788536303611 (broch.).
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

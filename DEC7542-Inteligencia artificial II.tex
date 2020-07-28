@@ -1,0 +1,211 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{INTELIGÊNCIA ARTIFICIAL II}
+\newcommand{\codigo}{DEC7542}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{2}
+\newcommand{\creditosP}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}%Graduação em Engenharia de Energia \\ \hline}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Introdução Inteligência Computacional. Lógica Nebulosa/Fuzzy. Conjuntos nebulosos. Tratamento de Incertezas: fuzificação e defuzificação. Raciocínio e inferência em lógica nebulosa. Algoritmos Genéticos e Programação Genética. Sistemas de Colônia de Formigas. Redes Neurais Artificiais. Aprendizado não supervisionado e supervisionado.
+
+\\ \hline
+}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input cabecalho.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+%\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+Objetivo Geral: \\
+Capacitar o aluno para o desenvolvimento e aplicação de métodos matemáticos e técnicas algorítmicas da Inteligência Artificial que se utilizam de modelos conexionistas, evolucionários e de inspiração biológica.\\
+\\
+Objetivos Específicos:\\
+Apresentar os conceitos de lógica nebulosa;\\
+Apresentar os conceitos de redes neurais artificiais;\\
+Apresentar os conceitos de computação evolucionária;\\
+Apresentar os conceitos de algoritmos baseados em enxames;\\
+Apresentar os conceitos de máquinas de vetores de suporte;\\
+Desenvolver exercícios com lógica nebulosa, redes neurais, computação evolucionária e algoritmos baseados em enxame e máquinas de vetores de suporte.\\
+
+\\ \hline
+\end{longtable}
+
+%\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+
+Conteúdo Teórico seguido de Conteúdo Prático com desenvolvimento de problemas em computador: \\
+\\
+UNIDADE 1: Introdução [2 horas-aula]\\
+Uma Breve História da Inteligência Artificial/Computacional\\
+Conceitos da Inteligência Computacional\\
+Aplicações da Inteligência Computacional\\
+\\
+UNIDADE 2: Lógica Nebulosa/Fuzzy [16 horas-aula]\\
+Introdução\\
+Conjuntos Nebulosos\\
+Tratamento de Incertezas\\
+Sistema de Inferência\\
+Raciocínio e Incertezas em Lógica Nebulosa\\
+\\
+UNIDADE 3: Redes Neurais Artificiais [22 horas-aula]\\
+Introdução\\
+Aprendizado Supervisionado e não Supervisionado\\
+Redes Perceptron\\
+Perceptron Multicamadas\\
+Redes Auto-Organizáveis\\
+Sistemas Neurofuzzy\\
+\\
+UNIDADE 4: Computação Evolucionária [16 horas-aula]\\
+Introdução\\
+Algoritmos Genéticos\\
+Outros algoritmos Evolucionários\\
+\\
+UNIDADE 5: Tópicos em Inteligência Computacional [16 horas-aula]\\
+Introdução\\
+Fundamentos de Inteligência Coletiva\\
+Otimização Baseada em Colônias de Formigas\\
+Otimização por Enxames de Partículas\\
+Máquinas de Vetores de Suporte\\
+
+\\ \hline
+\end{longtable} 
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item RUSSELL, S.; NORVIG, P. Inteligência Artificial. 2 ed. Editora Campus. 2004. 
+\item COPPIN, Ben. Inteligência artificial. Rio de Janeiro: LTC, c2010. xxv, 636 p. ISBN 9788521617297.
+\item HAYKIN, Simon. Redes Neurais: princípios e prática. Bookman, 2a. Ed., 2001.
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item  ROSA, J.L.G. Fundamentação da Inteligência Artificial. Editora LTC,2011. 
+\item BRAGA, A. P.; CARVALHO, A. P. L. F.; LUDERMIR, T. B. Redes Neurais Artificiais - teoria e aplicações. 2a ed. Editora LTC, 2007. 
+\item NASCIMENTO JÚNIOR, Cairo Lúcio; YONEYAMA, Takashi. Inteligência artificial: em controle e automação. São Paulo: FAPESP, c2000. vii, 218 p. ISBN 9788521203100.
+\item FACELI, Katti et al. Inteligência artificial: uma abordagem de aprendizado por máquina. Rio de Janeiro: LTC, c2011. xvi, 378 p. ISBN 9788521618805.
+\item SIMÕES, M. G,; SHAW, I. S. Controle e Modelagem Fuzzy. 2a ed. Editora Blucher, 2007.
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

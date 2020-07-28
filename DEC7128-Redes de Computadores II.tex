@@ -1,0 +1,208 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{REDES DE COMPUTADORES II}
+\newcommand{\codigo}{DEC7128}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{2}
+\newcommand{\creditosP}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{DEC7126 & REDES DE COMPUTADORES I & TIC \\ \hline}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoB}{}%Graduação em Engenharia de Computação. \\ \hline}
+\newcommand{\cursoA}{Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Introdução. Redes sem fio e redes móveis. Roteamento. Administração de Redes de Computadores. Segurança. Aplicações.
+ \\ \hline
+}
+
+
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input cabecalho.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+%\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+Objetivo Geral:\\
+
+Apresentar os principais conceitos relativos à Rede Internet, analisar e elucidar os assuntos relacionados a Administração e Gerência de Redes.\\
+\\
+Objetivos Específicos: \\
+\begin{itemize}
+\item Descrever os principais aspectos de operação dos protocolos dos diferentes níveis da Arquitetura Internet.
+\item Apresentar a política de endereçamento da Internet.
+\item Apresentar os conceitos de gerenciamento na Internet e os protocolos associados.
+\item Apresentar as principais tecnologias de redes locais sem fio.
+\item Apresentar, analisar e usar tecnologias e suporte para Gerência de Redes.
+\item Apresentar os principais conceitos de segurança em Redes.
+\item Pesquisar sobre Tendências e Futuro em Administração e Gerência de Redes.
+\end{itemize}
+
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+UNIDADE 1 - Introdução [2 ha]\\
+Evolução da Rede Internet ao longo do mundo\\
+Situação atual\\
+Níveis da Arquitetura Internet\\
+\\
+UNIDADE 2 - Redes sem fio e redes móveis [16 ha]\\
+Serviços oferecidos pela camada de enlace\\
+Redes sem fio IEEE 802.11\\
+Redes móveis IEEE 802.15.4 e Bluetooth\\
+Redes de telefonia móvel (celulares)\\
+\\
+UNIDADE 3 - Nível de Redes e seus conceitos [22 ha]\\
+Roteamento na Internet\\
+IPv6\\
+\\
+UNIDADE 4 - Gerenciamento de Redes na Internet [24 ha]\\
+Noções de Gerenciamento de Redes\\
+Gerenciando a Rede Internet.\\
+Ferramentas de Gerenciamento para Internet\\
+\\
+UNIDADE 5 - Gerenciamento de Segurança [8 ha]\\
+Noções de segurança em redes\\
+Princípios da criptografia\\
+Integridade de mensagem e autenticação\\
+Estudo de casos
+\\ \hline
+\end{longtable} 
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item KUROSE, James F; ROSS, Keith W. Redes de computadores e a Internet: uma abordagem topdow. 5. ed. São Paulo: Addison Wesley, 2010.
+\item TANENBAUM, Andrew S. Redes de computadores. 4. ed. Rio de Janeiro: Elsevier, 2003.
+\item COMER, Douglas. Interligação em rede com TCP/IP. Volume 1: princípios, protocolos e arquitetura. Rio de Janeiro: Campus, 2006.
+%
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item CARISSIMI, A. S.; ROCHOL, J.; GRANVILLE, L. Z. Redes de Computadores. Porto Alegre: Bookman, 2009.
+\item SOARES, Luiz Fernando Gomes; LEMOS, Guido; COLCHER, Sergio. Redes de Computadores: Das LANs, MANs e WANs, às Redes ATM. Rio de Janeiro: Editora Campus, 1995.
+\item STALLINGS, W. Redes e Sistemas de Comunicação de Dados, Rio de Janeiro: Elsevier. 5. Edicao, 2005.
+\item TORRES, Gabriel. Redes de Computadores. Rio de Janeiro: Nova Terra, 2009. 
+\item MARIN, Paulo S. Cabeamento estruturado: desvendando cada passo : do projeto à instalação. 4. ed. rev. e atual. São Paulo: Érica, 2014. 336 p.
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

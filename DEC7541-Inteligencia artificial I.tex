@@ -1,0 +1,215 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{INTELIGÊNCIA ARTIFICIAL I}
+\newcommand{\codigo}{DEC7541}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{4}
+\newcommand{\creditosP}{0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}%Graduação em Engenharia de Energia \\ \hline}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Introdução à resolução de problemas. Notas Históricas. Métodos de Busca de informação e heurística. Representação e aquisição de Conhecimento. Introdução à Aprendizagem da Máquina e a algoritmos de aprendizagem simbólica. Sistemas Especialistas, Agentes Inteligentes e Sistemas Multiagentes.
+
+\\ \hline
+}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input cabecalho.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+%\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+Objetivos Gerais: \\
+Capacitar os alunos à criação de soluções para problemas em computação usando técnicas da Inteligência Artificial.\\
+ \\
+Objetivos Específicos:
+\begin{itemize}
+\item Caracterizar a inteligência artificial na resolução de problemas;
+\item Conhecer as técnicas da inteligência Artificial Simbólica;
+\item Desenvolver uma aplicação utilizando as técnicas de Inteligência Artificial.
+\end{itemize}
+\\ \hline
+\end{longtable}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+
+Unidade 1. Introdução e histórico da Inteligência Artificial\\
+O que é a inteligência artificial\\
+ Histórico da inteligência artificial\\
+ Problemas tratados em inteligência artificial\\
+ Domínios de aplicação da inteligência artificial\\
+\\
+Unidade 2. Introdução à resolução de problemas.\\
+ Teoria de problemas\\
+ Características de problemas\\
+ Complexidade de algoritmos na solução de problemas\\
+              Estratégias para resolver problemas\\
+             Exemplo de um problema clássico de IA\\
+\\
+Unidade 3. Métodos de Busca de informação e heurística.\\
+Busca heurística \\
+Método de busca cega\\
+Método de busca competitiva em Jogos.\\
+\\
+Unidade 4. Aprendizado de máquina e a algoritmos de aprendizagem simbólica. Representação e aquisição de Conhecimento:\\
+           Símbolos e representações\\
+            Representação Lógica \\
+            Engenharia ontológica\\
+            Representações declarativas.\\
+\\
+Unidade 5. Sistemas Especialistas \\
+            Definição de sistemas especialistas\\
+            Estrutura de um  sistema especialista\\
+            Técnicas de extração do conhecimento\\
+            Raciocínio progressivo e regressivo\\
+            Exemplos de sistemas especialistas desenvolvidos.\\
+            Ferramenta para desenvolvimento de Sistemas Especialistas\\
+\\
+Unidade 6.  Agentes Inteligentes e Sistemas Multiagentes\\
+ Definição de Agentes\\
+ Tipos e Propriedades de Agentes\\
+ Arquiteturas e Organizações SMA\\
+ Comunicação, Coordenação, Cooperação e Colaboração\\
+ Integração e Interoperação de SMA\\
+             Modelagem e Implementação de Agentes
+\\ \hline
+\end{longtable} 
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item RUSSELL, S.; NORVIG, P. Inteligência Artificial. 2 ed. Editora Campus. 2004. 
+\item NASCIMENTO JÚNIOR, Cairo Lúcio; YONEYAMA, Takashi. Inteligência artificial: em controle e automação. São Paulo: FAPESP, c2000. vii, 218 p. ISBN 9788521203100.
+\item ROSA, João Luís Garcia. Fundamentos da inteligência artificial. Rio de Janeiro: LTC, c2011. xv, 212 p. ISBN 9788521605935.
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+
+\item COPPIN, Ben. Inteligência artificial. Rio de Janeiro: LTC, c2010. xxv, 636 p. ISBN 9788521617297.
+\item COSTA E.; SIMÕES A., Inteligência Artificial: Fundamentos e Aplicações, 2a Edição, Editora FCA, 2008. 
+\item FACELI, Katti et al. Inteligência artificial: uma abordagem de aprendizado por máquina. Rio de Janeiro: LTC, c2011. xvi, 378 p. ISBN 9788521618805.
+
+\item BELLIFEMINE F, CAIRE, G. GREENWOOD, D, Developing multiagents system with JADE, Series Editor: Michael Wooldridge, Liverpool University, UK 2004.
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

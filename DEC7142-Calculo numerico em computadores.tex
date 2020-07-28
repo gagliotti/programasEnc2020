@@ -1,0 +1,210 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{CÁLCULO NUMÉRICO EM COMPUTADORES}
+\newcommand{\codigo}{DEC7142}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{2}
+\newcommand{\creditosP}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{FQM7104 & ÁLGEBRA LINEAR & ENE\\ \hline }
+\newcommand{\requisitoB}{FQM7106 & CÁLCULO IV & ENE \\ \hline}
+\newcommand{\requisitoC}{DEC7143 & Lógica de Programação & ENE\\ \hline}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{Graduação em Engenharia de Energia \\ \hline}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Sistemas de numeração e erros numéricos. Resolução de equações não lineares transcendentais e polinomiais. Resolução de Sistemas Lineares e não lineares. Aproximações de funções por séries. Ajuste de curvas a dados experimentais. Integração numérica. Resolução numérica de equações e sistemas de equações diferenciais ordinárias.
+ \\ \hline
+}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input cabecalho.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+Objetivo Geral:\\
+
+Tornar o aluno apto a utilizar recursos computacionais nas soluções de problemas de cálculo que envolvam métodos numéricos.\\
+\\
+Objetivos Específicos: 
+\begin{itemize}
+\item Identificar os erros que afetam os resultados numéricos fornecidos por máquinas digitais;
+\item Resolver equações por métodos numéricos iterativos.
+\item Conhecer as propriedades básicas dos polinômios e determinar as raízes das equações polinomiais.
+\item  Resolver sistemas de equações lineares por métodos diretos e iterativos.
+\item Conhecer e usar o método dos mínimos quadrados para o ajuste polinomial e não polinomial.
+\item Conhecer e utilizar a técnica de interpolação polinomial para a aproximação de funções.
+\item Efetuar integração por meio de métodos numéricos.
+\item Resolver equações e sistemas de equações diferenciais ordinárias através de métodos numéricos.
+\item Elaborar algoritmos correspondentes a todos os métodos numéricos abordados e implementá-los.
+\end{itemize}
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+Conteúdo Teórico seguido de Conteúdo Prático com desenvolvimento de algoritmos.\\
+\\
+UNIDADE 1: Algoritmos e erros\\
+Aritmética de ponto flutuante.\\
+Erro absoluto e erro relativo.\\
+Estabilidade de algoritmos numéricos e condicionamento.\\
+\\
+UNIDADE 2: Zeros de funções\\
+Localização de raízes de funções.\\
+Métodos de partição: Bissecção e Falsa-Posição.\\
+Métodos iterativos: Aproximações sucessivas (convergência), Newton e Secante.\\
+\\
+UNIDADE 3: Sistemas Lineares e não Lineares\\
+Resolução de Sistemas Lineares (Aspectos Computacionais).\\
+Métodos Diretos: Eliminação Gaussiana e Decomposição LU.\\
+Métodos iterativos: Gauss-Seidel.\\
+Método de Newton e variantes.\\
+\\
+UNIDADE 4: Aproximação de funções\\
+Ajuste de curvas pelo método dos Mínimos Quadrados.\\
+Interpolação polinomial\\
+\\
+UNIDADE 5: Integração numérica\\
+Método dos Trapézios e Simpson\\
+Quadratura Gaussiana\\
+\\
+UNIDADE 6: Equações diferenciais ordinárias\\
+Resolução numérica de equações e sistemas de equações diferenciais ordinárias. \\
+Métodos de passo simples.\\
+Métodos de Runge-Kutta.\\
+
+\\ \hline
+\end{longtable} 
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item BURDEN, Richard L.; FAIRES, J. Douglas. Análise numérica. São Paulo: CENGAGE Learning, c2008. xiii, 721 p. ISBN 9788522106011.
+\item RUGGIERO, Marcia A. Gomes; LOPES, Vera Lucia da Rocha. Cálculo Numérico: aspectos teóricos e computacionais. 2. ed. São Paulo: Makron Books, 1996. 406 p. 
+\item PRESS, William H. Numerical recipes: the art of scientific computing. 3. ed. New York: Cambridge, 66 2007. 1235p. 
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item CHENEY, E. W; KINCAID, David. Numerical mathematics and computing. 7th ed. Pacific Grove: Thomson Brooks/Cole, c2013. 763 p. ISBN 9781133491811.
+\item FRANCO, Neide Maria Bertoldi. Cálculo numérico. São Paulo: Pearson Prentice Hall, 2007. xii, 505 p. ISBN 9788576010872.
+\item CHAPRA, Steven C.; CANALE, Raymond P. Métodos numéricos para engenharia. 5. ed. São Paulo: McGraw Hill, 2008. xxi, 809 p. ISBN 9788586804878.
+\item PUGA, Leila Zardo; TÁRCIA, José Henrique Mendes; PAZ, Álvaro Puga. Cálculo numérico. 2. ed. São Paulo: LCTE, 2012. 176 p. ISBN 9788585908157.
+\item BURIAN, Reinaldo; LIMA, Antonio Carlos de; HETEM JUNIOR, Annibal. Cálculo numérico. Rio de Janeiro: LTC, c2007. xii, 153 p. (Fundamentos de informática). ISBN 9788521615620.
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

@@ -1,0 +1,190 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{LABORATÓRIO DE CIRCUITOS ELÉTRICOS}
+\newcommand{\codigo}{DEC7547}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{0}
+\newcommand{\creditosP}{4}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{EES7378 & Eletrônica de Potência & ENE \\ \hline}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{Graduação em Engenharia de Energia \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Desenvolvimento de atividades práticas que permitam explorar os fundamentos, conceitos e técnicas relativas em circuitos elétricos e eletrônicos.
+\\ \hline
+}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input cabecalho.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+Objetivos Gerais:\\
+Esta disciplina deverá abordar aspectos práticos, em laboratório, de circuitos elétricos e eletrônicos.\\
+\\
+Objetivos Específicos:
+\begin{itemize}
+\item Introduzir conceitos básicos de circuitos elétricos;
+\item Discutir o conceito de fontes ideais independentes e dependentes em redes resistivas;
+\item Discutir o conceito de amplificador operacional ideal;
+\item Discutir técnicas de análise e características de circuitos em corrente contínua;
+\item Discutir técnicas de análise e características de circuitos de corrente alternada;
+\item Discutir dispositivos eletrônicos como diodo, transistor de efeito de campo e junção bipolar.
+\end{itemize}
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+Instrumentos de medição\\
+Lei de Ohm e Circuitos em Série\\
+Circuitos em paralelo e série/paralelo\\
+Teoria de Redes: Equivalente de Thevenin\\
+Circuito RC: análise DC\\
+Osciloscópio\\
+Circuito RL: análise AC\\
+Circuitos RC: análise AC\\
+Filtros RL e RC\\
+Amplificador Operacional\\
+Diodo\\
+Transistor de Junção Bipolar\\
+Transistor de Efeito de Campo\\
+\\ \hline
+\end{longtable} 
+
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+
+\begin{enumerate}
+\item NILSSON, James William; RIEDEL, Susan A. Circuitos elétricos. 6. ed Rio de Janeiro (RJ): LTC, c2003. 656p. 
+\item ALEXANDER, CHARLES K.; SADIKU, MATTHEW - FUNDAMENTOS DE CIRCUITOS  ELETRICOS - MCGRAW HILL - ARTMED, 2008, ISBN: 8586804975, ISBN-13: 9788586804977 
+\item SEDRA, Adel S.; SMITH, Kenneth C. Microeletrônica. 5. ed. São Paulo: Pearson Prentice Hall, 2007. xiv, 848 p. ISBN 9788576050223.
+\end{enumerate}
+
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item NAHVI, Mahmood; EDMINISTER, Joseph A. Teoria e problemas de circuitos elétricos. 4. ed. Porto Alegre: Bookman, 2005. 478 p. (Schaum). ISBN 9788536305516 (broch.).
+\item JOHNSON, David E.; HILBURN, John L.; JOHNSON, Johnny Ray. Fundamentos de análise de circuitos elétricos. 4. ed. Rio de Janeiro: LTC, c1994. 539 p. ISBN 9788521612384.
+\item RAZAVI, BEHZAD, - FUNDAMENTOS DE MICROELETRONICA - LTC, 2010, ISBN: 8521617321, ISBN-13: 9788521617327 
+\item DORF, RICHARD; SVOBODA, JAMES A. - INTRODUÇAO AOS CIRCUITOS ELETRICOS - LTC, 2008, ISBN: 8521615825, ISBN-13: 9788521615828 
+\item PEDRONI, Volnei A. Eletrônica Digital Moderna e VHDL: Princípios Digitais, Eletrônica Digital, Projeto Digital, Microeletrônica e VHDL. 1 ed. [S.l.]:Elsevier, 2010. 648 p. ISBN 978-8535234657.
+
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

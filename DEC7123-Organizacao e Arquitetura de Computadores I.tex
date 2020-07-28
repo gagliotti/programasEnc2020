@@ -1,0 +1,342 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{ORGANIZAÇÃO E ARQUITETURA DE COMPUTADORES}
+\newcommand{\codigo}{DEC7123}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{4}
+\newcommand{\creditosP}{0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{DEC7546 &Circuitos Digitais & ENC\\ \hline}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Sistemas de numeração em ponto flutuante e números negativos; Sistemas Computacionais: hardware de um computador, software de um computador, instrução de máquina, linguagem de montagem;  Conjunto de instruções CISC e RISC; Estudo de caso: computador didático BIP I; Estudo de caso: processador didático nPD; Arquitetura ARM: famílias de processadores ARM, processador Cortex-M0; Assembly do Cortex M0; Estruturas de Controle: desvios, repetições, suporte a procedimentos e pilhas; Pipelining; Tecnologias de memórias; Entrada e Saída de dados; Interrupção e DMA; Avaliação de desempenho de sistemas computacionais. \\ \hline
+}
+
+
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input cabecalho.tex
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina :} & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+Objetivo Geral:
+\begin{itemize}
+\item Compreender o funcionamento de processadores e microcontroladores. 
+\item Compreender a capacidade desses dispositivos e as possibilidades de utilização como computadores dedicados.
+\item Compreender os critérios para a escolha de processadores e microcontroladores quando estes devem ser utilizados para construir um computador, embarcado ou não.
+\end{itemize}
+
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+UNIDADE 1 (Introdução):\\
+      Apresentação da disciplina\\
+      Revisão de sistemas de numeração\\
+      Exercícios em sala de aula\\
+\\
+UNIDADE 2 (Sistemas de Numeração):\\
+      Operações com frações\\
+      Representação de números positivos e negativos\\
+      Numeração em ponto flutuante\\
+      Exercícios em sala de aula\\
+\\
+UNIDADE 3 (Fundamentos de circuitos digitais - Revisão):\\
+      Funções lógicas\\
+      Portas lógicas\\
+      Circuitos Combinacionais\\ 
+      Circuitos Sequenciais\\
+      Tabela-verdade\\
+      Maxtermos e Mintermos\\
+      Exercícios em sala de aula\\
+      \\
+UNIDADE 4 (Sistemas Computacionais):\\
+      Hardware de um computador\\
+      Software de um computador\\
+      Instrução de Máquina\\
+      Linguagem de Montagem\\
+      Conjunto de instruções CISC e RISC\\
+\\
+UNIDADE 5 (Estudo de caso - BIP I):\\
+      Um computador Básico \\
+      Conceito de Memória principal\\
+      Conceito de Processador \\
+      Processador didático - BIP I\\
+      Definindo a arquitetura\\
+      Definindo a organização \\
+      Caminho de Dados \\
+      Caminho de controle \\
+\\
+UNIDADE 6 (Implementação do BIP I):\\
+      Exercício de implementação do processador BIP I em simulador de circuitos digitais (LogiSim)\\
+      Apresentação da linguagem assembly do BIP I\\
+      Exercício de um pequeno programa para o BIP I (LogiSim)\\
+      Simulação do programa implementado (LogiSim)\\
+\\
+UNIDADE 7 (Estudo de caso - nPD):\\
+      Organização do processador nPD\\
+      Conceito de Memória no processador nPD\\
+      Banco de registradores\\
+      ULA\\
+      Caminho de Dados\\ 
+      Caminho de controle\\ 
+\\
+UNIDADE 8 (Assembly do nPD):\\
+      Apresentação das instruções assembly do nPD\\
+      Exercícios em assembly com uso do Simulador nPD\\
+\\
+UNIDADE 9 (Arquitetura ARM):\\
+      Famílias de processadores ARM\\
+      Processador Cortex-M0 \\
+      Mapa de memória do Cortex M0\\
+      Registradores do Cortex M0\\
+\\
+UNIDADE 10 (Assembly do Cortex M0):\\
+      Definições relativas à Área de Programa e à Área de Dados\\
+      Definição de nomes para Registradores \\
+      Relacionando símbolo com valor constante\\
+      Alocando memória e especificando conteúdo\\
+      Reservando um bloco de memória\\
+\\
+UNIDADE 11 (Instruções para acesso à memória):\\
+      ADR\\
+      LDR e STR com offset imediato\\ 
+      LDR e STR com offset dado por registradores\\ 
+      LDR relativo ao PC \\
+      LDM e STM \\
+      PUSH e POP \\
+      Exercícios relativos às instruções para acesso à memória (Simulador)\\
+      \\
+UNIDADE 12 (Instruções para processamento de dados):\\
+      ADC, ADD, RSB, SBC, e SUB \\
+      AND, ORR, EOR e BIC \\
+      ASR, LSL, LSR, e ROR \\
+      CMP e CMN \\
+      MOV e MVN \\
+      Exercícios relativos à  Instruções para processamento de dados (Simulador)\\
+\\
+UNIDADE 13 (Instruções para processamento de dados):\\
+      MULS\\
+      REV, REV16, e REVSH\\
+      SXT e UXT \\
+      TST\\
+      Exercícios relativos à  Instruções para processamento de dados (Simulador)\\
+      \\
+UNIDADE 14 (Instruções de controle e desvio):\\
+      B\\
+      BL\\
+      BX\\
+      BLX \\
+      Exercícios relativos à Instruções de controle e desvio (Simulador)\\
+\\
+UNIDADE 15 (Estruturas de Controle):\\
+      Estrutura IF \\
+      Estrutura IF ELSE\\ 
+      Repetiçõe por Laço FOR\\ 
+      Repetições por Laço WHILE\\
+      Exercício relativos à  Estruturas de Controle (Simulador)\\
+      Suporte à Procedimentos e Pilhas\\
+\\
+UNIDADE 16 (Pipelining):\\
+      Processadores Monociclo e Multi-ciclo\\
+      Desempenho: monociclo em relação ao pipeline\\
+      Falhas em pipeline - Hazards \\
+      Hazard Estrutural \\
+      Hazard de Dados\\
+      Hazard de Controle\\ 
+\\
+UNIDADE 17 (Memórias):\\
+      Tecnologias \\
+      Memórias Não Voláteis\\
+      Memórias Voláteis \\
+      Processadores e memórias\\ 
+      Hierarquia de Memória\\
+      Princípios básicos de Cache\\ 
+      Mapeamento direto \\
+      Mapeamento Associativo \\
+      \\
+UNIDADE 18 (Memórias):\\
+      Mapeamento Associativo por Conjunto\\
+      Gerência de blocos na memória cache\\
+      Escrita na memória cache \\
+      Múltiplas memórias cache \\
+      Memória Virtual \\
+      MMU \\
+       Acesso à memória virtual\\
+\\ 
+UNIDADE 19 (Entrada e saída de Dados):\\
+      Entrada e Saída de dados \\
+      Tipos de Entrada e Saída \\
+      Barramentos: internos e externos\\ 
+      Serial Peripheral Interface - SPI \\
+      Polaridade e fase do clock\\
+      Inter-Integrated Circuit - I2C\\ 
+      Controller Area Network - CAN \\
+      Universal Asynchronous Receiver/Transmitter\\
+\\
+UNIDADE 20 (Interrupções e DMA):\\
+      Interrupções \\
+      Interrupção de Hardware\\ 
+      Interrupção de Software \\
+      Controlador de Interrupções\\ 
+      DMA\\
+\\
+UNIDADE 21 (Análise de Desempenho):\\
+      Desempenho - tempo de execução\\
+      Tempo de execução - ciclos de relógio\\ 
+      Taxa de execução \\
+      Uso de Benchmark \\
+      Lei de Amdahl\\
+      \\
+UNIDADE 22 (Trabalho):\\
+      Sorteio do Trabalho Final para cada aluno\\
+      Explanação sobre cada um dos trabalhos\\
+      Definição das documentações exigidas na entrega do Trabalho Final\\
+\\
+UNIDADE 23 (Execução)\\
+      Acompanhar os alunos na execução dos trabalhos\\
+\hline
+\end{longtable} 
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item STALLINGS, W. Arquitetura e organização de computadores, 8. ed. São Paulo: Prentice-Hall, 2010. 
+\item TANENBAUM, Andrew. Organização estruturada de computadores. 5. ed. Rio de Janeiro: Pearson, 2006. 
+\item HENNESSY, J. L.; PATTERSON, D. A. Arquitetura de computadores: uma abordagem quantitativa. Rio de Janeiro: Campus, 2003
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+
+\item WEBER, R.F. Fundamentos de arquitetura de computadores. 3. ed. Bookman Editora, 2008.
+\item MONTEIRO, M. A. Introdução à organização de computadores. 5. Ed. Rio de Janeiro: LTC, 2007. 
+\item MURDOCCA, M.J.; HEURING V.P. Introdução à arquitetura de computadores. Rio de Janeiro: Campus, 2001. 
+\item CAPRON, H. L.; JOHNSON, J. A. Introdução à informática. São Paulo: Ed. Pearson, 2004. 
+\item MALVINO, Albert Paul; BATES, David J. Eletrônica. 7. ed. Porto Alegre: AMGH, 2007. v. ISBN 9788577260225 (v.1).
+
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

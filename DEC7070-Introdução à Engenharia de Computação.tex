@@ -1,0 +1,223 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2020.1} 
+
+\newcommand{\disciplina}{INTRODUÇÃO À ENGENHARIA DE COMPUTAÇÃO}
+\newcommand{\codigo}{DEC7070}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{1}
+\newcommand{\creditosP}{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação. \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+
+Perfil do profissional da computação. Campo de atuação. Ética profissional. Regulamentação profissional. Estrutura e objetivos do curso. Procedimento de matrícula. Histórico e evolução dos computadores. Introdução à computação. Características básicas dos computadores: hardware e software. Componentes básicos dos computadores: memória, unidade central de processamento, entrada e saída. Modelo de von Neumann.
+
+ \\ \hline
+}
+
+
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.2\textwidth}|C{0.8\textwidth}|} \hline
+%
+\multirow{6}*{\includegraphics[scale=0.5]{UFSC-foto.jpg}} &\\
+%
+&{\bf UNIVERSIDADE FEDERAL DE SANTA CATARINA}\hfill\\
+%
+&{\bf Centro de Ciências, Tecnologias e Saúde} \\
+%
+&{\bf Departamento de Computação}\\
+%
+&{\bf PROGRAMA DE ENSINO}\\
+%
+& \\ \hline
+
+%\multicolumn{2}{|c|}{{\bf SEMESTRE \semestre}}\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 36} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+Objetivo Geral:
+
+Fornecer ao aluno ingressante no curso de Engenharia de Computação uma visão geral acerca das principais áreas de atuação, competências, habilidades e o perfil do egresso do profissional de Engenharia de Computação. \\
+
+Objetivos Específicos:
+\begin{enumerate}
+
+\item Fornecer aos alunos uma visão dos cursos de graduação em Engenharia de Computação: estrutura curricular, ênfases, mercado de atuação, etc;
+\item Capacitar o aluno a conhecer a estrutura básica de um computador, seu funcionamento e aplicações; 
+\item Permitir ao aluno ter uma visão crítica sobre as áreas de atuação e a relação entre elas.
+
+\end{enumerate}
+
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+
+UNIDADE 1: Introdução [4 horas-aula] \\
+Áreas de atuação em computação \\
+Regulamentação da profissão \\
+Ética profissional \\
+Engenharia: ser engenheiro \\
+Projetos em Engenharia \\
+Sobre a Universidade Federal de Santa Catarina \\
+Estrutura do Curso de Engenharia de Computação da UFSC \\\\
+
+UNIDADE 2: História da Computação [4 horas-aula] \\
+Introdução à Computação \\
+Histórico e evolução da Computação \\
+Aspectos futurísticos da computação \\\\
+
+UNIDADE 3: Estrutura de Computadores [8 horas-aula] \\
+Evolução dos computadores \\
+Estrutura Interna (memória, unidade de processamento, barramentos) \\
+Hardware versus software \\
+Modelos computacionais (von Neumann e Harvard) \\\\
+
+UNIDADE 4: Projetos de Engenharia: Experimentos com Sistemas Microcontrolados [16 horas-aula] \\
+Introdução ao Arduino \\
+Simulação de Circuitos Elétricos \\
+Programação em Arduino \\
+Experimentos com Arduino \\
+
+\\ \hline
+\end{longtable} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+
+\item BROOKSHEAR, J. Glenn. Ciência da Computação – uma visão abrangente. 11ª ed. Bookman, 2013.
+\item ARAUJO, Celso de; CRUZ, Eduardo C. A.; JUNIOR, Salomão C. Eletrônica Digital. Editora Érika, 2013.
+\item BAZZO, Walter Antonio; PEREIRA, Luiz Teixeira do Vale. Introdução à Engenharia – conceitos, ferramentas e comportamentos. Editora da UFSC, 2006.
+
+%
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+
+\item IDOETA, Ivan Valeije; CAPUANO, Francisco Gabriel; Elementos de Eletrônica Digital. 41ª ed. Editora Érika, 2013.
+\item MONTEIRO, M. A. Introdução à organização de computadores. 5. Ed. Rio de Janeiro: LTC, 2007.
+%\item HENNESSY, John L.; PATTERSON, David A. Arquitetura de Computadores – uma abordagem quantitativa. 4ª ed. Editora Campus, 2008.
+\item PATTERSON, David A.; HENNESSY, John L. Arquitetura de computadores: uma abordagem quantitativa. 5. ed. Rio de Janeiro: Elsevier, c2014. xxv, 435 [200] p. ISBN 9788535261226.
+\item BROCKMAN, Jay B. Introdução à engenharia: modelagem e solução de problemas. Rio de Janeiro: LTC, c2010. xvii, 294 p. ISBN 9788521617266.
+\item BIGNELL, James; DONOVAN, Robert. Eletrônica digital. São Paulo: Cengage Learning, 2010. xviii, 648 p. ISBN 9788522107452
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

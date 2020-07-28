@@ -1,0 +1,227 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{INTELIGÊNCIA ARTIFICIAL}
+\newcommand{\codigo}{DEC7133}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{2}
+\newcommand{\creditosP}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{DEC7121 & FUNDAMENTOS MATEMÁTICOS PARA COMPUTAÇÃO & TIC\\ \hline }
+\newcommand{\requisitoB}{CIT7584 & ESTRUTURA DE DADOS E ALGORITMOS & TIC\\ \hline}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{}%Graduação em Engenharia de Computação. \\ \hline}
+\newcommand{\cursoB}{Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Introdução e histórico. Teoria de problemas e sua resolução. Paradigmas da IA. Modelagem de Agentes Inteligentes. Métodos de busca. Representação e aquisição de Conhecimento. Métodos de raciocínio. Tratamento de incertezas. Sistemas especialistas. Fundamentos de: lógica nebulosa, redes neurais artificiais e algoritmos genéticos.
+ \\ \hline
+}
+
+
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input cabecalho.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+Objetivo Geral:\\
+
+Fornecer subsídios ao aluno para que ele possa conhecer as técnicas da inteligência Artificial.\\
+\\
+Objetivos Específicos:
+\begin{itemize}  
+\item Caracterizar a inteligência artificial e suas aplicações;
+\item Demonstrar os principais paradigmas da inteligência artificial;
+\item Conhecer as principais técnicas da inteligência Artificial e suas aplicações na solução de problemas.
+\end{itemize}
+
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+
+Unidade 1. Introdução e inovações tecnológicas com IA.\\
+           a. O que é inteligência artificial\\
+           b. Evolução histórica da inteligência artificial (Material no Moodle)\\
+           c. Problemas tratados em inteligência artificial\\
+           d. Domínios de aplicação da inteligência artificial\\
+\\
+Unidade 2. Paradigmas da IA\\
+                  Simbólica, Conexionista, Evolucionista e Híbrido\\
+\\
+Unidade 3. Teoria de problemas e sua resolução.\\
+a. Teoria de problemas\\
+b. Características de problemas\\
+c. Estratégias para resolver problemas\\
+d. Exemplos de problemas clássicos\\
+\\
+Unidade 4. Métodos de buscas\\
+a. Busca heurística  \\
+b. Método de busca Cega\\
+c. Método de busca competitiva\\
+         \\
+Unidade 5. Representação e aquisição de Conhecimento.\\
+                  a. Métodos de raciocínio \\
+ b. Raciocínio progressivo e regressivo (Regras)\\
+\\
+Unidade 6. Sistemas especialistas\\
+           a. Definição de sistemas especialistas\\
+           b. Estrutura de um sistema especialista\\
+           c. Exemplos de sistemas especialistas\\
+\\
+Unidade 7. Modelagem de Agentes Inteligentes\\
+          a. Definição de agente \\
+          b. Propriedades de um agente inteligente\\
+          c. Características de sistemas multiagentes \\
+          d. Exemplos de SMA com interação entre agentes\\
+\\
+Unidade 8. Redes neurais artificiais \\
+       a. Caracterização de RNA. \\
+       b. Principais Arquiteturas de RNA.\\
+       c. Aprendizado supervisionado e não supervisionado\\
+       d. Exemplos de modelos de Redes Neurais Artificiais\\
+  \\
+Unidade  9. Fundamentos de Algoritmos genéticos\\
+a. Caracterização de Algoritmos genéticos\\
+b. Exemplos de aplicações com Algoritmos genéticos\\
+\\
+Unidade 10. Lógica nebulosa\\
+          a. Características e aplicações\\
+\\ \hline
+\end{longtable} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item HAYKIN, Simon. Redes Neurais: princípios e prática. 2. ed. Porto Alegre: Bookman, 2001.
+\item COPPIN, Ben. Inteligência artificial. Rio de Janeiro: LTC, c2010. xxv, 636 p.
+\item RUSSELL, S.; NORVIG, P. Inteligência artificial. 2. ed. Rio de Janeiro: Campus, 2004.
+%
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item BARRETO, J. M. Inteligência artificial: uma abordagem híbrida. Editora PPP, 2001.
+\item BITTENCOURT, G. Inteligência artificial: ferramentas e teorias. Florianópolis: Editora da UFSC, 1998.
+\item BRAGA, A.P; CARVALHO, A.P.L.; LUDERMIR, T.B. Redes Neuras Artificiais, Ed. Editora LTC, 2007.
+\item LINDEN, R., Algoritmos Genéticos - Uma Importante Ferramenta da Inteligência Computacional, Ed. Brasport, 2ª Ed. 2008.
+\item ROSA, J.L.G, Fundamentação da Inteligência Artificial, Editora LTG,2011.
+
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

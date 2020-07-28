@@ -1,0 +1,215 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{ESTRUTURA DE DADOS I}
+\newcommand{\codigo}{DEC7125}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{2}
+\newcommand{\creditosP}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%{Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Listas lineares e suas generalizações: listas ordenadas, listas encadeadas, pilhas e filas. Aplicações de listas. Algoritmos de inserção, remoção e consulta. Tabelas de Espalhamento Árvores binária. Métodos de pesquisa. Técnicas de implementação iterativa e recursiva de estruturas de dados.
+ \\ \hline
+}
+
+
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input cabecalho.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+
+Objetivo Geral:\\
+Abordar formalmente as estruturas de dados e as técnicas de manipulação destas estruturas, bem como analisar métodos de pesquisa, ordenação e representação de dados aplicando a estrutura de dados mais adequada para um dado sistema computacional.\\
+\\
+Objetivos Específicos:
+\begin{itemize}
+\item Estudar as técnicas para estruturação de dados;
+\item Analisar e conhecer os principais algoritmos de ordenação de dados;
+\item Estudar técnicas de busca de dados; e
+\item Implementar estruturas de dados e algoritmos de ordenação e pesquisa de dados usando a linguagem de programação C
+\end{itemize}
+
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+
+Conteúdo Teórico seguido de Conteúdo Prático com desenvolvimento de problemas em computador:\\
+\\
+Unidade 1: Introdução\\
+Apresentação da disciplina (ementa, bibliografia, metodologia e avaliações)\\
+Introdução às estruturas de dados\\
+Tipo de dados abstrato \\
+Lista encadeada, circular e duplamente encadeada\\
+Implementação de listas encadeadas\\
+Aplicação de listas encadeadas\\
+\\
+Unidade 2: Pilhas e Filas\\
+Pilha\\
+Fila\\
+Implementação de pilha e fila\\
+Aplicação de fila e fila\\
+\\
+Unidade 3: Algoritmos de Ordenação de Dados\\
+Algoritmos de ordenação de dados\\
+Algoritmos de inserção, remoção e pesquisa de dados\\
+Técnicas de implementação iterativa e recursiva de estruturas de dados\\
+Métodos de busca\\
+\\
+Unidade 4: Árvore\\
+Árvore binária (conceitos e aplicações)\\
+Implementação de árvore binária\\
+Busca de dados em árvore binária\\
+Árvore balanceada\\
+Fundamentos de Grafos\
+\\
+Unidade 5: Tabela de Espalhamento\\
+Tabela de espalhamento\\
+Implementação de tabela de espalhamento\\
+Tratamento de colisões
+\\ \hline
+\end{longtable} 
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item CORMEN, T. H. et al. Algoritmos - Teoria e Prática. Campus, 2002. 
+\item FEOFILOFF, P. Algoritmos em Linguagem C. Campus 2008. 
+\item ZIVIANI, N. Projeto de Algoritmos com Implementação em Pascal e C. 2 ed. São Paulo: Pioneira Thomson Learning, 2004.
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+%
+\item CELES, Waldemar et al. Introdução a Estruturas de Dados. Campus, 2004. 
+\item TENENBAUM, A. M. et al. Estruturas de Dados Usando C. São Paulo: Pearson Makron Books, 1995. 
+\item LOUDON, K. Mastering Algorithms with C. O'Reilly Media, 1st edition, 1999. 
+\item PEREIRA, Silvio do Lago. Estruturas de Dados Fundamentais. Érica, 2008. 
+\item WIRTH, Nicolaus. Algoritmos e Estruturas de Dados. Rio de Janeiro: LTC Editora, 1989.
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

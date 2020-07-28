@@ -1,0 +1,194 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{MODELAGEM E SIMULAÇÃO}
+\newcommand{\codigo}{DEC7523}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{2}
+\newcommand{\creditosP}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{Graduação em Engenharia de Energia \\ \hline}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Introdução à simulação. Propriedades e classificação dos modelos de simulação. Geração de números aleatórios. Noções básicas em teoria dos números. Geração e teste. Distribuições clássicas contínuas e discretas. Simulação de sistemas discretos e de sistemas contínuos. Verificação e validação de modelos. Técnicas estatísticas para análise de dados e de resultados de modelos de simulação. Simulação de sistemas simples de filas. Simulação de sistemas de computação.
+ \\ \hline
+}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input cabecalho.tex
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+%\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+Objetivo Geral: \\
+Proporcionar aos alunos um conjunto de conhecimentos teóricos e práticos sobre as técnicas e métodos associados à modelagem analítica e simulação de sistemas.\\
+\\
+Objetivos Específicos:
+\begin{itemize}
+\item desenvolver de forma básica os conceitos de modelagem e simulação contínua;
+\item aprofundar os conceitos relacionados a modelagem e simulação discreta;
+\item capacitar os alunos a modelar sistemas discretos em uma ferramenta de simulação;
+\item desenvolver um projeto de simulação discreta com os alunos.
+\end{itemize}
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+Conteúdo Teórico seguido de Conteúdo Prático com desenvolvimento de simulações no computador:\\
+UNIDADE 1: Introdução à simulação\\
+- Introdução à simulação\\
+- Propriedades e classificação dos modelos de simulação\\
+- Simulação de sistemas de computação\\
+- Simulação de Sistemas Contínuos\\
+\\
+UNIDADE 2: Ferramentas matemáticas de auxílio à simulação \\
+- Geração de números aleatórios\\
+- Noções básicas em teoria dos números\\
+- Geração e teste\\
+- Distribuições clássicas contínuas e discretas\\
+\\
+UNIDADE 3: Simulação de Sistemas Discretos\\
+- Simulação de sistemas discretos\\
+- Técnicas estatísticas para análise de dados e de resultados de modelos de simulação\\
+- Simulação de sistemas simples de filas\\
+- Verificação e validação de modelos discretos
+\\ \hline
+\end{longtable} 
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item FREITAS FILHO, Paulo José de. Introdução à modelagem e simulação de sistemas com aplicações em Arena. 2. ed. Florianópolis: Visual Books, 2008. 372 p. ISBN 9788575022283.
+\item BROCKMAN, Jay B. Introdução à engenharia: modelagem e solução de problemas. Rio de Janeiro: LTC, c2010. xvii, 294 p. ISBN 9788521617266. 
+\item AL-BEGAIN, Khalid; TELEK, MiklÃ³s; HEINDL, Armin. Analytical and Stochastic Modeling Techniques and Applications: 15th International Conference, ASMTA 2008 Nicosia, Cyprus, June 4- 6, 2008 Proceedings. Berlin: Springer-Verlag Berlin Heidelberg, 2008. (Lecture Notes in Computer Science, 0302-9743; 5055). (Online:http://dx.doi.org/10.1007/978-3-540-68982-9)
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item GARCIA, Claudio. Modelagem e simulação de processos industriais e de sistemas eletromecânicos. 2 ed. rev. e ampl. São Paulo: EDUSP, 2005. 678 p. (Acadêmica ; 11). ISBN 9788531409042. 
+\item ALECRIM, Paulo Dias de. Simulação computacional: para redes de computadores. Rio de Janeiro: Ciência Moderna, c2009. xii, 253 p. ISBN 9788573937701. 
+\item MARIN, Jean-Michel; ROBERT, Christian P. Bayesian Core: A Practical Approach to Computational Bayesian Statistics. New York: Springer Science+Business Media, LLC, 2007. (Springer Texts in Statistics, 1431-875X). (Online: http://dx.doi.org/10.1007/978-0-387-38983-7)
+\item HOLLAND, John M. Designing mobile autonomous robots. Amsterdam: Elsevier, 2004. xv, 335 p. ISBN 9780750676830. 
+\item TRIOLA, Mario F. Introdução à estatística: atualização da tecnologia. 11. ed. Rio de Janeiro: LTC, c2013. xxviii, 707 p. ISBN 9788521622062.
+
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

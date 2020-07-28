@@ -1,0 +1,176 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{LINGUAGENS FORMAIS E AUTÔMATOS}
+\newcommand{\codigo}{DEC7510}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{2}
+\newcommand{\creditosP}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}%Graduação em Engenharia de Energia \\ \hline}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Conceitos Centrais: Símbolos, Alfabeto, Strings e Linguagem. Linguagens Regulares. Expressões Regulares. Automatos Finitos e Expressões Regulares. Propriedades das Linguagens Regulares. Linguagens Livres de Contexto. Automato de Pilha. Introdução a Máquinas de Turing.
+ \\ \hline
+}
+
+
+\begin{document}
+
+
+\input cabecalho.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+%\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+Apresentar os principais métodos de tratamento sintático de linguagens lineares abstratas, com a respectiva associação às linguagens típicas da ciência da computação. Estudar formalismos operacionais, axiomáticos e denotacionais e sua aplicação em compiladores, interpretadores e em ciência da computação em geral.
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+Unidade I: Autômatos Finitos Determinísticos. Definição de um Autômato Finito Determinístico. Como um DFA processa Strings. Notação formal para DFAs, Tabela de Transição. Estendendo a Função de Transição para Strings. A linguagem definida por um DFA. Exercícios.\\
+\\
+Unidade II: Autômatos Finitos Não-Determinísticos. Uma visão informal. Definição. Função de Transição Estendida. A linguagem definida por uma NFA. Equivalência entre Autômato Finito Determinístico e Não-Determinístico. Exercícios.\\
+\\
+Unidade III: Autômatos Finitos de Transição Vazia. Uso da Transição Epsilon (Vazia). Notação Formal. Fechamento. Epsilons. Função de Transição Estendida. Eliminação de Transições Epsilons.\\
+\\
+Unidade IV: Expressões Regulares. Operadores. Construção de Expressões Regulares. Precedência entre operadores. Autômatos Finitos e Expressões Regulares. Conversão de DFA para Expressões Regulares. Conversão de Expressões Regulares em Autômatos. Exercícios.\\
+\\
+Unidade V: Linguagens Livres de Contexto. Definição. Gramáticas. Derivações à esquerda e à direita. Linguagem descrita por uma gramática. Formas sentenciais. Árvores de derivação. Inferência, derivação e árvores gramaticais. Ambiguidades. Aplicações. Exercícios.\\
+\\
+Unidade VI: A Máquina de Turing. Notação para máquina de Turing. Descrição instantânea para máquina de Turing. Diagramas de transição para máquinas de Turing. A linguagem da máquina de Turing.
+
+\\ \hline
+\end{longtable} 
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item HOPCROFT, John E.; ULLMAN, Jeffrey D.; MOTWANI, Rajeev. Introdução à teoria de autômatos, linguagens e computação. Rio de Janeiro: Elsevier, 2003. x, 560p. ISBN 0-201-02988-X. 
+\item RAMOS, Marcus Vinícius Midena; JOSÉ NETO, João; VEGA, Ítalo Santiago. Linguagens formais: teoria, modelagem e implementação. Porto Alegre: Bookman, 2009. 656 p. ISBN 9788577804535. 
+\item SIPSER, Michael. Introdução à teoria da computação. São Paulo: Cengage Learning, c2007. xxi, 459 p. ISBN 9788522104994.
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item HOPCROFT, John E.; MOTWANI, Rajeev; ULLMAN, Jeffrey D. Introduction to automata theory, languages, and computation. 3nd ed. Boston: Addison Wesley, 2007. xvii, 535p. ISBN 0-321455363 
+\item AHO, Alfred V. et al. Compiladores: princípios, técnicas e ferramentas. 2. ed. São Paulo: Pearson Addison Wesley, c2008. x,634 p. ISBN 9788588639249. 
+\item PRICE, Ana Maria de Alencar; TOSCANI, Simão Sirineo. Implementação de linguagens de programação: compiladores. 3. ed. Porto Alegre: Bookman, 2008. 195, [1] p. (Série livros didáticos ; ISBN 9788577803484
+
+\item HOPCROFT, John; MOTWANI, Rajeev; ULLMAN, Jefferey, Introdução à Teoria de Autômatos, Linguagens e Computação, Elsevier; Edição: 1a, 2002, ISBN-10: 8535210725, ISBN-13: 978-8535210729
+
+\item Paulo B. Menezes; Linguagens Formais e Autômatos - Volume 3, Bookman; Edição: 6a, 2010, ISBN-10: 8577807657, ISBN-13: 978-8577807659
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

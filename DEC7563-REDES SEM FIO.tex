@@ -1,0 +1,204 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{REDES SEM FIO}
+\newcommand{\codigo}{DEC7563}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{3}
+\newcommand{\creditosP}{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Introdução a redes sem fio. Fundamentos de transmissão e propragação de sinal. Tipos de Antenas. Protocolos e Mecanismos de Controle: Acesso ao Meio, Topologia, Potência, Ruído e Taxa. Padronização de redes sem fio (Padrões IEEE WPAN, WLAN e WMAN). Roteamento e QoS em redes sem fio: ad hoc e infraestruturadas, Mobilidade IP, TCP móvel. Estudos de casos: redes locais, redes celulares, redes de sensores e redes veiculares.
+\\ \hline
+}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input cabecalho.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+Objetivo Geral:\\
+
+Capacitar o estudante a analisar de forma crítica os problemas e soluções das Redes Sem Fio na transmissão de dados em diversos tipos de aplicações. 
+\\
+Objetivos Específicos:
+
+\begin{itemize}
+\item Aprofundar o conceito de Arquitetura Multicamadas e os princípios básicos de operação das Redes de Computadores.
+\item  Aprofundar os conceitos sobre a organização da arquitetura e os conceitos associados ao Modelo de Referência OSI e da arquitetura de protocolos TCP/IP. 
+\item  Compreender as características associadas aos Meios de Transmissão mais utilizados para transferência de dados em Redes de Computadores.
+\end{itemize}
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+Conteúdo Teórico seguido de Conteúdo Prático com desenvolvimento de um projeto de redes sem fio: \\
+Unidade 1. Introdução às  Redes sem Fio (6 horas/aula)\\
+ Desenvolvimento das redes sem fio\\
+ Tipos de redes sem fio (WWAN, WMAN, WLAN, WPAN)\\
+ Componentes de redes sem fio: hosts, estações base e enlaces\\
+ Características : vantagens e desvantagens\\
+ Acesso múltiplo por divisão de código (CDMA)\\
+\\
+Unidade 2. Fundamentos de transmissão e propagação do sinal (8 horas aula)\\
+ Antenas (Ominidirecional, direcional e semi-direcional)\\
+ Mecanismos de controle: acesso ao meio, topologia, potencia, ruído e taxa;\\
+ Espalhamento espectral\\
+ SNR\\
+\\
+Unidade 3. Padronização de Redes sem Fio (20 horas aula)*\\
+ Padrões de redes WLAN (IEEE 802.11)\\
+ Padrões de redes WPAN (IEEE 802.15.1 e IEEE 802.15.4)\\
+ Padrões de redes WMAN (IEEE 802.16)\\
+
+Unidade 4.  Roteamento em redes sem fio (10 horas aula)\\
+ QoS em redes em sem fio\\
+Mobilidade IP\\
+ TCP Móvel\\
+\\
+Unidade 5. Diferentes tipos de redes sem fio (10 horas aula) *\\
+ Estudos de casos: redes locais, redes celulares, redes de sensores e redes veiculares.\\
+
+*desenvolvimento de prática aplicando os conceitos estudados em sala de aula.\\
+
+
+
+\\ \hline
+\end{longtable} 
+
+%\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+\item KUROSE, James F.; ROSS, Keith W. Redes de computadores e a Internet: uma abordagem top-down. 5. ed. São Paulo: Pearson Addison Wesley, 2010. xxiii, 614 p. ISBN 9788588639973.
+\item FOROUZAN, Behrouz A.; FEGAN, Sophia Chung; GRIESI, Ariovaldo. Comunicação de dados e redes de computadores. 4. ed. São Paulo: McGraw Hill, 2008. 1134 p. ISBN 9788586804885. 
+\item LI, Deying; CHENG, Maggie Xiaoyan. Advances in Wireless Ad Hoc and Sensor Networks. Boston: Springer-Verlag US, 2008. (Signals and Communication Technology, 1860-4862). 
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item TRONCO, Tania Regina. Redes da nova geração: arquitetura de convergência das redes : IP, telefônica e óptica. 2. ed. rev. e atual. São Paulo: Érica, 2014. 164 p. ISBN 9788536501383.
+\item STALLINGS, William. Redes e sistemas de comunicação de dados. Rio de Janeiro: Elsevier, c2005. xvi, 449 p. ISBN 9788535217315. 
+\item  MEDEIROS, Julio Cesar de O. Princípios de telecomunicações: teoria e prática. 4. ed. rev. São Paulo: Érica, 2014. 320 p. ISBN 9788536500331. 
+\item  RAPPAPORT, Theodore S. Comunicações sem fio: princípios e práticas. 2. ed. São Paulo: Pearson Prentice Hall, 2009. xix, 409 p. ISBN 9788576051985. 
+\item FALUDI, Robert. Building wireless sensor networks. Sebastopol: O'Reilly, 2010. xviii, 300 p. ISBN 9780596807733. 
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

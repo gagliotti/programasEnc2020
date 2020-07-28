@@ -1,0 +1,193 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{COMUNICAÇÃO DE DADOS}
+\newcommand{\codigo}{DEC7548}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{2}
+\newcommand{\creditosP}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Fundamentos de comunicação de dados. Formas de transmissão de dados. Modulação por amplitude, ângulo e pulso. Demodulação. Modulação e Transmissão Digital. Meios de transmissão de dados. Detecção e correção de erros. Interfaces de comunicação de dados. Padronização de comunicação de dados.
+\\ \hline
+}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input cabecalho.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+Objetivos Gerais:\\ 
+Esta disciplina tem como objetivo abordar os principais conceitos envolvidos na comunicação de dados com ênfase à camada física do modelo OSI.\\
+\\
+Objetivos Específicos: \\
+O aluno ao final do curso deve possuir habilidades para:
+\begin{itemize}
+\item Introduzir fundamentos de comunicação de dados em nível de camada física;
+\item Discutir fundamentos de transmissão analógica e digital;
+\item Abordar métodos de codificação e correção erros em comunicação de dados;
+\item Abordar aplicações de comunicação de dados para sistemas embarcados
+\end{itemize}
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+Unidade 1: Fundamentos de Comunicação de Dados\\
+Introdução à Comunicação de Dados;\\
+Dados e Sinais;\\
+Transmissão Digital;\\
+Transmissão Analógica;\\
+\\
+Unidade 2: Métodos de Comunicação de Dados\\
+Multiplexação e Espalhamento;\\
+Meios de Transmissão;\\
+\\
+Unidade 3: Camada de Enlace\\
+Detecção e Correção de Erros;\\
+Padrões de Comunicação;\\
+Controle de Enlace de Dados;\\
+\\
+Unidade 4: Comunicação de Dados para Sistemas Embarcados\\
+Introdução a Comunicação de Dados para Sistemas Embarcados\\
+Protocolos de Comunicação para Sistemas Embarcados\\
+\\ \hline
+\end{longtable} 
+
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+
+\begin{enumerate}
+\item FOROUZAN, Behrouz A.; FEGAN, Sophia Chung; GRIESI, Ariovaldo. Comunicação de dados e redes de computadores. 4. ed. São Paulo: McGraw Hill, 2008. 1134 p. ISBN 9788586804885.
+\item KUROSE, James F.; ROSS, Keith W. Redes de computadores e a Internet: uma abordagem top-down. 5. ed. São Paulo: Pearson Addison Wesley, 2010. xxiii, 614 p. ISBN 9788588639973.
+\item TANENBAUM, Andrew S. Redes de computadores. Rio de Janeiro: Elsevier, Campus, c2003. xx, 945 p. ISBN 9788535211856.
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item MARIN, Paulo S. Cabeamento estruturado: desvendando cada passo : do projeto à instalação . 4. ed. rev. e atual. São Paulo: Érica, 2014. 336 p. ISBN 9788536502076.
+\item STALLINGS, William. Redes e sistemas de comunicação de dados. Rio de Janeiro: Elsevier, c2005. xvi, 449 p. ISBN 9788535217315.
+\item COVER, T. M.; THOMAS, Joy A. Elements of information theory. 2nd ed. Hoboken: Wiley Interscience, 2006. xxi, 748 p. ISBN 9780471241959.
+Número de chamada: 519.72 C873e 2.ed.
+\item MEDEIROS, Julio Cesar de O. Princípios de telecomunicações: teoria e prática. 4. ed. rev. São Paulo: Érica, 2014. 320 p. ISBN 9788536500331.
+\item GOMES, Alcides Tadeu. Telecomunicações: transmissão e recepção AM/FM. 21. ed. São Paulo: Érica, 2014. 415 p. ISBN 9788571940734.
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

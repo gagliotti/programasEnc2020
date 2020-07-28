@@ -1,0 +1,216 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{FUNDAMENTOS MATEMÁTICOS PARA COMPUTAÇÃO}
+\newcommand{\codigo}{DEC7121}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{4}
+\newcommand{\creditosP}{0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação. \\ \hline}
+\newcommand{\cursoB}{Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+
+Lógica matemática. Indução finita. Conjuntos. Relações e funções. Contagem. Álgebra booleana. Recursão. Fundamentos de grafos.
+ \\ \hline
+}
+
+
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input cabecalho.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina :} & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+Objetivo Geral:\\
+
+Permitir a construção e desenvolvimento de um raciocínio lógico a partir da teoria dos conjuntos, da lógica matemática, das provas matemáticas e dos conceitos de funções e relações. Trabalhar com ferramentas de contagem para permitir a contagem de estruturas discretas. Apresentar os fundamentos de uma estrutura discreta (grafos). \\
+\\
+Objetivos Específicos:
+\begin{itemize}
+\item Dominar os conceitos básicos da teoria dos conjuntos, da lógica matemática, e de funções e relações.
+\item Dominar ferramentas para contagem (permutação, combinação, coeficiente binomial e triângulo de pascal).
+\item Dominar os princípios da demonstração matemática.
+\item Dominar os princípios da indução matemática.
+\item Dominar os fundamentos de grafos.
+\end{itemize}
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+
+UNIDADE 1: Conjuntos, Relações e Funções \\
+
+Conjuntos\\
+Relações\\
+Relações equivalentes e partições\\
+Funções\\
+\\
+UNIDADE 2: Lógica Computacional \\
+
+Operadores AND, OR, NOT, Tabelas Verdade\\
+Implicação e bicondicional\\
+Tautologias\\
+Argumentos e Princípios da Demonstração\\
+Quantificadores \\
+Métodos de prova\\
+\\
+UNIDADE 3: Contagem \\
+
+Permutação\\
+Combinação\\
+Princípio da casa dos pombos\\
+Triângulo de Pascal\\
+\\
+UNIDADE 4: Teoria de Grafos \\
+
+Definição e conceitos preliminares\\
+Diferentes tipos de grafos\\
+Representações de grafos\\
+Conexidade e distância\\
+Caminho\\
+Problemas do menor caminho\\
+Árvores
+\\ \hline
+\end{longtable} 
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item GERSTING, J. L. Fundamentos Matemáticos para a Ciência da Computação. 5 ed.. Rio de Janeiro: LTC, 2004. 
+\item FILHO, Alencar E. Iniciação a Lógica Matemática. 21. ed. São Paulo: Nobel, 2008. 
+\item MENEZES, P. B. Matemática Discreta para Computação e Informática. 2 Ed. Porto Alegre: Bookman, 2008.
+
+%
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+
+\item SCHEINERMAN, E. R. Matemática Discreta Uma Introdução. São Paulo: Pioneira Thomson Learning, 2003. 
+\item LIPSCHUTZ, Seymour; LIPSON, Marc. Matemática discreta. Porto Alegre: Bookman, 2004. (Coleção Schaum). 
+\item CORMEN, Thomas H. et al. Algoritmos: teoria e prática. Rio de Janeiro: Elsevier, 2002.
+\item GRAHAM, R. L., D. E. Knuth, et al. Concrete mathematics: a foundation for computer science. Reading: Addison-Wesley, 1994. 
+\item FILHO, Edgard de Alencar. Iniciação a lógica matemática. São Paulo: Nobel, 2002. 203p.5.
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

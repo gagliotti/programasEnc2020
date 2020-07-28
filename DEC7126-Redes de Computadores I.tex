@@ -1,0 +1,216 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{REDES DE COMPUTADORES I}
+\newcommand{\codigo}{DEC7126}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{3}
+\newcommand{\creditosP}{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{DEC7121 & FUNDAMENTOS MATEMÁTICOS PARA COMPUTAÇÃO & TIC\\ \hline}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoB}{}%Graduação em Engenharia de Computação. \\ \hline}
+\newcommand{\cursoA}{Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Redes de computadores e a Internet. Camada de aplicação. Camada de transporte. Camada de rede. A camada de enlace e redes locais.
+ \\ \hline
+}
+
+
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input cabecalho.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+%\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+%
+Objetivo Geral:\\
+
+O principal objetivo é apresentar os principais conceitos relacionados às Arquiteturas, Serviços e Protocolos das Redes de Computadores. \\
+\\
+Objetivos Específicos:
+
+\begin{itemize}
+\item Apresentar um histórico, as características e as classes de Redes de Computadores;
+\item Introduzir o conceito de Arquitetura Multicamadas e os princípios básicos de operação;
+\item Descrever a organização da arquitetura e os conceitos associados ao Modelo de Referência  OSI e da arquitetura de protocolos TCP/IP;
+\item Apresentar as noções básicas da arquitetura Internet e seus principais protocolos de comunicação;
+\item Apresentar as principais técnicas associadas à transmissão de dados em meios de transmissão (modos de transmissão, técnicas de codificação, modulação, multiplexação etc);
+\item Apresentar as características associadas aos Meios de Transmissão mais utilizados para transferência de dados em Redes de Computadores;
+\item Introduzir os conceitos relativos às arquiteturas de Redes Locais de Computadores e os padrões associados.
+\end{itemize}
+
+
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+Unidade 1: Introdução às Redes de Computadores [8ha]\\
+Conceitos Gerais	\\
+Medidas de Desempenho\\
+Camadas de protocolos e serviços\\
+Histórico das redes de computadores e Internet\\
+Topologias de redes\\
+\\
+Unidade 2: Camada de Aplicação [12ha]\\
+Fundamentos das aplicações de rede\\
+Principais protocolos da camada de aplicação (HTTP, FTP, SMTP)\\
+Serviço de diretório da Internet (DNS)\\
+\\
+Unidade 3: Camada de Transporte [20ha]\\
+Introdução e Serviços da camada de transporte\\
+Protocolos TCP e UDP\\
+Princípios do controle de congestionamento\\
+\\
+Unidade 4: Camada de Rede [24ha]\\
+Introdução\\
+Endereçamento IP\\
+O protocolo IP\\
+Alocação dinâmica de IPs\\
+Tradução e Mapeamento de IPs\
+\\
+Unidade 5: Camada de enlace e redes locais [8ha]\\
+Serviços oferecidos pela camada de enlace\\
+Protocolos de acesso múltiplo\\
+Endereçamento na camada de enlace\\
+Redes Ethernet
+\\ \hline
+\end{longtable} 
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+%
+\item CARISSIMI, A. S.; ROCHOL, J.; GRANVILLE, L. Z. Redes de Computadores. Porto Alegre: Bookman, 2009.
+\item KUROSE, James F; ROSS, Keith W. Redes de computadores e a Internet: uma abordagem topdow.
+5. ed. São Paulo: Addison Wesley, 2010.
+\item TANENBAUM, Andrew S. Redes de computadores. 4. ed. Rio de Janeiro: Elsevier, 2003.
+
+%
+
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item COMER, Douglas. Interligação em rede com TCP/IP. Rio de Janeiro: Campus, 2006.
+\item SOARES, Luiz Fernando Gomes; LEMOS, Guido; COLCHER, Sergio. Redes de Computadores: Das LANs, MANs e WANs, às Redes ATM. Rio de Janeiro: Editora Campus, 1995.
+\item STALLINGS, W. Redes e Sistemas de Comunicação de Dados, Rio de Janeiro: Elsevier. 5. Edicao, 2005.
+\item TORRES, Gabriel. Redes de Computadores. Rio de Janeiro: Nova Terra, 2009. 
+\item FOROUZAN, Behrouz A.; FEGAN, Sophia Chung; GRIESI, Ariovaldo. Comunicação de dados e redes de computadores. 4. ed. São Paulo: McGraw Hill, 2008. 1134 p. ISBN 9788586804885
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}

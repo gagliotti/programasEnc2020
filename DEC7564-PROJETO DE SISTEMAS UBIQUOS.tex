@@ -1,0 +1,191 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage{graphicx,t1enc,wrapfig,amsmath,float}
+\usepackage{framed,fancyhdr}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%%%%%%%%%%%%%
+\oddsidemargin -0.5cm
+\evensidemargin -0.5cm
+\textwidth 17.5cm
+\topmargin -1.5cm
+\textheight 22cm
+%%%%%%%%%%%% 
+
+%\pagestyle{empty}
+
+\newcommand{\semestre}{2018.2}
+
+\newcommand{\disciplina}{PROJETO DE SISTEMAS UBIQUOS}
+\newcommand{\codigo}{DEC7564}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{0}
+\newcommand{\creditosP}{4}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% REQUISITOS
+\newcommand{\requisitoA}{}
+\newcommand{\requisitoB}{}
+\newcommand{\requisitoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Atende aos Cursos
+\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
+\newcommand{\cursoB}{}%Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoC}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% EMENTA
+\newcommand{\ementa}{
+Fundamentos de Sistemas Ubíquos e Pervasivos: computação móvel e embarcada, computação sensível ao contexto e descoberta de serviços. Fundamentos de sistemas operacionais embarcados, sistemas autônomos e reconfiguráveis. Tecnologias de Sistemas ubíquos: Middleware para sistemas ubíquos, Redes de Sensores Sem Fio, Identificação por Rádio Frequência (RFID), FlexRay, TinyOs, Android, Bluetooth.
+\\ \hline
+}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input cabecalho.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.11\textwidth}|C{0.29\textwidth}|C{0.09\textwidth}|C{0.09\textwidth}|C{0.15\textwidth}|C{0.158\textwidth}|} \hline
+%
+\multicolumn{6}{|l|}{{\bf I. IDENTIFICAÇÃO DA DISCIPLINA}} \\ \hline
+%
+\multirow{3}*{{\small CÓDIGO}} & \multirow{3}*{NOME DA DISCIPLINA} &\multicolumn{2}{c|}{{\small N$^\circ$ DE HORAS-AULA }} & {{\small TOTAL DE}} & \multirow{3}*{{\small MODALIDADE}} \\ 
+%
+& & \multicolumn{2}{c|}{\small SEMANAIS}  & {\small HORAS-AULA} & \\ \cline{3-4}
+%
+& & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
+% codigo da disciplina carga horaria: teorica - pratica e total
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+%
+\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+%
+CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+%
+\requisitoA
+\requisitoB
+\requisitoC
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf III. CURSO(S) PARA O(S) QUAL(IS) A DISCIPLINA É OFERECIDA } \\ \hline
+%
+\cursoA 
+\cursoB
+\cursoC
+
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf IV. EMENTA } \\ \hline
+%
+\ementa
+\end{longtable}
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf V. OBJETIVOS } \\ \hline
+Objetivo Geral: \\
+Habilitar o aluno a projetar e desenvolver sistemas computacionais ubíquos, bem como reconhecer as principais características e tecnologias de sistemas ubíquos e pervasivos.\\
+\\
+Objetivos Específicos:\\
+Denvolvimento de projetos para sistemas ubíquos.
+
+\begin{itemize}
+\item Familiarizar o aluno com o modelo sistemas distribuídos para computação ubíqua;
+\item  Apresentar os principais conceitos envolvidos no projeto e no desenvolvimento de sistemas ubíquos;
+\item  Capacitar o aluno no desenvolvimento de projetos para sistemas ubíquos.
+\end{itemize}
+\\ \hline
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
+Conteúdo Teórico seguido de Conteúdo Prático com desenvolvimento de problemas em computador: \\
+\\
+UNIDADE 1: Fundamentos de Sistemas Ubíquos e Pervasivos [4 horas-aula]\\
+Conceitos de sistemas ubíquos e pervasivos\\
+Exemplos de sistemas  ubíquos\\
+Computação móvel e embarcada\\
+Computação sensível ao contexto e descoberta de serviços\\
+\\
+UNIDADE 2: Projeto de Sistemas Ubíquos [8 horas-aula]\\
+Definição dos projetos de Sistemas Ubíquos.\\
+\\
+UNIDADE 3: Orientação de Projeto de Sistemas Ubíquos [44 horas-aula]\\
+Orientação de projeto.\\
+Experimentação e análise.\\
+\\
+UNIDADE 4:  Defesa de projeto [16 horas-aula]\\
+Escrita de artigo no formato do Simpósio Brasileiro de Engenharia de Sistemas\\ Computacionais ou Simpósio Brasileiro de Computação Ubíqua ou Pervasiva.\\
+Defesa de projeto com banca de avaliadores.\\
+\\ \hline
+\end{longtable} 
+
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
+\begin{enumerate}
+\item COULOURIS, George; DOLLIMORE, Jean; KINDBERG, Tim. Sistemas Distribuídos conceitos e projetos. 4a. Ed. Editora Bookman, 2007. 
+\item LEE, Valentino; SCHNEIDER, Heather; SCHELL, Robbie. Aplicações móveis: arquitetura, projeto e desenvolvimento. São Paulo: Pearson Makron Books, 2005. xx, 328 p. ISBN 8534615403 (broch.). 
+\item ALLEN, Sarah; GRAUPERA, Vidal; LUNDRIGAN, Lee. Desenvolvimento profissional multiplataforma para smartphone: iPhone, Android, Windows mobile e BlackBerry. Rio de Janeiro: Alta Books, 2012. xvi, 264 p. ISBN 9788576086611.
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{longtable}{|L{1.025\textwidth}|} \hline
+%
+{\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
+\begin{enumerate}
+\item C Dargie, Waltenegus., Poellabauer, Chirtian; Fundamentals of Wireless Sensor Networks: Theory and Practice (Wireless Communications and Mobile Computing). 
+\item DEITEL, H. M.; DEITEL, P.J. Java: como programar. 6. ed. São Paulo: Pearson, 2005.
+\item LECHETA, Ricardo R. Google Android: aprenda a criar aplicações para dispositivos móveis com Android SDK. 3. ed. São Paulo: Novatec, 2013. 824 p. ISBN 9788575223444.
+\item TANENBAUM, Andrew S.; STEEN, Maarten van. Sistemas distribuídos: princípios e paradgmas. 2. ed. São Paulo: Pearson Prentice Hall, 2007. x, 402 p. ISBN 978-85-7605-142-8 (broch.).
+\item FALUDI, Robert. Building wireless sensor networks. Sebastopol: O'Reilly, 2010. xviii, 300 p. ISBN 9780596807733.
+%
+\end{enumerate}
+ \\ \hline
+\end{longtable}
+
+
+\input aprovacao.tex
+
+
+\end{document}
