@@ -20,18 +20,18 @@
 
 \newcommand{\semestre}{2018.2}
 
-\newcommand{\disciplina}{FUNDAMENTOS MATEMÁTICOS PARA COMPUTAÇÃO}
-\newcommand{\codigo}{DEC7121}
+\newcommand{\disciplina}{Estruturas de Dados}
+\newcommand{\codigo}{DEC0006}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%% CRETIDOS
 \newcommand{\creditosT}{4}
-\newcommand{\creditosP}{0}
+\newcommand{\creditosP}{2}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%% REQUISITOS
-\newcommand{\requisitoA}{}
+\newcommand{\requisitoA}{DEC7532 & Linguagem de Programação II}
 \newcommand{\requisitoB}{}
 \newcommand{\requisitoC}{}
 
@@ -45,7 +45,7 @@
 %%%%%%%%%% EMENTA
 \newcommand{\ementa}{
 
-Lógica matemática. Indução finita. Conjuntos. Relações e funções. Contagem. Álgebra booleana. Recursão. Fundamentos de grafos.
+Notação assintótica. Recorrências. Técnicas de análise de algoritmos. Listas lineares e suas generalizações: listas ordenadas, listas encadeadas, pilhas e filas. Aplicações de listas. Algoritmos de inserção, remoção e consulta. Tabelas de Espalhamento. Árvores binárias. Métodos de pesquisa e ordenação. Técnicas de implementação iterativa e recursiva de estruturas de dados. Grafos e grafos orientados. Representação de problemas com grafos.
  \\ \hline
 }
 
@@ -85,7 +85,7 @@ Lógica matemática. Indução finita. Conjuntos. Relações e funções. Contag
 %
 & & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
 % codigo da disciplina carga horaria: teorica - pratica e total
-{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 108} & Presencial\\ \hline
 \end{longtable}
 
 
@@ -96,7 +96,7 @@ Lógica matemática. Indução finita. Conjuntos. Relações e funções. Contag
 %
 CÓDIGO & NOME DA DISCIPLINA \\ \hline	
 %
-\requisitoA
+\requisitoA \\ \hline
 \requisitoB
 \requisitoC
 \end{longtable}
@@ -132,16 +132,21 @@ CÓDIGO & NOME DA DISCIPLINA \\ \hline
 %
 Objetivo Geral:
 
-Permitir a construção e desenvolvimento de um raciocínio lógico a partir da teoria dos conjuntos, da lógica matemática, das provas matemáticas e dos conceitos de funções e relações. Trabalhar com ferramentas de contagem para permitir a contagem de estruturas discretas. Apresentar os fundamentos de uma estrutura discreta (grafos). \\
+Abordar formalmente as estruturas de dados e as técnicas de
+manipulação destas estruturas, bem como analisar métodos de pesquisa, ordenação e
+representação de dados aplicando a estrutura de dados mais adequada para um dado
+sistema computacional. \\
 
 Objetivos Específicos:
-\begin{enumerate}
-\item Dominar os conceitos básicos da teoria dos conjuntos, da lógica matemática, e de funções e relações.
-\item Dominar ferramentas para contagem (permutação, combinação, coeficiente binomial e triângulo de pascal).
-\item Dominar os princípios da demonstração matemática.
-\item Dominar os princípios da indução matemática.
-\item Dominar os fundamentos de grafos.
-\end{enumerate}
+\begin{itemize}
+\item Identificar limites de crescimento de funções
+\item Aplicar técnicas de análise de complexidade de algoritmos
+\item Estudar as técnicas para estruturação de dados;
+\item Analisar e conhecer os principais algoritmos de ordenação de dados;
+\item Estudar técnicas de busca de dados; e
+\item Implementar estruturas de dados e algoritmos de ordenação e pesquisa de dados
+usando a linguagem de programação C/C++
+\end{itemize}
 
 \\ \hline
 \end{longtable}
@@ -152,39 +157,37 @@ Objetivos Específicos:
 %
 {\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
 
-UNIDADE 1: Conjuntos, Relações e Funções \\
-
-Conjuntos\\
-Relações\\
-Relações equivalentes e partições\\
-Funções\\
-
-UNIDADE 2: Lógica Computacional \\
-
-Operadores AND, OR, NOT, Tabelas Verdade\\
-Implicação e bicondicional\\
-Tautologias\\
-Argumentos e Princípios da Demonstração\\
-Quantificadores \\
-Métodos de prova\\
-
-UNIDADE 3: Contagem \\
-
-Permutação\\
-Combinação\\
-Princípio da casa dos pombos\\
-Triângulo de Pascal\\
-
-UNIDADE 4: Teoria de Grafos \\
-
-Definição e conceitos preliminares\\
-Diferentes tipos de grafos\\
-Representações de grafos\\
-Conexidade e distância\\
-Caminho\\
-Problemas do menor caminho\\
-Árvores\\
-
+Unidade 1: Introdução \\
+Modelo de computação\\
+Notação assintótica\\
+Recorrências\\
+Invariantes\\
+Tipo abstrato de dados\\
+\\
+Unidade 2: Estruturas Lineares\\
+Lista encadeada, circular e duplamente encadeada\\
+Implementação de listas encadeadas\\
+Pilhas\\
+Filas\\
+Aplicações de pilhas e filas\\
+\\
+Unidade 3: Algoritmos de Ordenação de Dados\\
+Algoritmos de ordenação de dados\\
+Algoritmos de inserção, remoção e pesquisa de dados\\
+Técnicas de implementação iterativa e recursiva de estruturas de dados\\
+Métodos de busca\\
+\\
+Unidade 4: Árvores\\
+Árvore binária (conceitos e aplicações)\\
+Árvores balanceadas\\
+\\
+Unidade 5: Tabela de Espalhamento\\
+Função de espalhamento\\
+Tratamento de colisões\\
+\\
+Unidade 5: Grafos\\
+Conceitos de grafos\\
+Problemas sobre grafos
 \\ \hline
 \end{longtable} 
 
@@ -197,13 +200,9 @@ Problemas do menor caminho\\
 %
 {\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
 \begin{enumerate}
-%
-\item GERSTING, J. L. Fundamentos Matemáticos para a Ciência da Computação. 5 ed.. Rio de Janeiro: LTC, 2004. 
-\item FILHO, Alencar E. Iniciação a Lógica Matemática. 21. ed. São Paulo: Nobel, 2008. 
-\item MENEZES, P. B. Matemática Discreta para Computação e Informática. 2 Ed. Porto Alegre: Bookman, 2008.
-
-%
-
+\item CORMEN, Thomas H. et al. Algoritmos: teoria e prática. Rio de Janeiro: Elsevier, 2002. xvii, 916 p. ISBN 9788535209266.
+\item FEOFILOFF, Paulo. Algoritmos em linguagem C. Rio de Janeiro: Elsevier, c2009. xv, 208 p. ISBN 9788535232493.
+\item ZIVIANI, Nivio. Projeto de algoritmos: com implementações em Pascal e C. 3. ed. rev. e ampl. São Paulo: Cengage Learning, c2011. xx, 639 p. ISBN 9788522110506
 \end{enumerate}
  \\ \hline
 \end{longtable}
@@ -217,11 +216,14 @@ Problemas do menor caminho\\
 {\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
 \begin{enumerate}
 
-\item SCHEINERMAN, E. R. Matemática Discreta Uma Introdução. São Paulo: Pioneira Thomson Learning, 2003. 
-\item LIPSCHUTZ, Seymour; LIPSON, Marc. Matemática discreta. Porto Alegre: Bookman, 2004. (Coleção Schaum). 
-\item KURTZ, D. C. Foundations of abstract mathematics. New York: McGraw-Hill College, 1992.
-\item GRAHAM, R. L., D. E. Knuth, et al. Concrete mathematics: a foundation for computer science. Reading: Addison-Wesley, 1994. 
-\item ROSEN, K. H. Discrete mathematics and its applications. 5 ed. New York: McGraw-Hill, 2003.
+\item CELES FILHO, Waldemar; CERQUEIRA, Renato; RANGEL, José Lucas. Introdução a
+estruturas de dados: Introdução a estruturas de dados : com técnicas de programação em C. Rio de Janeiro: Elsevier, 2004. xiv, 294 p. ISBN 9788535212280.
+\item TENENBAUM, Aaron M.; LANGSAM, Yedidyah; AUGENSTEIN, Moshe. Estruturas
+de dados usando C. São Paulo: Pearson Makron Books, c1995. xx, 884 p. ISBN
+8534603480
+\item LOUDON, Kyle. Mastering algorithms with C. 1st ed. Sebastopol: O’Reilly, 1999. xvii, 540 p. ISBN 9781565924536.
+\item PEREIRA, Silvio do Lago. Estruturas de dados fundamentais: conceitos e aplicações. 12. ed., rev. e atual. São Paulo: Érica, c2008. 264 p. ISBN 9788571943704.
+\item WIRTH, Niklaus. Algoritmos e estruturas de dados. Rio de Janeiro: LTC, c1999. 255 p. ISBN 9788521611905.
 
 
 %
