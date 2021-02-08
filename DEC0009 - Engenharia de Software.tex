@@ -20,14 +20,14 @@
 
 \newcommand{\semestre}{2018.2}
 
-\newcommand{\disciplina}{ESTRUTURA DE DADOS I}
-\newcommand{\codigo}{DEC7125}
+\newcommand{\disciplina}{FUNDAMENTOS MATEMÁTICOS PARA COMPUTAÇÃO}
+\newcommand{\codigo}{DEC7121}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%% CRETIDOS
-\newcommand{\creditosT}{2}
-\newcommand{\creditosP}{2}
+\newcommand{\creditosT}{4}
+\newcommand{\creditosP}{0}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%% REQUISITOS
@@ -37,14 +37,15 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% Atende aos Cursos
-\newcommand{\cursoA}{Graduação em Engenharia de Computação \\ \hline}
-\newcommand{\cursoB}{}%{Graduação em Tecnologias da Informação e Comunicação \\ \hline}
+\newcommand{\cursoA}{Graduação em Engenharia de Computação. \\ \hline}
+\newcommand{\cursoB}{Graduação em Tecnologias da Informação e Comunicação \\ \hline}
 \newcommand{\cursoC}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% EMENTA
 \newcommand{\ementa}{
-Listas lineares e suas generalizações: listas ordenadas, listas encadeadas, pilhas e filas. Aplicações de listas. Algoritmos de inserção, remoção e consulta. Tabelas de Espalhamento Árvores binária. Métodos de pesquisa. Técnicas de implementação iterativa e recursiva de estruturas de dados.
+
+Lógica matemática. Indução finita. Conjuntos. Relações e funções. Contagem. Álgebra booleana. Recursão. Fundamentos de grafos.
  \\ \hline
 }
 
@@ -55,7 +56,22 @@ Listas lineares e suas generalizações: listas ordenadas, listas encadeadas, pi
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input cabecalho.tex
+\begin{longtable}{|C{0.2\textwidth}|C{0.8\textwidth}|} \hline
+%
+\multirow{6}*{\includegraphics[scale=0.5]{UFSC-foto.jpg}} &\\
+%
+&{\bf UNIVERSIDADE FEDERAL DE SANTA CATARINA}\hfill\\
+%
+&{\bf Centro de Ciências, Tecnologias e Saúde} \\
+%
+&{\bf Departamento de Computação}\\
+%
+&{\bf PROGRAMA DE ENSINO}\\
+%
+& \\ \hline
+
+%\multicolumn{2}{|c|}{{\bf SEMESTRE \semestre}}\\ \hline
+\end{longtable}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -78,7 +94,7 @@ Listas lineares e suas generalizações: listas ordenadas, listas encadeadas, pi
 %
 \multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
 %
-CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+CÓDIGO & NOME DA DISCIPLINA \\ \hline	
 %
 \requisitoA
 \requisitoB
@@ -114,17 +130,18 @@ CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline
 %
 {\bf V. OBJETIVOS } \\ \hline
 %
+Objetivo Geral:
 
-Objetivo Geral:\\
-Abordar formalmente as estruturas de dados e as técnicas de manipulação destas estruturas, bem como analisar métodos de pesquisa, ordenação e representação de dados aplicando a estrutura de dados mais adequada para um dado sistema computacional.\\
-\\
+Permitir a construção e desenvolvimento de um raciocínio lógico a partir da teoria dos conjuntos, da lógica matemática, das provas matemáticas e dos conceitos de funções e relações. Trabalhar com ferramentas de contagem para permitir a contagem de estruturas discretas. Apresentar os fundamentos de uma estrutura discreta (grafos). \\
+
 Objetivos Específicos:
-\begin{itemize}
-\item Estudar as técnicas para estruturação de dados;
-\item Analisar e conhecer os principais algoritmos de ordenação de dados;
-\item Estudar técnicas de busca de dados; e
-\item Implementar estruturas de dados e algoritmos de ordenação e pesquisa de dados usando a linguagem de programação C
-\end{itemize}
+\begin{enumerate}
+\item Dominar os conceitos básicos da teoria dos conjuntos, da lógica matemática, e de funções e relações.
+\item Dominar ferramentas para contagem (permutação, combinação, coeficiente binomial e triângulo de pascal).
+\item Dominar os princípios da demonstração matemática.
+\item Dominar os princípios da indução matemática.
+\item Dominar os fundamentos de grafos.
+\end{enumerate}
 
 \\ \hline
 \end{longtable}
@@ -135,39 +152,39 @@ Objetivos Específicos:
 %
 {\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
 
-Conteúdo Teórico seguido de Conteúdo Prático com desenvolvimento de problemas em computador:\\
-\\
-Unidade 1: Introdução\\
-Apresentação da disciplina (ementa, bibliografia, metodologia e avaliações)\\
-Introdução às estruturas de dados\\
-Tipo de dados abstrato \\
-Lista encadeada, circular e duplamente encadeada\\
-Implementação de listas encadeadas\\
-Aplicação de listas encadeadas\\
-\\
-Unidade 2: Pilhas e Filas\\
-Pilha\\
-Fila\\
-Implementação de pilha e fila\\
-Aplicação de fila e fila\\
-\\
-Unidade 3: Algoritmos de Ordenação de Dados\\
-Algoritmos de ordenação de dados\\
-Algoritmos de inserção, remoção e pesquisa de dados\\
-Técnicas de implementação iterativa e recursiva de estruturas de dados\\
-Métodos de busca\\
-\\
-Unidade 4: Árvore\\
-Árvore binária (conceitos e aplicações)\\
-Implementação de árvore binária\\
-Busca de dados em árvore binária\\
-Árvore balanceada\\
-Fundamentos de Grafos\
-\\
-Unidade 5: Tabela de Espalhamento\\
-Tabela de espalhamento\\
-Implementação de tabela de espalhamento\\
-Tratamento de colisões
+UNIDADE 1: Conjuntos, Relações e Funções \\
+
+Conjuntos\\
+Relações\\
+Relações equivalentes e partições\\
+Funções\\
+
+UNIDADE 2: Lógica Computacional \\
+
+Operadores AND, OR, NOT, Tabelas Verdade\\
+Implicação e bicondicional\\
+Tautologias\\
+Argumentos e Princípios da Demonstração\\
+Quantificadores \\
+Métodos de prova\\
+
+UNIDADE 3: Contagem \\
+
+Permutação\\
+Combinação\\
+Princípio da casa dos pombos\\
+Triângulo de Pascal\\
+
+UNIDADE 4: Teoria de Grafos \\
+
+Definição e conceitos preliminares\\
+Diferentes tipos de grafos\\
+Representações de grafos\\
+Conexidade e distância\\
+Caminho\\
+Problemas do menor caminho\\
+Árvores\\
+
 \\ \hline
 \end{longtable} 
 
@@ -181,10 +198,12 @@ Tratamento de colisões
 {\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
 \begin{enumerate}
 %
-\item CORMEN, T. H. et al. Algoritmos - Teoria e Prática. Campus, 2002. 
-\item FEOFILOFF, P. Algoritmos em Linguagem C. Campus 2008. 
-\item ZIVIANI, N. Projeto de Algoritmos com Implementação em Pascal e C. 2 ed. São Paulo: Pioneira Thomson Learning, 2004.
+\item GERSTING, J. L. Fundamentos Matemáticos para a Ciência da Computação. 5 ed.. Rio de Janeiro: LTC, 2004. 
+\item FILHO, Alencar E. Iniciação a Lógica Matemática. 21. ed. São Paulo: Nobel, 2008. 
+\item MENEZES, P. B. Matemática Discreta para Computação e Informática. 2 Ed. Porto Alegre: Bookman, 2008.
+
 %
+
 \end{enumerate}
  \\ \hline
 \end{longtable}
@@ -197,12 +216,14 @@ Tratamento de colisões
 %
 {\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
 \begin{enumerate}
-%
-\item CELES, Waldemar et al. Introdução a Estruturas de Dados. Campus, 2004. 
-\item TENENBAUM, A. M. et al. Estruturas de Dados Usando C. São Paulo: Pearson Makron Books, 1995. 
-\item LOUDON, K. Mastering Algorithms with C. O'Reilly Media, 1st edition, 1999. 
-\item PEREIRA, Silvio do Lago. Estruturas de Dados Fundamentais. Érica, 2008. 
-\item WIRTH, Nicolaus. Algoritmos e Estruturas de Dados. Rio de Janeiro: LTC Editora, 1989.
+
+\item SCHEINERMAN, E. R. Matemática Discreta Uma Introdução. São Paulo: Pioneira Thomson Learning, 2003. 
+\item LIPSCHUTZ, Seymour; LIPSON, Marc. Matemática discreta. Porto Alegre: Bookman, 2004. (Coleção Schaum). 
+\item KURTZ, D. C. Foundations of abstract mathematics. New York: McGraw-Hill College, 1992.
+\item GRAHAM, R. L., D. E. Knuth, et al. Concrete mathematics: a foundation for computer science. Reading: Addison-Wesley, 1994. 
+\item ROSEN, K. H. Discrete mathematics and its applications. 5 ed. New York: McGraw-Hill, 2003.
+
+
 %
 \end{enumerate}
  \\ \hline
