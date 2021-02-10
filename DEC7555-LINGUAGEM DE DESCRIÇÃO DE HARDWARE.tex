@@ -77,6 +77,8 @@ Desenvolvimento de projetos em Alto Nível através de Linguagens de Descrição
 \multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
 %
 CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline	
+DEC7546 & Circuitos Digitais & ENC \\ 
+DEC7123 & Organização e Arquitetura de Computadores I & ENC \\ \hline
 %
 \requisitoA
 \requisitoB
@@ -100,7 +102,19 @@ CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline
 %
 {\bf IV. EMENTA } \\ \hline
 %
-\ementa
+%\ementa
+Histórico e aspectos gerais da linguagem VHDL; Estruturas básicas da linguagem;
+Componentes e esquemas de iteração; 
+Subprogramas; 
+Funções; 
+Bibliotecas, pacotes e configurações; 
+Síntese de circuitos lógicos combinacionais; 
+Síntese de circuitos lógicos sequenciais; 
+Conceito de circuitos síncronos e assíncronos; 
+Máquinas de Estado; 
+Síntese de memórias, contadores e circuitos de serialização; Conceitos de Caminho de Dados e Caminho de Controle; 
+Conversão de algoritmos em processadores de propósito único; 
+Projeto de sistema embarcado baseado em FPGA. \\ \hline
 \end{longtable}
 
 \newpage
@@ -111,13 +125,18 @@ CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline
 \begin{longtable}{|L{1.025\textwidth}|} \hline
 %
 {\bf V. OBJETIVOS } \\ \hline
-Objetivo Geral: 
-\begin{itemize}
-\item Compreender o funcionamento de uma FPGA e o ciclo de desenvolvimento de Hardware utilizando esse tipo de dispositivo. 
-\item Compreender a capacidade desses dispositivos e as possibilidades de integração de Hard Cores, Soft Cores e código personalizado.
-\item Escrever código em linguagem de descrição de hardware, utilizar ferramentas de desenvolvimento e simulação
-\item Criar um pequeno projeto de dispositivo que explore os recursos de uma FPGA
-\end{itemize}
+%Objetivo Geral: 
+%\begin{itemize}
+%\item Compreender o funcionamento de uma FPGA e o ciclo de desenvolvimento de Hardware utilizando esse tipo de dispositivo. 
+%\item Compreender a capacidade desses dispositivos e as possibilidades de integração de Hard Cores, Soft Cores e código personalizado.
+%\item Escrever código em linguagem de descrição de hardware, utilizar ferramentas de desenvolvimento e simulação
+%\item Criar um pequeno projeto de dispositivo que explore os recursos de uma FPGA
+%\end{itemize}
+
+Compreender o funcionamento de um FPGA e o ciclo de desenvolvimento de Hardware utilizando esse tipo de dispositivo. 
+Compreender a capacidade desses dispositivos e as possibilidades de integração de Hard Cores, Soft Cores e código personalizado. Escrever código em linguagem de descrição de hardware, utilizando ferramentas de desenvolvimento e simulação.
+Criar um pequeno projeto de dispositivo que explore os recursos de um FPGA.
+
 \\ \hline
 \end{longtable}
 
@@ -126,29 +145,156 @@ Objetivo Geral:
 \begin{longtable}{|L{1.025\textwidth}|} \hline
 %
 {\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
-UNIDADE 1: FPGA\\
-FPGA, estrutura interna\\
-FPGA, ferramentas de desenvolvimento e simulação\\
-Ciclo de desenvolvimento, ferramenta de síntese de hardware, uso como ferramenta de prototipação\\
-Processadores implementados em hardware e em software, mercado de FPGAs, empresas fabricantes, mercado de atuação \\
-Propriedade intelectual de componentes de hardware\\
+ \\
+ 
+UNIDADE 1: Introdução\\
+- Objetivos da disciplina\\
+– Metodologia de projeto: pequenos sistemas digitais\\
+– Metodologia de projeto: grandes sistemas digitais\\
+– Visão geral de Dispositivos lógicos programáveis\\
 \\
-UNIDADE 2: Programação para FPGA \\
-Linguagens existentes\\
-Código sintetizável e código não sintetizável\\
-Linguagem de programação VHDL\\
+
+UNIDADE 2: Linguagem de Hardware e Síntese de Circuitos \\
+– Introdução ao VHDL\\
+– Definição de Entidade e Arquitetura\\
+– Operadores Lógicos e Aritméticos\\
+– Tipos de dados\\
+– Configuração das máquinas dos alunos para uso da ferramenta de síntese Quartu II\\
 \\
-UNIDADE 3: Estudo da linguagem VHDL \\
-Formato da linguagem, escrita de código básico\\
-Recursos avançados da linguagens\\
-Criação de código, simulação usando ambiente de desenvolvimento ALTERA\\
+
+UNIDADE 3: Definição de Componentes \\
+– Definição de Componentes\\
+– Formas de conexão interna de componentes\\
+– Exemplos e exercícios de síntese e simulação de componentes\\
 \\
-UNIDADE 4: Implementação de dispositivos em VHDL \\
-Portas lógicas, latches, Flipflops, circuitos compostos por diferentes elementos\\
-Decodificadores, mux, demux, decodificadores 7 segmentos\\
-Uso de decodificadores para habilitar partes de um circuito\\
-Máquinas de estado em VHDL, máquinas moore, máquinas mealy
-\\ \hline
+
+UNIDADE 4: Simuladores \\
+– Testes em componentes criados em VHDL\\
+– Ferramenta Qsim\\
+– Ferramenta ModelSim\\
+– Exercícios de síntese e simulação no ModelSim\\
+\\
+
+UNIDADE 5: Comandos Concorrentes\\
+– O que é a Concorrência em VHDL?\\
+– Comandos concorrentes básicos: WHEN – ELSE, WITH – SELECT, e PROCESS\\
+– Exercícios de implementação de lógica combinacional usando os comandos concorrentes apresentados\\
+\\
+
+UNIDADE 6: Comandos Sequenciais\\
+– Definição de Lista de sensibilidade\\
+– Comandos sequenciais básicos: IF – ELSE, CASE – WHEN, e NULL\\
+– Exercícios de implementação de lógica sequencial usando os comandos sequenciais\\
+\\
+
+UNIDADE 7: Circuitos Síncronos e Assíncronos\\
+– Conceitos de sincronismo\\
+– Flip-flops\\
+– Registradores\\
+– Máquinas de estado: Mealy, Moore e One-Hot-Encoding\\
+– Exercícios de implementação de circuitos síncronos e assíncronos\\
+– Exercício de implementação de um cronômetro baseado em máquina de estados\\
+\\
+
+UNIDADE 8: Esquemas de Geração\\
+– Declaração de GENERIC\\
+– Comando GENERATE\\
+– Esquema de geração IF\\
+– Comando LOOP\\
+– Comando FOR\\
+– Comando WHILE\\
+– Exercícios de implementação de esquemas de geração\\
+\\
+
+UNIDADE 9: Declaração de tipos e principais atributos\\
+– Definição de Bibliotecas\\
+– Definição de Pacotes\\
+– Ordem de análise na síntese\\
+– Tipos e Subtipos\\
+– Vetores Unidimensionais e Multidimensionais\\
+– Atributos que geram novos sinais\\
+– Atributos que não geram novos sinais\\
+– Exercícios de implementação de tipos e subtipos\\
+– Exercícios de implementação de atributos e vetores\\
+\\
+
+UNIDADE 10: Memórias e PLL\\
+– Conceitos de memórias internas e externas ao FPGA\\
+– Elaboração de uma Read-only memory (ROM) usando VHDL\\
+– Elaboração de uma Random-acces memory (RAM) usando VHDL\\
+– Uso de templates da ferramenta Quartus para gerar memórias\\
+– Definição de PLL\\
+– Template da ferramenta Quartus II para gerar um componente PLL\\
+– Exercícios de implementação de memórias\\
+– Exercícios de implementação de PLL\\
+\\
+
+UNIDADE 11: Configurações\\
+– Uso de configuração\\
+– Exemplo de caso prático do uso de configuração\\
+– Exercícios de implementação baseados no conceito de Configurações\\
+\\
+
+UNIDADE 12: Variáveis\\
+– Conceito de variáveis\\
+– Atribuição de valores em variáveis\\
+– Diferenças entre Sinais e Variáveis\\
+– Exercícios de implementação utilizando o conceito de variáveis\\
+\\
+
+UNIDADE 13: Instruções auxiliares\\
+– ASSERT\\
+– ALIAS\\
+– PACKAGE\\
+– FUNCTION\\
+– PROCEDURE\\
+– Exercício de implementação com instruções auxiliares\\
+\\
+
+UNIDADE 14: Projetos de circuitos\\
+– Registrador de deslocamento com Data-Load\\
+– Deboucer para chave\\
+– Temporizador\\
+– Exercício de implementação dos projetos de circuitos\\
+\\
+
+UNIDADE 15: Projetos de circuitos\\
+– Conversor Paralelo-Serial\\
+– Conversor Serial-Paralelo\\
+– Decodificador de endereços\\
+– Conversor BCD para display de sete segmentos\\
+– Exercício de implementação dos projetos de circuitos\\
+\\
+
+UNIDADE 16: Projeto de circuitos\\
+– Medidores de frequência\\
+– Redes neurais\\
+\\
+
+UNIDADE 17: Caminhos de Dados e Controle\\
+– Definição de Caminho de Dados e Caminho de controle\\
+– Definição de um processador didático\\
+– Implementação do processador didático em VHDL\\
+\\
+
+UNIDADE 18: Processador didático\\
+– Implementação do processador didático em VHDL\\
+– Programação e teste do processador didático\\
+\\
+
+UNIDADE 19: Processadores de Propósito Único - PPU\\
+– Conceito de PPU\\
+– Técnica de mapeamento de algoritmos para geração de PPU\\
+– Exercício de conversão de algoritmo em PPU\\
+\\
+
+UNIDADE 20: Trabalho\\
+– Sorteio do Trabalho Final para cada aluno\\
+– Explanação sobre cada um dos trabalhos\\
+– Definição das documentações exigidas na entrega do Trabalho Final\\
+\\
+
+\hline
 \end{longtable} 
 
 \newpage
@@ -161,8 +307,8 @@ Máquinas de estado em VHDL, máquinas moore, máquinas mealy
 
 \begin{enumerate}
 \item HAMBLEN, James O; HALL, Tyson S; FURMAN, Michael D. Rapid Prototyping of Digital Systems. Boston: Springer Science+Business Media, LLC, 2008. 
-\item Pedroni - Circuit Design with VHDL; MIT Press, 2005. 
-\item D'Amore, R. - VHDL: Descrição e Síntese de Circuitos Digitais, LTC, 2005.
+\item PEDRONI, Volnei A. Eletrônica digital moderna e VHDL. Rio de Janeiro: Elsevier, c2010. 619 p. ISBN 9788535234657. 
+\item D’AMORE, Roberto. VHDL: descrição e síntese de circuitos digitais. 2. ed. Rio de Janeiro: LTC, c2012. xiii, 292 p. ISBN 9788521620549.
 
 
 \end{enumerate}
@@ -177,12 +323,15 @@ Máquinas de estado em VHDL, máquinas moore, máquinas mealy
 %
 {\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
 \begin{enumerate}
-\item  Digital\_McLogic\_Design - Livro disponível gratuitamente em http://www.ee.calpoly.edu/media/uploads/resources/Master\_Digital\_McLogic\_Design\_-\_v2.01.pdf - (licença creative commons) 
-\item Free Range VHDL - Livro disponível gratuitamente em http://www.freerangefactory.org/ 
-\item The Designer's Guide to VHDL 3 edição, Volume 3, Peter J. Ashenden ISBN: 978-0-12-088785-9 (disponível no science direct) 
-\item Quartus II Introduction Using VHDL Designs,Altera, disponível em :(ftp://ftp.altera.com/up/pub/Altera\_Material/11.0/Tutorials/VHDL/Quartus\_II\_Introduction.pdf) 
-\item Getting Started with Altera's DE-Series Boards, Altera, disponível em: ftp://ftp.altera.com/up/pub/Altera\_Material/10.1/Tutorials/Getting\_Started\_with\_DE-series\_boards.pdf
 
+\item CHU, Pong P. FPGA prototyping by VHDL examples: Xilinx Spartan-3 version.
+Hoboken, N.J.: Wiley-Interscience, [2008] 1 recurso online (xxv, 440 p ISBN 9780470231623 (e-book). Disponível em: <https://doi.org/10.1002/9780470231630>.
+\item CHU, Pong P., RTL hardware design using VHDL: coding for efficiency, portability, and scalability. Hoboken, N.J.: Wiley-Interscience, c2006. 1 online resource (xxiii, 66 ISBN 0471720925 (alk. paper)).
+\item The Designer’s Guide to VHDL 3 edição, Volume 3, Peter J. Ashenden ISBN: 978-0-12-088785-9 (disponível no science direct).
+\item FERREIRA, José Manuel Martins. Introdução ao projeto com sistemas digitais e microcontroladores. Porto: FEUP, 1998. 371 p. ISBN 9727520324.
+\item WILSON, Peter. The circuit designer’s companion. 3rd ed. Amsterdam: Elsevier, 2012. xv, 439 p. ISBN 9780080971384.
+\item Free Range VHDL - Livro disponível gratuitamente em http://www.freerangefactory.org/ 
+\item The Designer's Guide to VHDL 3 edição, Volume 3, Peter J. Ashenden ISBN: 978-0-12-088785-9 (disponível no science direct).
 \end{enumerate}
  \\ \hline
 \end{longtable}
