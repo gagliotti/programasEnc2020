@@ -5,6 +5,8 @@
 \usepackage{multirow}
 \usepackage{longtable}
 \usepackage{array}
+\usepackage{colortbl}
+\usepackage[table]{xcolor}
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
@@ -18,16 +20,16 @@
 
 %\pagestyle{empty}
 
-\newcommand{\semestre}{2018.2}
+\newcommand{\semestre}{2021.2}
 
-\newcommand{\disciplina}{FUNDAMENTOS MATEMÁTICOS PARA COMPUTAÇÃO}
-\newcommand{\codigo}{DEC7121}
+\newcommand{\disciplina}{PROJETO INTEGRADOR I}
+\newcommand{\codigo}{DEC0013}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%% CRETIDOS
-\newcommand{\creditosT}{4}
-\newcommand{\creditosP}{0}
+\newcommand{\creditosT}{0}
+\newcommand{\creditosP}{2}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%% REQUISITOS
@@ -44,8 +46,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% EMENTA
 \newcommand{\ementa}{
-
-Lógica matemática. Indução finita. Conjuntos. Relações e funções. Contagem. Álgebra booleana. Recursão. Fundamentos de grafos.
+Serão atividades ligadas a conteúdos de outras disciplinas da matriz curricular, nas quais os estudantes vivenciam situações de aprendizagem diferenciadas e ações que contribuam para o
+desenvolvimento de práticas de temas que já foram apresentados em sala de aula. O tema do
+Projeto Integrador I será determinado pelos órgãos colegiados do curso (NDE e Colegiado do
+Curso) anualmente com previsão para os dois semestres subsequentes, de forma que se possam
+ser organizadas com antecedência o conjunto de atividades que serão necessárias para a
+avaliação dos projetos pelo professor supervisor da disciplina.
  \\ \hline
 }
 
@@ -85,20 +91,17 @@ Lógica matemática. Indução finita. Conjuntos. Relações e funções. Contag
 %
 & & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
 % codigo da disciplina carga horaria: teorica - pratica e total
-{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 36} & Presencial\\ \hline
 \end{longtable}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{longtable}{|C{0.12\textwidth}|L{0.736\textwidth}|C{0.12\textwidth}|} \hline
+\begin{longtable}{|L{1.025\textwidth}|} \hline
 %
-\multicolumn{3}{|l|}{{\bf II. PRÉ-REQUISITO(S)}} \\ \hline
+{\bf II. PRÉ-REQUISITO(S) } \\ \hline
 %
-CÓDIGO & NOME DA DISCIPLINA \\ \hline	
-%
-\requisitoA
-\requisitoB
-\requisitoC
+O aluno precisa ter concluído no mínimo 60 créditos. \\ \hline
+
 \end{longtable}
 
 
@@ -130,18 +133,16 @@ CÓDIGO & NOME DA DISCIPLINA \\ \hline
 %
 {\bf V. OBJETIVOS } \\ \hline
 %
-Objetivo Geral:
+O objetivo do Projeto Integrador I é estimular o aluno através de atividades práticas e desafiadoras, buscando evitar a evasão de alunos no início do curso. Além disso, o Projeto Integrador I deverá articular as competências do perfil profissional do curso desenvolvidas pelas disciplinas cursadas até a terceira/quarta fase.
 
-Permitir a construção e desenvolvimento de um raciocínio lógico a partir da teoria dos conjuntos, da lógica matemática, das provas matemáticas e dos conceitos de funções e relações. Trabalhar com ferramentas de contagem para permitir a contagem de estruturas discretas. Apresentar os fundamentos de uma estrutura discreta (grafos). \\
-
-Objetivos Específicos:
-\begin{enumerate}
-\item Dominar os conceitos básicos da teoria dos conjuntos, da lógica matemática, e de funções e relações.
-\item Dominar ferramentas para contagem (permutação, combinação, coeficiente binomial e triângulo de pascal).
-\item Dominar os princípios da demonstração matemática.
-\item Dominar os princípios da indução matemática.
-\item Dominar os fundamentos de grafos.
-\end{enumerate}
+Objetivos Específicos: 
+\begin{itemize}
+    \item Integrar o conteúdo das componentes curriculares dos semestres anteriores;
+    \item Capacitar o aluno a desenvolver projetos e soluções para problemas;
+    \item Desenvolver as habilidades do aluno com o manuseio e aplicação de ferramentas, instrumentos de medidas e equipamentos de laboratório;
+    \item Incentivar o trabalho em grupo;
+    \item Desenvolver habilidades de apresentação em público;
+    \end{itemize}
 
 \\ \hline
 \end{longtable}
@@ -152,38 +153,21 @@ Objetivos Específicos:
 %
 {\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
 
-UNIDADE 1: Conjuntos, Relações e Funções \\
+{\bf UNIDADE 1:} Apresentação da disciplina, plano de ensino, divisão em grupos de trabalho. \\
 
-Conjuntos\\
-Relações\\
-Relações equivalentes e partições\\
-Funções\\
 
-UNIDADE 2: Lógica Computacional \\
 
-Operadores AND, OR, NOT, Tabelas Verdade\\
-Implicação e bicondicional\\
-Tautologias\\
-Argumentos e Princípios da Demonstração\\
-Quantificadores \\
-Métodos de prova\\
+{\bf UNIDADE 2:}  Metodologia para elaboração do projeto: Definição do problema a ser resolvido e seu escopo e relevância. Identificação dos atores envolvidos. Estudo da literatura relacionada. Vantagens/desvantagens da solução proposta. Formas de avaliação da solução. Capacidade de escala da solução. Viabilidade física/financeira do projeto. Modelagem do projeto. Definição de cronograma para desenvolvimento do projeto.  Documentação inicial do projeto,  materiais/ferramentas utilizadas. \\
 
-UNIDADE 3: Contagem \\
 
-Permutação\\
-Combinação\\
-Princípio da casa dos pombos\\
-Triângulo de Pascal\\
 
-UNIDADE 4: Teoria de Grafos \\
+{\bf UNIDADE 3:}   Execução do projeto: particionamento do projeto em tarefas. Criação de um MPV (Mínimo Produto Viável). Acompanhamento das equipes e apresentação pública das etapas de desenvolvimento, Avaliação e testes parciais. Relatórios parciais de execução.\\
 
-Definição e conceitos preliminares\\
-Diferentes tipos de grafos\\
-Representações de grafos\\
-Conexidade e distância\\
-Caminho\\
-Problemas do menor caminho\\
-Árvores\\
+
+
+{\bf UNIDADE 4:} Documentação final do projeto: relatório acadêmico/científico, apresentação pública, demonstração experimental.\\
+
+
 
 \\ \hline
 \end{longtable} 
@@ -196,15 +180,13 @@ Problemas do menor caminho\\
 \begin{longtable}{|L{1.025\textwidth}|} \hline
 %
 {\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
-\begin{enumerate}
-%
-\item GERSTING, J. L. Fundamentos Matemáticos para a Ciência da Computação. 5 ed.. Rio de Janeiro: LTC, 2004. 
-\item FILHO, Alencar E. Iniciação a Lógica Matemática. 21. ed. São Paulo: Nobel, 2008. 
-\item MENEZES, P. B. Matemática Discreta para Computação e Informática. 2 Ed. Porto Alegre: Bookman, 2008.
+1. SCHWABER, Ken. Agile project management with Scrum. Redmond: Microsoft Press, 2004. xix, 163 p. ISBN 9780735619937.
 
-%
+2. XAVIER, Carlos Magno da Silva. Gerenciamento de projetos: como definir e controlar o escopo do projeto. 2. ed. São Paulo: Saraiva, 2009. 259 p. ISBN 9788502061958.
 
-\end{enumerate}
+3. THIEL, Peter; MASTERS, Blake. Zero to One: Notes on Startups, or How to Build the Future, Currency, 2014. 224 p. ISBN-10 : 9780804139298
+
+
  \\ \hline
 \end{longtable}
 
@@ -215,17 +197,22 @@ Problemas do menor caminho\\
 \begin{longtable}{|L{1.025\textwidth}|} \hline
 %
 {\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
-\begin{enumerate}
 
-\item SCHEINERMAN, E. R. Matemática Discreta Uma Introdução. São Paulo: Pioneira Thomson Learning, 2003. 
-\item LIPSCHUTZ, Seymour; LIPSON, Marc. Matemática discreta. Porto Alegre: Bookman, 2004. (Coleção Schaum). 
-\item KURTZ, D. C. Foundations of abstract mathematics. New York: McGraw-Hill College, 1992.
-\item GRAHAM, R. L., D. E. Knuth, et al. Concrete mathematics: a foundation for computer science. Reading: Addison-Wesley, 1994. 
-\item ROSEN, K. H. Discrete mathematics and its applications. 5 ed. New York: McGraw-Hill, 2003.
+ 4. RIES, Eric. The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses, Currency, 2011,  336 p. ISBN-10 : 9780307887894
+ 
+ 5. Daychouw, Merhi. 40 ferramentas e técnicas de gerenciamento. Ed. Basport, 2018. ISBN: 9788574528687
+ 
+ 6. BROWN, Tim.  Design Thinking, Alta Books, 2017 , 272 p. ISBN-10 : 8550801348
+ 
+ 7. Reis, Dálcio Roberto. GESTÃO DA INOVAÇÃO TECNOLÓGICA. Saraiva, 2005.Ed. Manole. ISBN: 9788520426784
+
+ 8. KEELING, Ralph. GESTÃO DE PROJETOS – UMA ABORDAGEM GLOBAL. São Paulo: Saraiva, 2009. ISBN: 9788553131631
 
 
-%
-\end{enumerate}
+
+
+
+
  \\ \hline
 \end{longtable}
 

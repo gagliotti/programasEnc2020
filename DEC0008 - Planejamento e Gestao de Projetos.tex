@@ -20,21 +20,20 @@
 
 \newcommand{\semestre}{2018.2}
 
-\newcommand{\disciplina}{ENGENHARIA DE SOFTWARE}
-\newcommand{\codigo}{DEC0009}
+\newcommand{\disciplina}{Planejamento e Gestão de Projetos}
+\newcommand{\codigo}{DEC0008}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%% CREDITOS
-\newcommand{\creditosT}{2}
+%%%%%%%%%%%%% CRETIDOS
+\newcommand{\creditosT}{4}
 \newcommand{\creditosP}{2}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%% REQUISITOS
-\newcommand{\requisitoA}{DEC7532 &Linguagem de Programação II & ENC\\ \hline}
+\newcommand{\requisitoA}{DEC7532 & Linguagem de Programação II}
 \newcommand{\requisitoB}{}
 \newcommand{\requisitoC}{}
-%DEC7532(Linguagem de Programação II)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% Atende aos Cursos
@@ -46,7 +45,7 @@
 %%%%%%%%%% EMENTA
 \newcommand{\ementa}{
 
-Conceitos e paradigmas da engenharia de software. Metodologias de desenvolvimento de software. Processo de desenvolvimento de software: levantamento de dados, técnicas e ferramentas de especificação de requisitos. Análise e projeto de software. Linguagem de especificação de software. Testes de software. Controle de qualidade. Gerenciamento do projeto de software.
+Notação assintótica. Recorrências. Técnicas de análise de algoritmos. Listas lineares e suas generalizações: listas ordenadas, listas encadeadas, pilhas e filas. Aplicações de listas. Algoritmos de inserção, remoção e consulta. Tabelas de Espalhamento. Árvores binárias. Métodos de pesquisa e ordenação. Técnicas de implementação iterativa e recursiva de estruturas de dados. Grafos e grafos orientados. Representação de problemas com grafos.
  \\ \hline
 }
 
@@ -86,7 +85,7 @@ Conceitos e paradigmas da engenharia de software. Metodologias de desenvolviment
 %
 & & {\tiny TEÓRICAS} & {\tiny PRÁTICAS} & {\small SEMESTRAIS} & \\ \hline
 % codigo da disciplina carga horaria: teorica - pratica e total
-{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 72} & Presencial\\ \hline
+{\bf \small \codigo} & {\bf \small \disciplina } & {\bf \creditosT} & {\bf \creditosP} & {\bf 108} & Presencial\\ \hline
 \end{longtable}
 
 
@@ -97,7 +96,7 @@ Conceitos e paradigmas da engenharia de software. Metodologias de desenvolviment
 %
 CÓDIGO & NOME DA DISCIPLINA \\ \hline	
 %
-\requisitoA
+\requisitoA \\ \hline
 \requisitoB
 \requisitoC
 \end{longtable}
@@ -133,15 +132,21 @@ CÓDIGO & NOME DA DISCIPLINA \\ \hline
 %
 Objetivo Geral:
 
-Fornecer subsídios ao aluno para que ele possa analisar e projetar adequadamente um produto de software e compreender os processos de implementação, gerenciamento e manutenção de software. \\
-\\
+Abordar formalmente as estruturas de dados e as técnicas de
+manipulação destas estruturas, bem como analisar métodos de pesquisa, ordenação e
+representação de dados aplicando a estrutura de dados mais adequada para um dado
+sistema computacional. \\
+
 Objetivos Específicos:
-\begin{enumerate}
-\item Modelar os dados de uma organização utilizando uma notação apropriada.
-\item Projetar um sistema a partir da engenharia de requisitos.
-\item Analisar e projetar software através do paradigma orientado a objetos.
-\item Entender o que é um software de qualidade e conhecer as métricas existentes.
-\end{enumerate}
+\begin{itemize}
+\item Identificar limites de crescimento de funções
+\item Aplicar técnicas de análise de complexidade de algoritmos
+\item Estudar as técnicas para estruturação de dados;
+\item Analisar e conhecer os principais algoritmos de ordenação de dados;
+\item Estudar técnicas de busca de dados; e
+\item Implementar estruturas de dados e algoritmos de ordenação e pesquisa de dados
+usando a linguagem de programação C/C++
+\end{itemize}
 
 \\ \hline
 \end{longtable}
@@ -152,24 +157,37 @@ Objetivos Específicos:
 %
 {\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
 
-Unidade I: Fundamentos de Engenharia de Software\\
-Visão geral da engenharia de software\\
-Modelo de Processo de software\\
-
+Unidade 1: Introdução \\
+Modelo de computação\\
+Notação assintótica\\
+Recorrências\\
+Invariantes\\
+Tipo abstrato de dados\\
 \\
-
-Unidade II: Análise e Projeto\\
-Engenharia de requisitos\\
-Projeto de software\\
-
+Unidade 2: Estruturas Lineares\\
+Lista encadeada, circular e duplamente encadeada\\
+Implementação de listas encadeadas\\
+Pilhas\\
+Filas\\
+Aplicações de pilhas e filas\\
 \\
-
-Unidade III: Teste, Manutenção, Qualidade e Gerenciamento \\
-Testes de software\\
-Manutenção de software\\
-Qualidade de software\\
-Gerenciamento de projeto de software\\
-
+Unidade 3: Algoritmos de Ordenação de Dados\\
+Algoritmos de ordenação de dados\\
+Algoritmos de inserção, remoção e pesquisa de dados\\
+Técnicas de implementação iterativa e recursiva de estruturas de dados\\
+Métodos de busca\\
+\\
+Unidade 4: Árvores\\
+Árvore binária (conceitos e aplicações)\\
+Árvores balanceadas\\
+\\
+Unidade 5: Tabela de Espalhamento\\
+Função de espalhamento\\
+Tratamento de colisões\\
+\\
+Unidade 5: Grafos\\
+Conceitos de grafos\\
+Problemas sobre grafos
 \\ \hline
 \end{longtable} 
 
@@ -182,13 +200,9 @@ Gerenciamento de projeto de software\\
 %
 {\bf VII. BIBLIOGRAFIA BÁSICA} \\ \hline
 \begin{enumerate}
-%
-\item SOMMERVILLE, Ian. Engenharia de software. 9. ed. São Paulo: Pearson; c2011. xii, 529 p. ISBN 9788579361081. 
-\item WAZLAWICK, Raul Sidnei. Análise e projeto de sistemas de informação orientados a objetos. 2. ed. rev. e atual. Rio de Janeiro: Elsevier: Campus, 2011. 330 p. (Série Editora Campus, SBC). ISBN 9788535239164. 
-\item BOOCH, Grady; RUMBAUGH, James; JACOBSON, Ivar. UML: guia do usuário. 2. ed.totalmente rev. e atual. Rio de Janeiro: Elsevier, 2006. xxvii, 521 p. ISBN 9788535217841.
-
-%
-
+\item CORMEN, Thomas H. et al. Algoritmos: teoria e prática. Rio de Janeiro: Elsevier, 2002. xvii, 916 p. ISBN 9788535209266.
+\item FEOFILOFF, Paulo. Algoritmos em linguagem C. Rio de Janeiro: Elsevier, c2009. xv, 208 p. ISBN 9788535232493.
+\item ZIVIANI, Nivio. Projeto de algoritmos: com implementações em Pascal e C. 3. ed. rev. e ampl. São Paulo: Cengage Learning, c2011. xx, 639 p. ISBN 9788522110506
 \end{enumerate}
  \\ \hline
 \end{longtable}
@@ -202,11 +216,15 @@ Gerenciamento de projeto de software\\
 {\bf VIII. BIBLIOGRAFIA COMPLEMENTAR} \\ \hline
 \begin{enumerate}
 
-\item BEZERRA, Eduardo. princípios de análise e projeto de sistemas com UML. 2 ed. total. rev. e atual. Rio de Janeiro: Elsevier, 2007. 369 p. ISBN 9788535216967.
-\item LARMAN, Craig. Utilizando UML e padrões: uma introdução à análise e ao projeto orientados a objetos e ao desenvolvimento iterativo. Porto Alegre: Bookman, 2007. xiv, 695 p. ISBN 9788560031528. 
-\item PRESSMAN, Roger S. Engenharia de software: uma abordagem profissional. 7. ed. Porto Alegre: AMGH, 2011. 780 p. ISBN 9788563308337.
-\item GRAHAM, R. L., D. E. Knuth, et al. Concrete mathematics: a foundation for computer science. Reading: Addison-Wesley, 1994. BREITMAN, Karin Koogan; CASANOVA, M. A.; TRUSZKOWSKI, W. Semantic web: concepts, technologies and applications. London: Springer, 2007. 327 p. ISBN 9781846285813.
-\item FRIEDENTHAL, Sanford; MOORE, Alan; STEINER, Rick. A practical guide to SysML: the systems modeling language. 2nd ed. Waltham: Morgan Kaufmann, c2012. xxiii, 615 p. ISBN 9780123852069.
+\item CELES FILHO, Waldemar; CERQUEIRA, Renato; RANGEL, José Lucas. Introdução a
+estruturas de dados: Introdução a estruturas de dados : com técnicas de programação em C. Rio de Janeiro: Elsevier, 2004. xiv, 294 p. ISBN 9788535212280.
+\item TENENBAUM, Aaron M.; LANGSAM, Yedidyah; AUGENSTEIN, Moshe. Estruturas
+de dados usando C. São Paulo: Pearson Makron Books, c1995. xx, 884 p. ISBN
+8534603480
+\item LOUDON, Kyle. Mastering algorithms with C. 1st ed. Sebastopol: O’Reilly, 1999. xvii, 540 p. ISBN 9781565924536.
+\item PEREIRA, Silvio do Lago. Estruturas de dados fundamentais: conceitos e aplicações. 12. ed., rev. e atual. São Paulo: Érica, c2008. 264 p. ISBN 9788571943704.
+\item WIRTH, Niklaus. Algoritmos e estruturas de dados. Rio de Janeiro: LTC, c1999. 255 p. ISBN 9788521611905.
+
 
 %
 \end{enumerate}
