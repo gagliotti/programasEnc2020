@@ -18,7 +18,7 @@
 
 %\pagestyle{empty}
 
-\newcommand{\semestre}{2018.2}
+\newcommand{\semestre}{2023.1}
 
 \newcommand{\disciplina}{REDES SEM FIO}
 \newcommand{\codigo}{DEC7563}
@@ -31,7 +31,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%% REQUISITOS
-\newcommand{\requisitoA}{}
+\newcommand{\requisitoA}{DEC 7557 & Redes de Computadores & ENC \hline}
 \newcommand{\requisitoB}{}
 \newcommand{\requisitoC}{}
 
@@ -44,7 +44,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% EMENTA
 \newcommand{\ementa}{
-Introdução a redes sem fio. Fundamentos de transmissão e propragação de sinal. Tipos de Antenas. Protocolos e Mecanismos de Controle: Acesso ao Meio, Topologia, Potência, Ruído e Taxa. Padronização de redes sem fio (Padrões IEEE WPAN, WLAN e WMAN). Roteamento e QoS em redes sem fio: ad hoc e infraestruturadas, Mobilidade IP, TCP móvel. Estudos de casos: redes locais, redes celulares, redes de sensores e redes veiculares.
+Introdução à comunicação sem fio. Principais redes sem fio: ad hoc e infraestruturadas. Camada física (PHY): protocolos, topologias, potência de transmissão e recepção, taxas de transferência.
+Protocolos da camada de enlace (MAC): controle de acesso ao meio livre de contenção, controle de acesso ao meio com contenção. Roteamento e QoS. Principais tecnologias de Low-Rate Wireless Personal Area Networks (LR-WPAN): eficiência de energia, escalabilidade (aplicações
+para IoT) e confiabilidade de redes LR-WPAN. Desenvolvimento de projeto ou aplicação com redes de sensores sem fio.
 \\ \hline
 }
 
@@ -113,14 +115,17 @@ CÓDIGO & NOME DA DISCIPLINA & CURSO \\ \hline
 {\bf V. OBJETIVOS } \\ \hline
 Objetivo Geral:\\
 
-Capacitar o estudante a analisar de forma crítica os problemas e soluções das Redes Sem Fio na transmissão de dados em diversos tipos de aplicações. 
+Capacitar o estudante a analisar de forma crítica os problemas de larga
+escala e propor soluções empregando o uso das tecnologias de Redes Sem Fio mais apropriadas. 
 \\
 Objetivos Específicos:
 
 \begin{itemize}
-\item Aprofundar o conceito de Arquitetura Multicamadas e os princípios básicos de operação das Redes de Computadores.
-\item  Aprofundar os conceitos sobre a organização da arquitetura e os conceitos associados ao Modelo de Referência OSI e da arquitetura de protocolos TCP/IP. 
-\item  Compreender as características associadas aos Meios de Transmissão mais utilizados para transferência de dados em Redes de Computadores.
+\item Aprofundar o conceito de arquiteturas e protocolos sem fio e os princípios básicos de operação de transmissão de dados;
+\item  Dimensionar o uso de tecnologias sem fio para solução de problemas de larga escala; 
+\item  Compreender o desenvolvimento de protocolos de comunicação sem fio;
+\item Dominar questões relacionadas a escalabilidade, abrangência e topologias de redes de comunicação sem fio;
+\item Propor soluções para projetos de redes sem fio empregando diferentes recursos tecnológicos.
 \end{itemize}
 \\ \hline
 \end{longtable}
@@ -131,33 +136,38 @@ Objetivos Específicos:
 %
 {\bf VI. CONTEÚDO PROGRAMÁTICO } \\ \hline
 Conteúdo Teórico seguido de Conteúdo Prático com desenvolvimento de um projeto de redes sem fio: \\
-Unidade 1. Introdução às  Redes sem Fio (6 horas/aula)\\
- Desenvolvimento das redes sem fio\\
- Tipos de redes sem fio (WWAN, WMAN, WLAN, WPAN)\\
- Componentes de redes sem fio: hosts, estações base e enlaces\\
- Características : vantagens e desvantagens\\
- Acesso múltiplo por divisão de código (CDMA)\\
-\\
-Unidade 2. Fundamentos de transmissão e propagação do sinal (8 horas aula)\\
- Antenas (Ominidirecional, direcional e semi-direcional)\\
- Mecanismos de controle: acesso ao meio, topologia, potencia, ruído e taxa;\\
- Espalhamento espectral\\
- SNR\\
-\\
-Unidade 3. Padronização de Redes sem Fio (20 horas aula)*\\
- Padrões de redes WLAN (IEEE 802.11)\\
- Padrões de redes WPAN (IEEE 802.15.1 e IEEE 802.15.4)\\
- Padrões de redes WMAN (IEEE 802.16)\\
+Unidade 1. Introdução à comunicação sem fio (6 horas/aula)\\
+ Principais redes sem fio: ad hoc e infraestruturadas\\
+ Tipos de redes sem fio\\
+ Componentes básicos da arquitetura de redes sem fio: camadas, hosts, estações base e enlaces\\
+ Características e desafios da transmissão sem fio\\
 
-Unidade 4.  Roteamento em redes sem fio (10 horas aula)\\
- QoS em redes em sem fio\\
-Mobilidade IP\\
- TCP Móvel\\
-\\
-Unidade 5. Diferentes tipos de redes sem fio (10 horas aula) *\\
- Estudos de casos: redes locais, redes celulares, redes de sensores e redes veiculares.\\
+ Unidade 2 - Camada física (PHY) (10 horas/aula)\\
+ Principais funções da camada física\\
+ Tipos de transmissão e multiplexação\\
+ Potência de transmissão e recepção\\
+ Taxas de transferência e alcance\\
+ Estudos de casos\\
 
-*desenvolvimento de prática aplicando os conceitos estudados em sala de aula.\\
+ Unidade 3 - Protocolos da camada de enlace (MAC) (10 horas/aula)\\
+ Principais funções da camada MAC
+ Controle de acesso ao meio livre de contenção
+ Controle de acesso ao meio com contenção
+ Estudos de casos
+\\
+Unidade 4 - Roteamento e QoS (10 horas/aula)\\
+ QoS em redes sem fio\\
+ Principais tecnologias de Low-Rate e topologias\\
+ Desafios do roteamento em redes sem fio\\
+ Exemplos de protocolos de roteamento na prática: hierárquicos, por demanda, etc\\
+
+Unidade 5 - Wireless Personal Area Networks (LR-WPAN) (18 horas/aulas)
+  Eficiência de energia
+  Escalabilidade e aplicações para IoT
+  Nuvem e desafios de segurança
+  Confiabilidade, privacidade e segurança 
+
+ Unidade 6 - Desenvolvimento de projeto ou aplicação com redes de sensores sem fio (18 horas/aulas)
 
 
 
